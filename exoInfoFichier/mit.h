@@ -15,6 +15,8 @@ typedef struct {
 	char label[100];
 }PC;
 
+char **allouer(int a,int b);
+
 int enTete(char* chemin,char* tete);
 
 void sort(PC* datas,int i);
@@ -29,4 +31,6 @@ Identite getDataId();
 PC getDataPc();
 int enregistrement1(char* chemin,Identite* mit);
 int enregistrement2(char* chemin,PC* mit);
+void addURL(char** datas,char** URL,int i);
+
 #endif

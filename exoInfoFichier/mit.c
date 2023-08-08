@@ -6,6 +6,15 @@
 #include<ctype.h>
 
 ///Les fonctions
+char ** allouer(int a,int b){
+	char** tab = malloc(sizeof(char*)*a);
+	for(int i=0;i<a;i++){
+		*(tab+i)=malloc(b);
+	}
+
+	return tab;
+}
+
 
 int max(char* s1,char* s2){
 	int maxim=0;
@@ -28,7 +37,7 @@ int enregistrement1(char* chemin,Identite* mit){
 	}
 	
 ///Enregistrement
-	fprintf(fichier,"%s,%s,%s,%s,%s\n",mit->nom,mit->prenom,mit->parcours,mit->grade,mit->num);
+	fprintf(fichier,"%s\t%s\t%s\t%s\t%s\n",mit->nom,mit->prenom,mit->parcours,mit->grade,mit->num);
 
 ///Fermeture
 	fclose(fichier);
@@ -235,4 +244,16 @@ int enTete(char* chemin,char* tete){
 		fclose(fichier1);
 	}
 	return 0;
+}
+
+void addURL(char** datas,char** URL,int i){
+	strcpy(URL[0],"URL\n");
+	datas[0][strlen(datas[0])-1]='\0';	
+	sprintf(datas[0],"%s,%s",datas[0],URL[0]);
+	for(int j=1;j<i;j++){
+		datas[j][strlen(datas[j])-1]='\0';
+		fprintf(stdout,"\t\n- %s -\n\n Entrez votre URL GitHub:\t",datas[j]);
+		fgets(URL[j],100,stdin);
+		sprintf(datas[j],"%s,%s",datas[j],URL[j]);
+	}
 }
