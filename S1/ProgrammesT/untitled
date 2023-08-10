@@ -1,0 +1,9 @@
+#include<math.h>
+#include<stdio.h>
+	int main(){
+	float x=30;
+	float y=sin(x);
+printf("%f", y);
+
+return 0;
+}

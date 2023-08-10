@@ -1,0 +1,31 @@
+Types des ordinateur: super calculateur, ordinateur intégré à une carte, PC
+Composantes PC: Unité centrale ( CPU Centrale Processing Unit+ Unité de stockage:Mémoire et disque + RAM+ HD), Périphérique ( entrée et sortie)
+Périphérique de sortie: Écran, imprimante, Réseau, 
+Périphérique d'entrée: Clavier, souris, réseau,
+Comment utiliser le clavier: Suppr(supprime les caractères à droite), AltGr ( pour écrire les caractères à gauche comme @) , VerNum ( pour écrire les chiffres (ex 1 au lieu de J))
+Ctrl+C Copier, Ctrl+V Coller , Ctrl+X Couper
+nombre binaire: nombre basé sur les nombre à base 2 ( =>0 et 1 )
+Instruction-->Logiciel-->Code binaire
+Il y a des connexions entre tous les Composantes de l'ordinateur (ce sont les supports physique: courant eletrique)=> l'ordinateur est une machine
+Nombre binaire: 0= Sans courant (au niveau physique) , 1=avec courant (signal électrique)
+L'orinateur n'est pas un ordinateur sans programme: à partir de 1970, on a crée le premier système d'exploitation (UNIX)
+Tous les OS existants viennent tous de UNIX ( les payants et gratuits)
+1983:Développement logiciel GNU (Gnu is Not Unix) (Pour pouvoir utiliser des applications ouvertement)
+Un système d'exploitation est l'ensemble de tous les programmes basiques pour pouvoir utiliser un ordinateur (commander avec clavier,...)
+Pilote/Module: Lequel qui guide le matériel 
+Système d'exploitation (SE) = Operator System (OS): Intération avec les matériels et les applications,logiciels,...
+1991: Développement du noyau ( pour que tout le monde puisse l'utiliser ouvertement) => Un étudiant a crée ce noyau=>GNU/LINUX est née (GNU+Noyau= lINUX TOWALD)
+le Noyau est le principal qui pilote tous les matériels
+GPU calcul au niveau des cartes graphiques
+Linux: plutôt pour les informaticiens et on peu personnaliser tous ce qu'on veut faire
+Support physique pur stcker les données: Disque dur(pour stocker des choses qu'on ne veut pas oublier) et RAM
+Répertoire: Comme l'armoir
+Fichier: Sous-repertoire (dans le repertoire)
+NB: pour les système Linux/Unix tout est fichier
+/: Repertoire racine
+/.../.../...
+Linux exige les majuscules et miniscules
+N'utilisez pas l'espace et le français dans la programmation ( surtout les accents)
+Façon pour trouver un système fichier: Chemin absolu (Départ: Racine) et chemin relatif (Départ: Ou tu es)
+Quelques commandes (pwd, ls, date, man(manuel), sudo halt(pour éteindre l'orinateur)
+
