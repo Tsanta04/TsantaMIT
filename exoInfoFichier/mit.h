@@ -40,4 +40,11 @@ void addURL(char** datas,char** URL,int i,char* tete);
 
 int infoCherchEe(int i,char** info,char* numero, Identite* datas);
 void ajoutDinfo(char** resultat);
+
+void etudiantsMIT();
+void trieEtudiantsId();
+void PcMIT();
+void triePcId();
+//void ajoutColonne();
+void ajoutInfoEtudiant();
 #endif

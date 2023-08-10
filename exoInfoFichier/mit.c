@@ -10,7 +10,7 @@
 char ** allouer(int a,int b){
 	char** tab = malloc(sizeof(char*)*a);
 	for(int i=0;i<a;i++){
-		*(tab+i)=malloc(b);
+		*(tab+i)=(char*)malloc(b);
 	}
 
 	return tab;
@@ -39,7 +39,7 @@ int enregistrement1(char* chemin,Identite* mit){
 	}
 	
 ///Enregistrement
-	fprintf(fichier,"%s,%s,%s,%s,%s,%s,%s\n",mit->nom,mit->prenom,mit->parcours,mit->grade,mit->num,mit->email,mit->git);
+	fprintf(fichier,"%s,%s,%s,%s,%s,%s,%s\n",mit->nom,mit->prenom,mit->parcours,mit->grade,mit->num,mit->git,mit->email);
 
 ///Fermeture
 	fclose(fichier);
@@ -58,7 +58,7 @@ int enregistrement2(char* chemin,PC* mit){
 	}
 	
 ///Enregistrement
-	fprintf(fichier,"%s\t%s\t%s\n",mit->marque,mit->MAC,mit->label);
+	fprintf(fichier,"%s,%s,%s\n",mit->marque,mit->MAC,mit->label);
 
 ///Fermeture
 	fclose(fichier);
@@ -124,7 +124,7 @@ Identite getDataId(){
 	mit.num[strlen(mit.num)-1]='\0';
 	mit.email[strlen(mit.email)-1]='\0';
 	mit.git[strlen(mit.git)-1]='\0';
-			
+
 	return mit;
 }
 
@@ -250,7 +250,7 @@ int getFileToStruct(char* chemin,PC* datas){
 ///Get File Datas
 	for(i=0;feof(fichier)!=1;i++){
 		fgets(tmp,256,fichier);
-		sscanf(tmp,"%[^\t]\t%[^\t]\t%[^\t]\n",datas[i].marque,datas[i].MAC,datas[i].label);
+		sscanf(tmp,"%[^,],%[^,],%[^\n]",datas[i].marque,datas[i].MAC,datas[i].label);
 	}	
 	return i;
 }
@@ -264,7 +264,7 @@ int getFileToStructEtudiants(char* chemin,Identite* datas){
 ///Get File Datas
 	for(i=0;feof(fichier)!=1;i++){
 		fgets(tmp,256,fichier);
-		sscanf(tmp,"%[^,],%[^,],%[^,],%[^,],%[^,],%[^,],%[^,]\n",datas[i].nom,datas[i].prenom,datas[i].parcours,datas[i].grade,datas[i].num,datas[i].email,datas[i].git);
+		sscanf(tmp,"%[^,],%[^,],%[^,],%[^,],%[^,],%[^,],%[^\n]",datas[i].nom,datas[i].prenom,datas[i].parcours,datas[i].grade,datas[i].num,datas[i].git,datas[i].email);
 	}
 	return i;
 }
@@ -283,7 +283,7 @@ int enTete(char* chemin,char* tete){
 	}
 	return 0;
 }
-
+/*
 ///Ajout d'URL dans les Infos etudiants
 void addURL(char** datas,char** URL,int i,char* tete){
 	strcpy(URL[0],tete);
@@ -292,11 +292,12 @@ void addURL(char** datas,char** URL,int i,char* tete){
 	for(int j=1;j<i;j++){
 		datas[j][strlen(datas[j])-1]='\0';
 		fprintf(stdout,"\t\n- %s -\n\n Entrez votre %s :\t",datas[j],tete);
-		fgets(URL[j],100,stdin);
+		fgets(URL[j],256,stdin);
 		sprintf(datas[j],"%s,%s",datas[j],URL[j]);
+		datas[j][strlen(datas[j])]='\0';
 	}
 }
-
+*/
 ///Trouver l'info de celle qui va ajouter son info
 int infoCherchEe(int i,char** info,char* numero, Identite* datas){
         numero[strlen(numero)-1]='\0';
@@ -318,8 +319,8 @@ int infoCherchEe(int i,char** info,char* numero, Identite* datas){
         strcpy(info[2],datas[indice].parcours);
         strcpy(info[3],datas[indice].grade);
         strcpy(info[4],datas[indice].num);
-        strcpy(info[5],datas[indice].email);
-        strcpy(info[6],datas[indice].git);
+        strcpy(info[5],datas[indice].git);
+        strcpy(info[6],datas[indice].email);
 
         return indice;
 }
@@ -327,10 +328,206 @@ int infoCherchEe(int i,char** info,char* numero, Identite* datas){
 ///Ajout d'information entrEe
 void ajoutDinfo(char** resultat){
         char numero[10];
-        printf("Quelles informations voulez-vous en ajouter?\n1-Nom\n2-Prenom\n3-Parcours\n4-Grade\n5-Number\n6-E-mail\n7-Git\n=>");
+	char tmp[256];
+        printf("Quelles informations voulez-vous en ajouter?\n1-Nom\n2-Prenom\n3-Parcours\n4-Grade\n5-Number\n6-git\n7-E-mail\n=>");
         fgets(numero,10,stdin);
         int test=atoi(numero);
         printf("Entrez le 'contenu'\t:");
-        fgets(resultat[test-1],100,stdin);
-        for(int k=0;k<7;k++){printf("%s\n",resultat[k]);}
+        fgets(tmp,256,stdin);
+	tmp[strlen(tmp)-1]='\0';
+	sprintf(resultat[test-1],"%s",tmp);
+       // for(int k=0;k<7;k++){printf("%s\n",resultat[k]);}
+}
+
+///Les fonctions principales
+//EtudiantsMITId
+void etudiantsMIT(){
+///Les variables
+        Identite mit;
+        char contenu[100] = "EtudiantsMIT.csv";
+        char tete[100] = "NOM\tPRENOM\tPARCOURS\tGRADE\tNUMERO\n";
+        int test=0;
+        char** datas;
+        int i=0;
+        char oui[10];
+
+///En-tete
+        test = enTete(contenu,tete); //Si le fichier n'existe pas encore, on met les titres
+        if(test==-1){
+                printf("Erreur d'ouverture\n");
+                exit(1);
+        }
+
+        for(int i=0;i<46;i++){
+                printf("\t\t\tInformations sur les L1 MIT\n\n");
+
+///Get data
+                mit = getDataId();      //Scaner les donnees entrees des etudiants
+
+///Enregistrement
+                test=enregistrement1(contenu,&mit);     //enregistrer dans les fichiers
+                if(test==-1){
+                        printf("\nErreur d'ouverture!!\n");
+                        break;
+                }
+///Continuer pour en ajouter ou quitter
+                printf("\nAppuyez sur 0 pour quitter et autre pour en ajouter et :\t"); //Continuer les enregistrements
+                fgets(oui,10,stdin);
+                if((oui[0]=='0')&&(oui[1]=='\n')){break;}
+                sleep(2);
+         system("clear");
+        }
+}
+
+//Trier etudiants.csv
+void trieEtudiantsId(){
+///Les variables
+        char** datas;
+        char contenu[100]="EtudiantsMIT.csv";
+        int i=0;
+	printf("\tTrier par ordre alphabetique les informations sur les etudiants MIT\n\n");
+
+///Allocation
+        datas = (char**)malloc(sizeof(char*)*100);
+        for(int i=0;i<100;i++){
+                *(datas+i) = (char*)malloc(sizeof(char)*256);
+        }
+
+///Get datas's File
+        i = getFileToChar(contenu,datas);
+        if(i==-1){
+                printf("Erreur d'ouverture\n");
+                exit(1);
+        }
+	i=i-1;
+///Trier
+        trier(datas,i);
+
+///Remis
+        i = putFile(contenu,datas,i);
+
+        if(i==-1){
+                printf("Erreur d'enregistrement\n");
+                exit(1);
+        }
+	if(i!=-1)printf("\n\t\tFait\t\n");
+	sleep(1);
+}
+
+///PcMIT
+void PcMIT(){
+///Les variables
+        PC mit;
+        int test=0;     
+        char tete[100] = "MARQUE\tMAC\tLABEL\n";
+        PC datas[100];
+        char contenu[100]="PcMIT.csv";
+        int i=0;
+        char oui[12];
+        char** resultat;
+
+///En-tete
+        test = enTete(contenu,tete);    //Si le fichier n'existe pas encore, on mets les en-tetes
+        if(test==-1){
+                printf("Erreur d'ouverture\n");
+                exit(1);
+        }
+
+///Debut
+        for(int i=0;i<46;i++){
+                printf("\t\tInformations sur les PC des L1 MIT\n");
+
+///Get data
+                mit = getDataPc();      //Obtenir les infos entrees des etudiants
+
+///Enregistrement
+                test=enregistrement2(contenu,&mit);     //Enregistrement
+                if(test==-1){
+                        printf("\nErreur d'ouverture!!\n");
+                        break;
+                }
+///Continuer pour en ajouter ou quitter
+                printf("\nAppuyez sur 0 pour quitter et autre pour en ajouter et :\t"); //COntinuer ou quitter l'enreistrement
+		fgets(oui,12,stdin);
+                if((oui[0]=='0')&&(oui[1]=='\n')){break;}
+                sleep(2);
+                system("clear");
+        }
+}
+
+//Trier PcMMIT.csv
+void triePcId(){
+///Les variables
+        PC datas[100];
+        char contenu[100]="PcMIT.csv";
+        int i=0;
+        char** resultat;
+	printf("\tTrier par ordre alphabetique les informations sur les PC MIT\n\n");
+
+///Allocation
+        resultat = (char**)malloc(sizeof(char*)*100);
+        for(int i=0;i<100;i++){
+                *(resultat+i) = (char*)malloc(sizeof(char)*256);
+        }
+
+///Get file's contain
+        i = getFileToStruct(contenu,datas);
+        i=i-1;
+
+///Trier
+        sort(datas,i);
+
+///Remis
+        for(int j=0;j<i;j++){
+                sprintf(resultat[j],"%s,%s,%s\n",datas[j].marque,datas[j].MAC,datas[j].label);
+        }
+
+        i = putFile(contenu,resultat,i);
+
+        if(i==-1){
+                printf("Erreur d'enregistrement\n");
+                exit(1);
+        }
+	if (i!=-1)printf("\tFait\n");
+	sleep(1);
+}
+
+//Ajout des infos non completEes
+void ajoutInfoEtudiant(){
+       printf("\t\tAjout information\n\n");
+///Variables
+        Identite* datas=(Identite*)malloc(sizeof(Identite)*100);
+        char contenu[100]="EtudiantsMIT.csv";
+        int i=0;
+        char** resultat;
+        char**  valiny;
+        char numero[10];
+        int test=0;
+///Recuperer tous les infos
+        i = getFileToStructEtudiants(contenu,datas);
+        if(i==-1){printf("Erreur\n");exit(1);}
+        i=i-1;
+        int indice = i+10;      //to make sure that this mark don't exit
+///Allocation
+        resultat= allouer(7,256);
+        valiny=allouer(i,256);
+///Entree votre numero
+        printf("Entrez votre numero:\t");
+        fgets(numero,10,stdin);
+        indice = infoCherchEe(i,resultat,numero,datas);
+
+///Ajout des informations
+        ajoutDinfo(resultat);
+///Refaire la place
+        for(int k=0;k<i;k++){
+                if(k==indice){
+                        sprintf(valiny[k],"%s,%s,%s,%s,%s,%s,%s\n",resultat[0],resultat[1],resultat[2],resultat[3],resultat[4],resultat[5],resultat[6]);
+                        continue;
+                }
+		sprintf(valiny[k],"%s,%s,%s,%s,%s,%s,%s\n",datas[k].nom,datas[k].prenom,datas[k].parcours,datas[k].grade,datas[k].num,datas[k].git,datas[k].email);
+        }
+///Remis dans le fichier
+        putFile(contenu,valiny,i);
+	printf("\n\t\tFait");
+	sleep(1);
 }
