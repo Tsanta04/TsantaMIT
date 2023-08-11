@@ -25,6 +25,7 @@ int enTete(char* chemin,char* tete);
 
 void sort(PC* datas,int i);
 int getFileToStruct(char* chemin,PC* datas);
+int getFileToStructEtudiants(char* chemin,Identite* datas);
 
 int max(char* s1,char* s2);
 int getFileToChar(char* chemin,char** datas);
@@ -37,4 +38,6 @@ int enregistrement1(char* chemin,Identite* mit);
 int enregistrement2(char* chemin,PC* mit);
 void addURL(char** datas,char** URL,int i,char* tete);
 
+int infoCherchEe(int i,char** info,char* numero, Identite* datas);
+void ajoutDinfo(char** resultat);
 #endif

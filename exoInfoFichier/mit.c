@@ -131,7 +131,7 @@ Identite getDataId(){
 ///Triage par alphabet (a partir de test char par char)
 void trier(char** datas,int i){
 ///Les variables
-	char tmp[100];
+	char tmp[256];
 	int len=0; 
 ///Traitement
 	for(int j=1;j<i;j++){
@@ -254,22 +254,21 @@ int getFileToStruct(char* chemin,PC* datas){
 	}	
 	return i;
 }
-/*
+
 ///recuperer tous les infos dans les fichier dit (dans le sttruct specifiE)
 int getFileToStructEtudiants(char* chemin,Identite* datas){
 	int i=0;
 	char tmp[256];
-
 	FILE* fichier =fopen(chemin,"r");
-
+	if(fichier==NULL)return -1;
 ///Get File Datas
 	for(i=0;feof(fichier)!=1;i++){
 		fgets(tmp,256,fichier);
-		sscanf(tmp,"%[^,],%[^,],%[^,]\n",datas[i].nom,datas[i].prenom,datas[i].parcours,datas[i].grade,datas[i]);
-	}	
+		sscanf(tmp,"%[^,],%[^,],%[^,],%[^,],%[^,],%[^,],%[^,]\n",datas[i].nom,datas[i].prenom,datas[i].parcours,datas[i].grade,datas[i].num,datas[i].email,datas[i].git);
+	}
 	return i;
 }
-*/
+
 ///Generer l'e titre de chaque colonne
 int enTete(char* chemin,char* tete){
 	char existence[100];
@@ -296,4 +295,42 @@ void addURL(char** datas,char** URL,int i,char* tete){
 		fgets(URL[j],100,stdin);
 		sprintf(datas[j],"%s,%s",datas[j],URL[j]);
 	}
+}
+
+///Trouver l'info de celle qui va ajouter son info
+int infoCherchEe(int i,char** info,char* numero, Identite* datas){
+        numero[strlen(numero)-1]='\0';
+        int indice = i+10;
+        char test[14];
+///Truver son information
+        for(int j=0;j<i;j++){
+                if(strcmp(datas[j].num,numero)==0){
+                        indice = j;
+                        break;
+                }
+        }
+///Make sure it's true
+        if(indice!=i+10)printf("Est-ce votre nom '%s %s'? (0 si oui et autre que 0 si non) ->  ",datas[indice].nom,datas[indice].prenom);
+        fgets(test,14,stdin);
+        if((test[0]!='0')&&(test[1]!='\n'))return i+10;
+        strcpy(info[0],datas[indice].nom);
+        strcpy(info[1],datas[indice].prenom);
+        strcpy(info[2],datas[indice].parcours);
+        strcpy(info[3],datas[indice].grade);
+        strcpy(info[4],datas[indice].num);
+        strcpy(info[5],datas[indice].email);
+        strcpy(info[6],datas[indice].git);
+
+        return indice;
+}
+
+///Ajout d'information entrEe
+void ajoutDinfo(char** resultat){
+        char numero[10];
+        printf("Quelles informations voulez-vous en ajouter?\n1-Nom\n2-Prenom\n3-Parcours\n4-Grade\n5-Number\n6-E-mail\n7-Git\n=>");
+        fgets(numero,10,stdin);
+        int test=atoi(numero);
+        printf("Entrez le 'contenu'\t:");
+        fgets(resultat[test-1],100,stdin);
+        for(int k=0;k<7;k++){printf("%s\n",resultat[k]);}
 }
