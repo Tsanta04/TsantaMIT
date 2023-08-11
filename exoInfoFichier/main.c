@@ -28,16 +28,16 @@ here:
 		}
 	}
 	else if((choix[0]=='2')&&(choix[1]=='\n')){
-		printf("\t\tInformation sur les etudiants\n\nEntrer votre choix:\n\t1-Ajouter un nouveau ligne d'information\n\t2-Trier\n\t3-Completer les informations des etudiants deja enregistrEs\n-->");
+		printf("\t\tInformation sur les etudiants\n\nEntrer votre choix:\n\t1-Completer les informations des etudiants deja enregistrEs\n\t2-Ajouter un nouveau ligne d'information\n\t3-Trier\n-->");
 		fgets(choix,10,stdin);
 		system("clear");
-		if((choix[0]=='1')&&(choix[1]=='\n')){
+		if((choix[0]=='2')&&(choix[1]=='\n')){
 			etudiantsMIT();
 		}
-		else if((choix[0]=='2')&&(choix[1]=='\n')){
+		else if((choix[0]=='3')&&(choix[1]=='\n')){
 			trieEtudiantsId();
 		}
-		else if((choix[0]=='3')&&(choix[1]=='\n')){
+		else if((choix[0]=='1')&&(choix[1]=='\n')){
 			ajoutInfoEtudiant();
 		}
 	}
