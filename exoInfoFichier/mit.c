@@ -5,7 +5,8 @@
 #include<string.h>
 #include<ctype.h>
 
-///Les fonctions
+							///Les fonctions
+///Allouer 2D
 char ** allouer(int a,int b){
 	char** tab = malloc(sizeof(char*)*a);
 	for(int i=0;i<a;i++){
@@ -15,7 +16,7 @@ char ** allouer(int a,int b){
 	return tab;
 }
 
-
+///Obtenir "le max_length" entre 2 char*
 int max(char* s1,char* s2){
 	int maxim=0;
 	if(strlen(s1)>strlen(s2)){
@@ -27,6 +28,7 @@ int max(char* s1,char* s2){
 	return maxim;
 }
 
+///Ecrire dans le fichier concernant l'ID des etudiants
 int enregistrement1(char* chemin,Identite* mit){
 ///Les variables
 	FILE* fichier = fopen(chemin,"a");
@@ -37,13 +39,15 @@ int enregistrement1(char* chemin,Identite* mit){
 	}
 	
 ///Enregistrement
-	fprintf(fichier,"%s\t%s\t%s\t%s\t%s\n",mit->nom,mit->prenom,mit->parcours,mit->grade,mit->num);
+	fprintf(fichier,"%s,%s,%s,%s,%s,%s,%s\n",mit->nom,mit->prenom,mit->parcours,mit->grade,mit->num,mit->email,mit->git);
 
 ///Fermeture
 	fclose(fichier);
 	return 0;
 }
 
+
+///Ecrire dans le fichier concernant l'Info sur PC
 int enregistrement2(char* chemin,PC* mit){
 ///Les variables
 	FILE* fichier = fopen(chemin,"a");
@@ -61,6 +65,8 @@ int enregistrement2(char* chemin,PC* mit){
 	return 0;
 }
 
+
+///Faire scaner les infos PC a partir du clavier
 PC getDataPc(){
 ///Les variables
 	PC mit;
@@ -83,6 +89,8 @@ PC getDataPc(){
 	return mit;	
 }
 
+
+///Faire scaner les infos ID etudiants a partir du clavier
 Identite getDataId(){
 ///Les variables
 	Identite mit;
@@ -102,16 +110,25 @@ Identite getDataId(){
 	printf("NUMERO:\t");
 	fgets(mit.num,100,stdin);
 	
+	printf("E-mail:\t");
+	fgets(mit.email,100,stdin);
+	
+	printf("URL Git:\t");
+	fgets(mit.git,100,stdin);
+	
 ///Suppresssion \n
 	mit.nom[strlen(mit.nom)-1]='\0';
 	mit.prenom[strlen(mit.prenom)-1]='\0';
 	mit.parcours[strlen(mit.parcours)-1]='\0';
 	mit.grade[strlen(mit.grade)-1]='\0';
 	mit.num[strlen(mit.num)-1]='\0';
+	mit.email[strlen(mit.email)-1]='\0';
+	mit.git[strlen(mit.git)-1]='\0';
 			
 	return mit;
 }
 
+///Triage par alphabet (a partir de test char par char)
 void trier(char** datas,int i){
 ///Les variables
 	char tmp[100];
@@ -142,10 +159,11 @@ void trier(char** datas,int i){
 				}
 			}
 		}
-	}	
-	
+	}
+
 }
 
+///Remis des donnees dans le fichier
 int putFile(char* chemin,char** datas,int i){
 ///Declaration
 	FILE* fichier1 = fopen(chemin,"w");
@@ -163,6 +181,7 @@ int putFile(char* chemin,char** datas,int i){
 	return i;	
 }
 
+///recuperer tous les infos dans les fichier dit (dans char*)
 int getFileToChar(char* chemin,char** datas){
 ///Declaration
 	FILE* fichier1 = fopen(chemin,"r");
@@ -180,6 +199,8 @@ int getFileToChar(char* chemin,char** datas){
 	return i;	
 }
 
+
+///Triage par alphabet (a partir de strcmp)
 void sort(PC* datas,int i){
 	PC tempo;
 	int len=0;
@@ -218,6 +239,8 @@ void sort(PC* datas,int i){
 	}	
 }
 
+
+///recuperer tous les infos dans les fichier dit (dans le sttruct specifiE)
 int getFileToStruct(char* chemin,PC* datas){
 	int i=0;
 	char tmp[256];
@@ -231,7 +254,23 @@ int getFileToStruct(char* chemin,PC* datas){
 	}	
 	return i;
 }
+/*
+///recuperer tous les infos dans les fichier dit (dans le sttruct specifiE)
+int getFileToStructEtudiants(char* chemin,Identite* datas){
+	int i=0;
+	char tmp[256];
 
+	FILE* fichier =fopen(chemin,"r");
+
+///Get File Datas
+	for(i=0;feof(fichier)!=1;i++){
+		fgets(tmp,256,fichier);
+		sscanf(tmp,"%[^,],%[^,],%[^,]\n",datas[i].nom,datas[i].prenom,datas[i].parcours,datas[i].grade,datas[i]);
+	}	
+	return i;
+}
+*/
+///Generer l'e titre de chaque colonne
 int enTete(char* chemin,char* tete){
 	char existence[100];
 	int test=123;
@@ -246,13 +285,14 @@ int enTete(char* chemin,char* tete){
 	return 0;
 }
 
-void addURL(char** datas,char** URL,int i){
-	strcpy(URL[0],"URL\n");
+///Ajout d'URL dans les Infos etudiants
+void addURL(char** datas,char** URL,int i,char* tete){
+	strcpy(URL[0],tete);
 	datas[0][strlen(datas[0])-1]='\0';	
 	sprintf(datas[0],"%s,%s",datas[0],URL[0]);
 	for(int j=1;j<i;j++){
 		datas[j][strlen(datas[j])-1]='\0';
-		fprintf(stdout,"\t\n- %s -\n\n Entrez votre URL GitHub:\t",datas[j]);
+		fprintf(stdout,"\t\n- %s -\n\n Entrez votre %s :\t",datas[j],tete);
 		fgets(URL[j],100,stdin);
 		sprintf(datas[j],"%s,%s",datas[j],URL[j]);
 	}

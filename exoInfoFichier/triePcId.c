@@ -2,13 +2,13 @@
 #include<stdlib.h>
 #include<unistd.h>
 #include<string.h>
-#include"/home/tsanta/Documents/Programmes/bibl/mit.h"
+#include"mit.h"
 //#include"/home/mit/Documents/ProgrammeC/bibl/mit.c"
 
 int main(){
 ///Les variables
 	PC datas[100];
-	char contenu[100]="/home/tsanta/Documents/PDF/PcMIT.csv";
+	char contenu[100]="PcMIT.csv";
 	int i=0;
 	char** resultat;
 

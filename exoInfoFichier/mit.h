@@ -1,12 +1,15 @@
-///Les en-tete
+							///Les en-tete
 #ifndef MIT
 #define MIT
+///structures utilisEs
 typedef struct Identite{
 	char nom[100];
 	char prenom[100];
 	char parcours[100];
 	char grade[100];
-	char num[100];	
+	char num[100];
+	char email[100];
+	char git[100];
 }Identite;
 
 typedef struct {
@@ -15,6 +18,7 @@ typedef struct {
 	char label[100];
 }PC;
 
+///Prototypes
 char **allouer(int a,int b);
 
 int enTete(char* chemin,char* tete);
@@ -31,6 +35,6 @@ Identite getDataId();
 PC getDataPc();
 int enregistrement1(char* chemin,Identite* mit);
 int enregistrement2(char* chemin,PC* mit);
-void addURL(char** datas,char** URL,int i);
+void addURL(char** datas,char** URL,int i,char* tete);
 
 #endif

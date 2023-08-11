@@ -2,14 +2,14 @@
 #include<stdlib.h>
 #include<unistd.h>
 #include<string.h>
-#include"/home/tsanta/Documents/Programmes/bibl/mit.h"
+#include"mit.h"
 //#include"/home/tsanta/Documents/Programmes/bibl/mit.c"
 
 int main(){
 
 ///Les variables
 	Identite mit;
-	char contenu[100] = "/home/tsanta/Documents/PDF/EtudiantsMIT.csv";
+	char contenu[100] = "EtudiantsMIT.csv";
 	char tete[100] = "NOM\tPRENOM\tPARCOURS\tGRADE\tNUMERO\n";
 	int test=0;
 	char** datas;
@@ -17,7 +17,7 @@ int main(){
 	char oui[10];
 
 ///En-tete
-	test = enTete(contenu,tete);
+	test = enTete(contenu,tete); //Si le fichier n'existe pas encore, on met les titres
 	if(test==-1){
 		printf("Erreur d'ouverture\n");
 		exit(1);
@@ -27,16 +27,16 @@ int main(){
 		printf("\t\t\tInformations sur les L1 MIT\n\n");
 
 ///Get data
-		mit = getDataId();
+		mit = getDataId(); 	//Scaner les donnees entrees des etudiants
 	
 ///Enregistrement
-		test=enregistrement1(contenu,&mit);
+		test=enregistrement1(contenu,&mit);	//enregistrer dans les fichiers
 		if(test==-1){
 			printf("\nErreur d'ouverture!!\n");
 			break;
 		}
 ///Continuer pour en ajouter ou quitter
-		printf("\nAppuyez sur 0 pour quitter et autre pour en ajouter et :\t");
+		printf("\nAppuyez sur 0 pour quitter et autre pour en ajouter et :\t"); //Continuer les enregistrements
 		fgets(oui,10,stdin);
 		if((oui[0]=='0')&&(oui[1]=='\n')){break;}
 		sleep(2);
