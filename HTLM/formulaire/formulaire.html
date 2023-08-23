@@ -14,48 +14,49 @@
                 </TD>
                 <!-- #FF EE CC -->
                 <TD><FONT COLOR="White">..........</FONT></TD> 
-                <TD style="border-radius: 8% 8% 8% 8%;box-shadow:2vw 2vw 5vw;"><CENTER><FORM>
+                <TD style="border-radius: 8% 8% 8% 8%;box-shadow:2vw 2vw 5vw;"><CENTER>
+                <FORM ACTION="essai.txt" METHOD="POST">
                     <BR><BR><H1><FONT COLOR="Brown">Formulaire d'inscription</FONT></H1><br><br><br>
                     Nom :&nbsp&nbsp
-                        <INPUT style="width: 250;" TYPE="text"/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <INPUT style="width: 250;" TYPE="text" NAME="Nom"/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                     Prenom :&nbsp&nbsp
-                        <INPUT style="width: 250;" TYPE="text"/><BR><BR><BR><BR>
+                        <INPUT style="width: 250;" TYPE="text" NAME="Prenom"/><BR><BR><BR><BR>
                     Date de naissance :&nbsp&nbsp
-                        <INPUT TYPE="text" VALUE="JJ/MM/AA"/>&nbsp&nbsp&nbsp&nbsp
+                        <INPUT TYPE="text" VALUE="JJ/MM/AA" NAME="DateNaissance"/>&nbsp&nbsp&nbsp&nbsp
                     Lieu de naissance :&nbsp&nbsp
-                        <INPUT TYPE="text"/><BR><BR><BR><BR>
+                        <INPUT TYPE="text" NAME="LieuNaissance"/><BR><BR><BR><BR>
                     Adresse :&nbsp&nbsp
-                        <INPUT TYPE="text"/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <INPUT TYPE="text" NAME="Adresse"/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                     Genre :&nbsp&nbsp
-                        <SELECT>
+                        <SELECT NAME="Genre">
                             <OPTION>Homme</OPTION>
                             <OPTION>Femme</OPTION>
                             <OPTION>Autre</OPTION>
                         </SELECT><BR><BR><BR><BR>
                     Annee d'obtention du bacc :&nbsp&nbsp
-                        <SELECT>
+                        <SELECT NAME="ObtentionBacc">
                             <OPTION>2020</OPTION>
                             <OPTION>2021</OPTION>
                             <OPTION>2022</OPTION>
                             <OPTION>2023</OPTION>
                         </SELECT>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                     Centre du Bacc :&nbsp&nbsp
-                        <INPUT TYPE="text"/><BR><BR><BR><BR>
+                        <INPUT TYPE="text" NAME="CentreBacc"/><BR><BR><BR><BR>
                     Numero d'inscription :&nbsp&nbsp
-                        <INPUT TYPE="text"/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <INPUT TYPE="text" NAME="NumInscription"/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                     Serie :&nbsp&nbsp
-                        <SELECT>
+                        <SELECT NAME="Serie">
                             <OPTION>S</OPTION>
                             <OPTION>C</OPTION>
                         </SELECT><BR><BR><BR><BR>
                     Mention :&nbsp&nbsp
-                        <INPUT TYPE="text" VALUE="Très-Bien..."/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <INPUT TYPE="text" VALUE="Très-Bien..." NAME="Mention"/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                     Moyenne lors du Bacc :&nbsp&nbsp
-                        <INPUT TYPE="text"/><BR><BR><BR><BR>
+                        <INPUT TYPE="text" NAME="Moyenne"/><BR><BR><BR><BR>
                     E-mail :&nbsp&nbsp
-                        <INPUT style="width: 300;" TYPE="text"/>&nbsp&nbsp&nbsp&nbsp
+                        <INPUT style="width: 300;" NAME="Email" TYPE="text"/>&nbsp&nbsp&nbsp&nbsp
                     Telephone :&nbsp&nbsp
-                        <INPUT TYPE="text"/><BR><BR><BR><BR><BR><BR>
+                        <INPUT TYPE="text" NAME="Telephone"/><BR><BR><BR><BR><BR><BR>
 
                         <INPUT style="width: 100;height: 40;" TYPE="submit" VALUE="S'inscrire"><BR><BR><BR>
                 </FORM></CENTER></TD>
