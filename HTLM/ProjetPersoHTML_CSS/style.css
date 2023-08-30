@@ -1,0 +1,213 @@
+*{box-sizing: border-box;}
+body,nav,ul.contact,header{width:100%;}
+NAV,NAV UL{height: 6vw;position:fixed;top:0%;}
+form,section,div.donation{
+    margin: auto;
+    margin-top:10vw;
+    margin-bottom:10vw;
+}
+
+/* Background */
+body{
+    background-image: url(shareLogo.jpg);
+    background-size:100%;
+    background-attachment: fixed;
+    height: auto;
+    margin: auto;
+}
+
+NAV{
+    background-color: #d3c54ad2;
+    background-size: cover;
+    border-radius: 0% 0% 7% 7%;
+}
+
+header{
+    height: 84%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 0px;
+    padding-left:7%;
+    padding-top:21%;
+    color:#302e2e;
+    font-size: larger;
+}
+
+header.contact{
+    background-image:url(CONTACT.jpg);
+}
+
+header.donation{
+    background-image:url(donation.jpg);
+}
+
+header.aPropos{
+    background-image:url(AproposDeNous.jpg);
+}
+
+header.actualite{
+    background-image:url(activites.jpeg);
+}
+
+/* Menu */
+NAV UL{
+    left: 37%;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    list-style-type: none;
+}
+
+#LogoMenu{
+    height: 70px;
+    border-radius: 50%;
+    margin-left: 5%;
+}
+
+.icon{width: 20px;}
+.image{
+    width: 50%;
+    height: auto;
+    border-radius: 10%;
+    margin: 37px;
+    float: left;
+}
+
+/* CONTACT */
+ul.contact,ul.acceuil{
+    height: 100px;
+    background-color:#cae9a6c4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family:'Courier New';
+    font-size: medium;
+    list-style-type: none;
+}
+
+input{width:400px;}
+
+form{
+    width:65%;
+    height:auto;
+    background-color: #d3c54a;
+    box-shadow: 10px 10px 10px #49430c;
+    padding: 10%;
+    /*POUR CENTER TOTALEMENT display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center; */
+}
+
+MAIN{
+    color: aliceblue;
+}
+
+/* A propos */
+img.presentation{
+    display: block;
+    width:40%;
+    height: auto;
+    border-radius: 10%;
+}
+
+p.paragraphe{
+    /* height: 90%; */
+    width: 45%;
+    color: aliceblue;
+    text-indent: 10px;
+    font-family:Arial;
+    font-size: large;
+    line-height:2;
+}
+
+section{
+    width: 90%;
+    height: 80%;
+    background-color: #d3c54a;
+    box-shadow: 10px 10px 10px #49430c;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Donation */
+div.donation{
+    width: 90%;
+    height: 100%;
+    background-color: #d3c54a;
+    box-shadow: 10px 10px 10px #49430c;
+    display: grid;
+    grid-template-areas:"Mvola BNI" 
+                        "Airtel BOA"
+                        "Orang BOA";  
+    justify-content: space-around;justify-items:space-around;
+    align-items: center;
+}
+.Mvola{grid-area: "Mvola";}
+.Airtel{grid-area: "Airtel";}
+.Orange{grid-area: "Orang";}
+.BNI{grid-area: "BNI";}
+.BFV{grid-area: "BFV";}
+.BOA{grid-area: "BOA";}
+
+div.donation p{
+    width: 40%;
+    height: 30%;    
+}
+
+img.donation{
+    width:40%;
+    height: auto;
+    float: left;
+}
+
+/*NY TSY TAO*/
+
+header.acceuil{padding: 0%;}
+video.acceuil{
+    width:100%;
+    height: 105%;
+    object-fit: cover;
+    /* mi-couvrir tout espace dispo:width*/
+}
+
+main#actualites{
+    margin: auto;
+    margin-top: 50px;
+    color: #302e2e;
+    width: 90%;
+    background-color: aqua;
+    height: 100%;
+    display:grid;
+    grid-template-areas:"menu contenu"
+                        "aside contenu"
+                        "partenariat partenariat";
+    justify-content: space-around;justify-items:space-around;
+    align-items: center; 
+}
+
+main#actualites div{
+    border-radius: 10%;
+    background-color: #d3c54a;
+    box-shadow: 10px 10px 10px #49430c;
+    box-sizing: border-box;
+}
+
+div.menu{grid-area:menu;}
+div.contenu{grid-area:contenu;}
+div.aside{grid-area:aside;}
+div.partenariat{grid-area:partenariat;}
+ul.menuActualite li a{
+    text-decoration: none;
+    color:hwb(44 6% 75%);
+}
+ul.menuActualite li{
+    font-weight: bold;
+    list-style-type: circle;
+    line-height: 2;
+    font-size: large;   
+}
