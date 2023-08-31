@@ -5,83 +5,78 @@
     </HEAD>
 
     <BODY>
-        <NAV>
-            <IMG id="LogoMenu" SRC="ShaRe.png"/>
+        <NAV id="somaire">
+            <IMG id="LogoMenu" SRC="Image/ShaRe.png"/>
             <UL>
                 <LI><A HREF="acceuil.html">ACCEUIL</A></LI>
-                <LI><A HREF="actualite.html">ACTUALITES</A></LI>
+                <LI><A HREF="activite.html">NOS ACTIVITES</A></LI>
                 <LI><A HREF="aPropos.html">A PROPOS DE NOUS</A></LI>
                 <LI><A HREF="donation.html">DONATION</A></LI>
                 <LI><A HREF="contact.html">CONTACT</A></LI>
-                <LI><A HREF="acceuil.html"><IMG class="icon" SRC="Anglais.svg" title="Langue"></A> 
-                    <A HREF="acceuil.html"><IMG class="icon" SRC="francais.webp" title="Langue"/></A> 
-                    <A HREF="acceuil.html"><IMG class="icon" SRC="malagasy.webp" title="Langue"/></A>
+                <LI><A HREF="acceuil.html"><IMG class="icon" SRC="Image/Anglais.svg" title="Langue"></A> 
+                    <A HREF="acceuil.html"><IMG class="icon" SRC="Image/francais.webp" title="Langue"/></A> 
+                    <A HREF="acceuil.html"><IMG class="icon" SRC="Image/malagasy.webp" title="Langue"/></A>
                 </LI>
             </UL>
         </NAV>
+
         <MAIN>
             <HEADER class="acceuil">
-                <VIDEO class="acceuil" SRC="SHAREAcceuil.mp4" type="media/mp4" loop autoplay/>
+                <VIDEO class="acceuil" SRC="Image/SHAREAcceuil.mp4" type="media/mp4" loop autoplay/>
             </HEADER>
-        <!--     <PRE>
-            grid-template-row: heightRow1 heightRow2 heightRow3... ==(taille des lignes A former)
-            grid-template(== grid):pourLigne/pour colonne ==(grid-template-column et grid-template-row en un seur propriete)
-            grid-auto-column/row:(px) ==on definit ici tous ce qui n'etaient pas defini par grid-template-column/row
-            grid-auto-flow:(row,column) ==on va empiler en ligne/colonne les blocs non definis par moi
+            <P class="proverbe">"Le bien n'est agreable que s'il s'est partagE."</P>
+
+            <H1 class="Acceuil">Presentation de notre Association SHARE</H1>
+            <SECTION class="Acceuil">
+                <IMG class="presentation" SRC="Image/ShaRe.png">
+                    <P class="paragraphe">Nous sommes ravis de vous présenter l'Association <b>SHARE</b>, une initiative passionnée et engagée qui vise à apporter un changement significatif dans la vie de personnes qui ont été malheureusement contraintes de vivre dans des conditions inhumaines. Notre mission fondamentale est de leur offrir un nouveau départ empreint de dignité, de respect et d'espoir.
+                        <br><br> <MARK><A HREF="aPropos.html">En savoir plus >></A></MARK>
+                    </P>
+            </SECTION>
+
+            <DIV id="Slogan">
+                “Soutenir, partager et aider d'autres personnes font partis des plus grandes récompenses de la vie.”
+            </DIV>
+            
+            <H1 class="Acceuil">Notre Mission</H1>
+            <SECTION class="Acceuil">
+                <IMG class="presentation" SRC="Image/heart.png">
+                    <P class="paragraphe">Dans un monde où chaque individu mérite d'être traité avec respect et équité, il est douloureusement regrettable que certaines personnes soient encore privées de leurs droits fondamentaux et soient forcées de vivre dans des circonstances dégradantes. Notre association est née de la conviction profonde que personne ne devrait vivre dans de tels lieux, et nous nous sommes engagés à créer un impact positif et durable.
+                        <br><br> <MARK><A HREF="activite.html">En savoir plus >></A></MARK>
+                    </P>
+            </SECTION>
             
 
-
-
-
-            justify-content ==(@colonne :mitovy @asa sy valeur an'ny Justify-content @flexbox ihany)
-            align-content ==(@ligne :mitovy @asa sy valeur an'ny justify-content @flexbox ihany fa ligne)
-            place-content:ligne/colone ==(align-items/justify-content anatina propriete iray)
-            
-
-
-
-
-            justify-items, align-items, place-items (@ligne :mitovy @asa sy valeur an'ny align-items @flexbox)
-            NB: flex-start start fotsiny,...
-            
-
-
-
-            justify-self,align-self,place-self (meme que les autres mais avec un specifique box parmis les autres)
-            
-
-
-
-            Espacemet des box dns un containers
-            grid-column-gap:(px)    
-            grid-row-gap:(px)
-            grid-gap (==gap):px/px (row/column==les deux grid en meme temps)
-            
-
-
-
-            CONTENU:
-            grid-column:<int>/-<int>        (num de sa colonne/occuper toute la colonne)
-            grid-row:<int>/-<int>   (num de sa ligne/occuper toute la ligne)
-            
-
-
-
-            LES DEUX ENSEMBLES
-            CONTENU1: grid-area:"Anarana1"
-            CONTENU2: grid-area:"Anarana2"
-            CONTANINER: grid-template-areas: "Anarana1"     ==Soratana toy ny tableau izay tiana hanaovana azy ilay notenenina tao @gri-are>
-              
-            
-            "Anarana2"
-            --Media queries (responsive)
-            @media screen/print/all... (condition atteint){
-                    changement
-            }
-            
-            
-
-        </PRE> -->
+            <ASIDE class="Partenariat">
+            <H1> NOS PARTENAIRES: </H1>
+            <DIV class="Partenaires">
+                <figure>
+                    <IMG SRC="Image/AssAKAMASOA.jpeg">
+                    <figcaption><A HREF="https://www.perepedro-akamasoa.net/" target="_blank">Association AKAMASOA</A></figcaption>
+                </figure>
+                <figure>
+                    <IMG SRC="Image/AssFitia.jpeg">
+                    <figcaption><A HREF="https://www.presidence.gov.mg/actualites/informations/sociale/916-l-association-fitia-procede-a-la-desinfection-des-marches-de-la-capitale.html" target="_blank">Association FITIA</A></figcaption>
+                </figure>
+                <figure>
+                    <IMG SRC="Image/OMS.png">
+                    <figcaption><A HREF="https://www.who.int/fr" target="_blank">Organisation Mondiale de la sante (OMS)</A></figcaption>
+                </figure>
+                <figure>
+                    <IMG SRC="Image/UNICEF.jpg">
+                    <figcaption><A HREF="https://wateractionhub.org/organizations/373/d/unicef-the-united-nations-childrens-fund/?gclid=CjwKCAjwrranBhAEEiwAzbhNtfIjbUs94HObd6gXK8hFtnuWFkFNXuqzDMk1LDTbQ-W2sKT2Pj690BoC9YQQAvD_BwE" target="_blank">UNICEF</A></figcaption>
+                </figure>
+            </DIV><HR>
+            <DIV class="resume">
+                <UL class="contact">
+                    <LI><A HREF="https://www.facebook.com/tsanta.randrianarisoa.3">Tsanta Randrianarisoa</A></LI>
+                    <LI><A HREF="mailto:atnastsanta@gmail.com">atnastsanta@gmail.com</A></LI>
+                    <LI><A HREF="#">+261 34 77 294 19</A></LI>
+                    <LI><A HREF="https://www.google.com/maps/search/Ivato+Aeroport/@-18.7994752,47.4752673,17z/data=!3m1!4b1?entry=ttu" target="_blank">Lot K1 056 Ivato Aeroport</A></LI>
+                </UL>
+            </DIV><HR>
+            <FOOTER>Copyright &copy 2023</FOOTER>
+        </ASIDE>
         </MAIN>
     </BODY>
 </HTML>

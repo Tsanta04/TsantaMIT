@@ -1,22 +1,27 @@
 *{box-sizing: border-box;}
-body,nav,ul.contact,header{width:100%;}
-NAV,NAV UL{height: 6vw;position:fixed;top:0%;}
+body,NAV#somaire,ul.contact,header,main.activite,main aside.Partenariat,div#Slogan{width:100%;}
+NAV#somaire,NAV#somaire UL{height: 6vw;position:fixed;top:0%;}
+form,section,div.donation{
+    background-color: #d3c54a;
+    box-shadow: 10px 10px 10px #49430c;
+}
 form,section,div.donation{
     margin: auto;
     margin-top:10vw;
     margin-bottom:10vw;
 }
+p{text-indent: 15px;line-height:2;}
 
 /* Background */
 body{
-    background-image: url(shareLogo.jpg);
+    background-image: url(Image/shareLogo.jpg);
     background-size:100%;
     background-attachment: fixed;
     height: auto;
     margin: auto;
 }
 
-NAV{
+NAV#somaire{
     background-color: #d3c54ad2;
     background-size: cover;
     border-radius: 0% 0% 7% 7%;
@@ -33,26 +38,16 @@ header{
     font-size: larger;
 }
 
-header.contact{
-    background-image:url(CONTACT.jpg);
-}
-
-header.donation{
-    background-image:url(donation.jpg);
-}
-
-header.aPropos{
-    background-image:url(AproposDeNous.jpg);
-}
-
-header.actualite{
-    background-image:url(activites.jpeg);
-}
+header.acceuil{padding: 0%;}
+header.contact{background-image:url(Image/CONTACT.jpg);}
+header.donation{background-image:url(Image/donation.jpg);}
+header.aPropos{background-image:url(Image/AproposDeNous.jpg);}
+header.activite{background-image:url(Image/activites.jpeg);}
 
 /* Menu */
-NAV UL{
-    left: 37%;
-    width: 60%;
+NAV#somaire UL{
+    left: 35%;
+    width: 65%;
     display: flex;
     justify-content: space-around;
     align-items:center;
@@ -76,8 +71,17 @@ NAV UL{
     float: left;
 }
 
+
+/* Acceuil */
+video.acceuil{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    /* mi-couvrir tout espace dispo:width*/
+}
+
 /* CONTACT */
-ul.contact,ul.acceuil{
+ul.contact,p.remarque,p.proverbe,p.aPropos,p.activite{
     height: 100px;
     background-color:#cae9a6c4;
     display: flex;
@@ -86,15 +90,16 @@ ul.contact,ul.acceuil{
     font-family:'Courier New';
     font-size: medium;
     list-style-type: none;
+    color:#8f841f;
 }
+p.proverbe{margin-top: 0%;}
 
-input{width:400px;}
+input[type="text"]{width:76%;}
+input[type="submit"]{width:30%;height:5%;}
 
 form{
     width:65%;
     height:auto;
-    background-color: #d3c54a;
-    box-shadow: 10px 10px 10px #49430c;
     padding: 10%;
     /*POUR CENTER TOTALEMENT display: flex;
     flex-direction: column;
@@ -118,17 +123,13 @@ p.paragraphe{
     /* height: 90%; */
     width: 45%;
     color: aliceblue;
-    text-indent: 10px;
     font-family:Arial;
     font-size: large;
-    line-height:2;
 }
 
 section{
     width: 90%;
     height: 80%;
-    background-color: #d3c54a;
-    box-shadow: 10px 10px 10px #49430c;
     display:flex;
     justify-content: space-around;
     align-items: center;
@@ -138,8 +139,6 @@ section{
 div.donation{
     width: 90%;
     height: 100%;
-    background-color: #d3c54a;
-    box-shadow: 10px 10px 10px #49430c;
     display: grid;
     grid-template-areas:"Mvola BNI" 
                         "Airtel BOA"
@@ -154,10 +153,7 @@ div.donation{
 .BFV{grid-area: "BFV";}
 .BOA{grid-area: "BOA";}
 
-div.donation p{
-    width: 40%;
-    height: 30%;    
-}
+div.donation p{width: 40%;height: 30%;}
 
 img.donation{
     width:40%;
@@ -165,49 +161,141 @@ img.donation{
     float: left;
 }
 
-/*NY TSY TAO*/
-
-header.acceuil{padding: 0%;}
-video.acceuil{
-    width:100%;
-    height: 105%;
-    object-fit: cover;
-    /* mi-couvrir tout espace dispo:width*/
-}
-
-main#actualites{
-    margin: auto;
-    margin-top: 50px;
-    color: #302e2e;
-    width: 90%;
-    background-color: aqua;
-    height: 100%;
+/* ACTIVITIES */
+main.activite{
+    height: 180%;
+    margin:0%;
+    margin-top: 5%;
     display:grid;
-    grid-template-areas:"menu contenu"
-                        "aside contenu"
-                        "partenariat partenariat";
-    justify-content: space-around;justify-items:space-around;
-    align-items: center; 
+    grid-template:33% 33% 33% 33% 48%/33% 33% 33%;
+    grid-template-areas:"Menu-activite Detail-activite Detail-activite"
+                        "Menu-activite Detail-activite Detail-activite"
+                        "Menu-activite Detail-activite Detail-activite"
+                        "Photo Detail-activite Detail-activite" 
+                        "Partenariat Partenariat Partenariat";
+}
+hr{color:white;}
+a.activite{
+    font-size: larger;
+    text-decoration: overline;
+    color:aliceblue;
 }
 
-main#actualites div{
-    border-radius: 10%;
-    background-color: #d3c54a;
-    box-shadow: 10px 10px 10px #49430c;
+main.activite nav{
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+    font-size: larger;
+    color: #d3c54a;
 }
 
-div.menu{grid-area:menu;}
-div.contenu{grid-area:contenu;}
-div.aside{grid-area:aside;}
-div.partenariat{grid-area:partenariat;}
-ul.menuActualite li a{
-    text-decoration: none;
-    color:hwb(44 6% 75%);
+main nav.Menu-activite,main nav.Photo{
+    width: 93%;
+    height:90%;
+    margin: auto;
+    background-color: #302e2ec0;
+    grid-area: Menu-activite;
+    border-radius: 10% 10% 10% 10%;
+    box-shadow: 5px 5px 20px black;
 }
-ul.menuActualite li{
-    font-weight: bold;
-    list-style-type: circle;
-    line-height: 2;
-    font-size: large;   
+
+main nav.Photo{grid-area: Photo;}
+
+main div.Detail-activite{
+    width: 99%;
+    margin: 1%;
+    background-color: #c2b7599d;
+    grid-area: Detail-activite;
+    border-radius: 10% 10% 10% 10%;
+
+    overflow: hidden;
+}
+main aside.Partenariat{
+    margin: 0%;
+    margin-top: 5vw;
+    margin-bottom: 0%;
+    grid-area: Partenariat;
+    background-color:black;
+}
+main.activite aside.Partenariat{height:100%;}
+
+div.Detail-activite article h1,h1.Acceuil{
+    margin-top: 10vw;
+    color:#302e2e;
+    font-size:3vw;
+    text-align: center;
+}
+
+div.Detail-activite article h3,aside.Partenariat h1{
+    grid-area:sous-titre;
+    color:#49430c;
+    background-color:#cae9a6c4;
+    font-size:2vw;
+}
+
+div.Detail-activite article section{
+    height: 23%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+div.Detail-activite article section p.paragraphe{color: #49430c;font-size: medium;}
+div.Detail-activite article section img.presentation{height: 90%;}
+
+div.partenaires{
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+aside.Partenariat h1{
+    margin-top: 2vw;
+}
+
+div.partenaires figure img{
+    width:18vw;
+    height: 18vw;
+}
+
+figure figcaption a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: larger;
+    font-family: Arial;
+    text-align: center;
+}
+
+div.resume ul{
+    height: 3vw;
+    background-color: black;
+    margin-bottom: 0%;
+}
+
+div.resume ul li a{
+    color: white;
+}
+footer{text-align: right;}
+
+/* ACCEUIL */
+h1.Acceuil{background-color: #d3c54a;}
+section.Acceuil p{font-size: larger;text-align:justify;color:#302e2e;}
+div#Slogan{
+    height: 70%;
+    background-position-x: center;
+    background-position-y:75% ;
+    background-image: url(Image/shareeee.webp);
+    color:black;
+    font-size: 5vw;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 1vw;
 }
