@@ -5,7 +5,7 @@
 
     <BODY style="background-color: azure;">
     
-        <TABLE><CENTER>
+        <TABLE width="100%" cellpadding="10%"><CENTER>
 <!-- Le Logo de MIT -->
             <TR><CENTER><IMG SRC="MIT.jpg" width="1200" ></CENTER></TR>
                 <br><br><br><br><br><br>
@@ -20,58 +20,79 @@
 <!-- Formulaire -->
                 <CENTER><FORM ACTION="essai.txt" METHOD="POST">
                     <BR><BR><H1><FONT COLOR="Brown">Formulaire d'inscription</FONT></H1><br><br><br>
-                    
-                    <P style="float: inline-start;">Nom :  &nbsp&nbsp
+
+                    <!-- Nom / Prenom-->
+                    <P style="float: inline-start;">
+                        <LABEL FOR="Nom">Nom :</LABEL>
                         <INPUT style="width: 250;" TYPE="text" NAME="Nom" required/></P>
-                    <P style="float: inline-end;">Prenom : &nbsp&nbsp
+                    <P style="float: inline-end;">
+                        <LABEL FOR="Prenom">Prenom :</LABEL>
                         <INPUT style="width: 250;" TYPE="text" NAME="Prenom" required/></P>
                     <BR><BR><BR><BR>
     
-                    <P style="float: inline-start;">Date de naissance : &nbsp&nbsp
+                    <!-- Lieu / date de naissance -->
+                    <P style="float: inline-start;">
+                        <LABEL FOR="DateNaissance">Date de naissance :</LABEL>
                         <INPUT TYPE="date" NAME="DateNaissance" required/></P>
-                    <P style="float: inline-end;">Lieu de naissance : &nbsp&nbsp
+                    <P style="float: inline-end;">
+                        <LABEL FOR="LieuNaissance">Lieu de naissance :</LABEL>
                         <INPUT TYPE="text" NAME="LieuNaissance"/></P>
                     <BR><BR><BR><BR>
-        
-                    <P style="float: inline-start;">Adresse : &nbsp&nbsp
+
+                    <!-- Adresse / Genre-->
+                    <P style="float: inline-start;">
+                        <LABEL FOR="Adresse">Adresse :</LABEL>
                         <INPUT TYPE="text" NAME="Adresse" required/></P>
-                    <P style="float: inline-end;">Genre : &nbsp&nbsp
+                    <P style="float: inline-end;">
+                        <LABEL FOR="Genre">Genre :</LABEL>
                         <SELECT NAME="Genre">
                             <OPTION>Homme</OPTION>
                             <OPTION>Femme</OPTION>
                             <OPTION>Autre</OPTION>
                         </SELECT></P>
                     <BR><BR><BR><BR>
-            
-                    <P style="float: inline-start;">Annee d'obtention du bacc : &nbsp&nbsp
+
+                    <!-- Annee / Centre du bacc -->
+                    <P style="float: inline-start;">
+                        <LABEL FOR="ObtentionBacc">Annee d'obtention du bacc :</LABEL>
                         <SELECT NAME="ObtentionBacc">
                             <OPTION>2020</OPTION>
                             <OPTION>2021</OPTION>
                             <OPTION>2022</OPTION>
                             <OPTION>2023</OPTION>
                         </SELECT></P>
-                    <P style="float: inline-end;">Centre du Bacc : &nbsp&nbsp
+                    <P style="float: inline-end;">
+                        <LABEL FOR="CentreBacc">Centre du Bacc :</LABEL>
                         <INPUT TYPE="text" NAME="CentreBacc"/></P>
                     <BR><BR><BR><BR>
                 
-                    <P style="float: inline-start;">Numero d'inscription : &nbsp&nbsp
+                    <!-- Numero / Serie hors du bacc -->
+                    <P style="float: inline-start;">
+                        <LABEL FOR="NumInscription">Numero d'inscription :</LABEL>
                         <INPUT TYPE="text" NAME="NumInscription" required/></P>
-                    <P style="float: inline-end;">Serie : &nbsp&nbsp
+                    <P style="float: inline-end;">
+                        <LABEL FOR="Serie">Serie :</LABEL>
                         <SELECT NAME="Serie">
                             <OPTION>S</OPTION>
                             <OPTION>C</OPTION>
                         </SELECT></P>
                     <BR><BR><BR><BR>
                     
-                    <P style="float: inline-start;">Mention : &nbsp&nbsp
+                    <!-- Mention / Moyenne du Bacc -->
+                    <P style="float: inline-start;">
+                        <LABEL FOR="Mention">Mention :</LABEL>
                         <INPUT TYPE="text" placeholder="Très-Bien..." NAME="Mention" required/></P>
-                    <P style="float: inline-end;">Moyenne lors du Bacc : &nbsp&nbsp
+                    <P style="float: inline-end;">
+                        <LABEL FOR="Moyenne">Moyenne lors du Bacc :</LABEL>
                         <INPUT TYPE="text" NAME="Moyenne"/></P>
                     <BR><BR><BR><BR>
                     
-                    <P style="float: inline-start;">E-mail : &nbsp&nbsp
+                    <!-- Mail / Telephone -->
+                    <P style="float: inline-start;">
+                        <LABEL FOR="Email">E-mail :</LABEL>
                         <INPUT style="width: 300;" NAME="Email" TYPE="email" required/></P>
-                    <P style="float: inline-end;">Telephone : &nbsp&nbsp
+                    <P style="float: inline-end;">
+                        <LABEL FOR="Telephone">Telephone :</LABEL>
                         <INPUT TYPE="tel" NAME="Telephone"/></P>
                     <BR><BR><BR><BR><BR><BR>
 
