@@ -6,64 +6,87 @@
     <BODY style="background-color: azure;">
     
         <TABLE><CENTER>
+<!-- Le Logo de MIT -->
             <TR><CENTER><IMG SRC="MIT.jpg" width="1200" ></CENTER></TR>
                 <br><br><br><br><br><br>
             <TR>
+
+<!--Logos a gauche-->
                 <TD width="22%" align="center">
                     <IMG SRC="logo1.jpeg" style="border-radius: 50% 50% 50% 50%;" width="200" height="200"><br><br><br><br><br><br><br><br><br><br><br><br><IMG SRC="logo2.jpeg" style="border-radius: 50% 50% 50% 50%;" width="200" height="200">
                 </TD>
-                <TD style="border-radius: 8% 8% 8% 8%;box-shadow:2vw 2vw 5vw;"><CENTER>
-                <FORM ACTION="essai.txt" METHOD="POST">
+                <TD style="border-radius: 8% 8% 8% 8%;box-shadow:2vw 2vw 5vw;">
+
+<!-- Formulaire -->
+                <CENTER><FORM ACTION="essai.txt" METHOD="POST">
                     <BR><BR><H1><FONT COLOR="Brown">Formulaire d'inscription</FONT></H1><br><br><br>
-                    Nom :  &nbsp&nbsp
-                        <INPUT style="width: 250;" TYPE="text" NAME="Nom" required/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                    Prenom : &nbsp&nbsp
-                        <INPUT style="width: 250;" TYPE="text" NAME="Prenom" required/><BR><BR><BR><BR>
-                    Date de naissance : &nbsp&nbsp
-                        <INPUT TYPE="date" NAME="DateNaissance" required/>&nbsp&nbsp&nbsp&nbsp
-                    Lieu de naissance : &nbsp&nbsp
-                        <INPUT TYPE="text" NAME="LieuNaissance"/><BR><BR><BR><BR>
-                    Adresse : &nbsp&nbsp
-                        <INPUT TYPE="text" NAME="Adresse" required/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                    Genre : &nbsp&nbsp
+                    
+                    <P style="float: inline-start;">Nom :  &nbsp&nbsp
+                        <INPUT style="width: 250;" TYPE="text" NAME="Nom" required/></P>
+                    <P style="float: inline-end;">Prenom : &nbsp&nbsp
+                        <INPUT style="width: 250;" TYPE="text" NAME="Prenom" required/></P>
+                    <BR><BR><BR><BR>
+    
+                    <P style="float: inline-start;">Date de naissance : &nbsp&nbsp
+                        <INPUT TYPE="date" NAME="DateNaissance" required/></P>
+                    <P style="float: inline-end;">Lieu de naissance : &nbsp&nbsp
+                        <INPUT TYPE="text" NAME="LieuNaissance"/></P>
+                    <BR><BR><BR><BR>
+        
+                    <P style="float: inline-start;">Adresse : &nbsp&nbsp
+                        <INPUT TYPE="text" NAME="Adresse" required/></P>
+                    <P style="float: inline-end;">Genre : &nbsp&nbsp
                         <SELECT NAME="Genre">
                             <OPTION>Homme</OPTION>
                             <OPTION>Femme</OPTION>
                             <OPTION>Autre</OPTION>
-                        </SELECT><BR><BR><BR><BR>
-                    Annee d'obtention du bacc : &nbsp&nbsp
+                        </SELECT></P>
+                    <BR><BR><BR><BR>
+            
+                    <P style="float: inline-start;">Annee d'obtention du bacc : &nbsp&nbsp
                         <SELECT NAME="ObtentionBacc">
                             <OPTION>2020</OPTION>
                             <OPTION>2021</OPTION>
                             <OPTION>2022</OPTION>
                             <OPTION>2023</OPTION>
-                        </SELECT> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                    Centre du Bacc : &nbsp&nbsp
-                        <INPUT TYPE="text" NAME="CentreBacc"/><BR><BR><BR><BR>
-                    Numero d'inscription : &nbsp&nbsp
-                        <INPUT TYPE="text" NAME="NumInscription" required/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                    Serie : &nbsp&nbsp
+                        </SELECT></P>
+                    <P style="float: inline-end;">Centre du Bacc : &nbsp&nbsp
+                        <INPUT TYPE="text" NAME="CentreBacc"/></P>
+                    <BR><BR><BR><BR>
+                
+                    <P style="float: inline-start;">Numero d'inscription : &nbsp&nbsp
+                        <INPUT TYPE="text" NAME="NumInscription" required/></P>
+                    <P style="float: inline-end;">Serie : &nbsp&nbsp
                         <SELECT NAME="Serie">
                             <OPTION>S</OPTION>
                             <OPTION>C</OPTION>
-                        </SELECT><BR><BR><BR><BR>
-                    Mention : &nbsp&nbsp
-                        <INPUT TYPE="text" placeholder="Très-Bien..." NAME="Mention" required/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                    Moyenne lors du Bacc : &nbsp&nbsp
-                        <INPUT TYPE="text" NAME="Moyenne"/><BR><BR><BR><BR>
-                    E-mail : &nbsp&nbsp
-                        <INPUT style="width: 300;" NAME="Email" TYPE="email" required/>&nbsp&nbsp&nbsp&nbsp
-                    Telephone : &nbsp&nbsp
-                        <INPUT TYPE="tel" NAME="Telephone"/><BR><BR><BR><BR><BR><BR>
+                        </SELECT></P>
+                    <BR><BR><BR><BR>
+                    
+                    <P style="float: inline-start;">Mention : &nbsp&nbsp
+                        <INPUT TYPE="text" placeholder="Très-Bien..." NAME="Mention" required/></P>
+                    <P style="float: inline-end;">Moyenne lors du Bacc : &nbsp&nbsp
+                        <INPUT TYPE="text" NAME="Moyenne"/></P>
+                    <BR><BR><BR><BR>
+                    
+                    <P style="float: inline-start;">E-mail : &nbsp&nbsp
+                        <INPUT style="width: 300;" NAME="Email" TYPE="email" required/></P>
+                    <P style="float: inline-end;">Telephone : &nbsp&nbsp
+                        <INPUT TYPE="tel" NAME="Telephone"/></P>
+                    <BR><BR><BR><BR><BR><BR>
 
-                        <INPUT style="width: 100;height: 40;" TYPE="submit" VALUE="S'inscrire"><BR><BR><BR>
-                </FORM></CENTER></TD>
+                        <INPUT style="width: 100;height: 40;" TYPE="submit" VALUE="S'inscrire">
+                    <BR><BR><BR>
+    
+                </FORM></CENTER>
+                </TD>
+<!--Logos a droite  -->
                 <TD width="21%" align="center"><CENTER><IMG SRC="logo2.jpeg" style="border-radius: 50% 50% 50% 50%;" width="200" height="200"><br><br><br><br><br><br><br><br><br><br><br><br><IMG SRC="logo1.jpeg" style="border-radius: 50% 50% 50% 50%;" width="200" height="200"></CENTER></TD>
             </TR>
         </CENTER></TABLE>
-        <TABLE>        
+
+<!-- Annee universitaire -->
             <br><br><br><br>
             <h1><FONT COLOR="Grey">Annee universitaire: 2023 - 2024</FONT></h1>
-        </TABLE>
     </BODY>
 </HTML>
