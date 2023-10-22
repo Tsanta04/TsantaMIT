@@ -54,10 +54,10 @@ float integraleC(float a,float b,float eps){
 
 	for(float i=a;i<b;i+=eps){
 		k++;
-		rep+=fabs( f(i)*eps );
+		rep+=( f(i)*eps );
 ///Vaut mieux perdre les donnees plutot que d'inventer
 		if( fabs(f(i))>fabs(f(i+eps)) ){
-			rep-=fabs( (f(i)-f(i+eps))*eps );
+			rep-=( (f(i)-f(i+eps))*eps );
 		}
 
 		printf("-->%d: %f\n",k,rep);
@@ -75,10 +75,10 @@ float integraleT(float a,float b,float eps){
 		k++;
 ///Choix s'il faut ajouter ou soustraire le petit rectangle
 		if( fabs(f(i))>fabs(f(i+eps)) ){
-			rep+=fabs( f(i)*eps )-fabs( ((f(i)-f(i+eps))*eps)/2 );
+			rep+=( f(i)*eps )-fabs( ((f(i)-f(i+eps))*eps)/2 );
 		}
 		else if( fabs(f(i))<=fabs(f(i+eps)) ){
-			rep+=fabs( f(i)*eps )+fabs( ((f(i)-f(i+eps))*eps)/2 );
+			rep+=( f(i)*eps )+fabs( ((f(i)-f(i+eps))*eps)/2 );
 		}
 
 		printf("-->%d: %f\n",k,rep);
@@ -120,6 +120,7 @@ void traitementSecante(float a,float b,float eps){
 }
 
 ///Methode de Newton
+
 void newton(float a,float b,float eps){
 	float rep=0.0;
 	int i=0;
@@ -131,14 +132,6 @@ void newton(float a,float b,float eps){
     }
     
     else{
-/*
-        if(produit(f(a),f(tmp))<=0){
-            rep=a;
-        }
-        else if(produit(f(b),f(tmp))<=0){
-            rep=b;
-        }
-*/
 		rep=centre(a,b);
 	while(fabs(f(rep))>eps){
 		i++;
@@ -153,6 +146,38 @@ void newton(float a,float b,float eps){
 	}
     }
 }
+
+/*
+void newton(float a,float b,float eps){
+	float rep=0.0;
+	int i=0;
+
+///Traitement	
+	while(fabs(f(rep))>eps){
+		i++;
+///On divise par deux
+		rep=tan(a);
+		if((rep>b)||(rep<a)){
+			rep=centre(a,b);
+		}
+///Si aucun d'eux a une solution f(x)=0		
+		if((produit(f(b),f(rep)>0))&&(produit(f(a),f(rep))>0)){
+			printf("=>Aucune solution\n");
+			break;
+		}
+///Si il y en a, on remplace les bornes
+		else if(produit(f(a),f(rep))<=0){
+			b=rep;
+			//continue;
+		}
+		else if(produit(f(b),f(rep))<=0){
+			a=rep;
+			//continue;
+		}
+		printf("--> %d=%f\n",i,rep);
+	}
+}
+*/
 
 ///Autres fonctions utiles
 float secante(float a,float b){

@@ -13,9 +13,9 @@ int main(){
 	lesDonnees(&a,&b,&eps);
 	
 ///Traitement et sortie des donnees
-	printf("\tCalcul d'integrale Carre\n\n");
+	//printf("\tCalcul d'integrale Carre\n\n");
 	resultat=integraleC(a,b,eps);
-	printf("\tCalcul d'integrale Trapeze\n\n");
+	//printf("\tCalcul d'integrale Trapeze\n\n");
 	resultat=integraleT(a,b,eps);
 //	printf("\nFinal result = %f\n",resultat);
 	return 0;

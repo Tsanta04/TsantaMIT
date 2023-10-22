@@ -1,0 +1,87 @@
+#include<stdio.h>
+#include<math.h>
+
+double f(double x);
+double newton(double a,double b,double eps);
+void lesDonnees(double* a,double* b,double* eps);
+double tangente(double x);
+float centre(float a,float b);
+float produit(float x,float y);
+
+int main(){
+	printf("\n La fonction: f(x)=ln(x)-1\n\n");
+
+///Les variables
+	double a=0,b=0;
+	double eps=0;
+	double resultat=0.0;
+
+///Entree de donnee
+	lesDonnees(&a,&b,&eps);
+	
+///Traitement et sortie des donnees
+	resultat=newton(a,b,eps);
+	//printf("\nFinal result = %f\n",resultat);
+	return 0;
+}
+
+void lesDonnees(double* a,double* b,double* eps){
+	printf("Entrez la borne a gauche:\na=\t");
+	scanf("%lf",a);
+	
+	printf("Entrez la borne a droite:\nb=\t");
+	scanf("%lf",b);
+	
+	printf("Entrez l'approximation (en float):\neps=\t");
+	scanf("%lf",eps);
+}
+
+double f(double x){
+	return log(x)-1;
+}
+
+double tangente(double x){
+	return (x/(1+f(x)));
+}
+
+float centre(float a,float b){
+    return (((b-a)/2)+a);
+}
+
+float produit(float x,float y){
+    return (x*y);
+}
+double newton(double a,double b,double eps){
+	double rep=0.0;
+	int i=0;
+	double tmp=0;
+	double ct=0;
+
+    ct=centre(a,b);
+    if( (produit(f(a),f(ct))>0)&&(produit(f(b),f(ct))>0) ){
+        printf("pro1=%lf\nprod2=%lf\nAucune solution\n",produit(f(a),f(ct)),produit(f(b),f(ct)));
+    }
+    else{
+	    while(fabs(f(rep))>eps){
+
+            if(produit(f(a),f(ct))<=0){
+                rep=a;
+                b=ct;
+            }
+            else if(produit(f(b),f(ct))<=0){
+                rep=b;
+                a=ct;
+            }
+    		tmp=tangente(rep);
+	       	if(produit(f(a),f(tmp))<=0){
+                b=tmp;
+            }
+            else if(produit(f(b),f(tmp))<=0){
+                a=tmp;
+            }
+		    i++;
+	    	printf("%d-->%lf\n",i,rep);
+		}
+    }
+	return rep;
+}
