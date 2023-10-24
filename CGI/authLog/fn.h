@@ -45,37 +45,41 @@ typedef struct{
         char id[200];
 }LOGIN;
 
-///Principale
+///Les prototypes
+
+///Outils pour avoir les donnees
 char* geturl();
+char* reglage(char* data);
+int max(int ligne);
 void chiffrePagination(char* total,int* rand,int* debut,int* voalohany,int* farany,int mx);
 void separerDonnee(char* string, char* line);
+char* supprPlus(char* data);
 
-///Les prototypes de authMlg
+///Obtenir les donnees de authLog (avec les gestions de recherche ...)
 INFO* getData(int *ligne,char* string);
 char* malagasyDate(char* mois,char* j,char* h);
-void displayResult(char* total,int ligne,INFO* user,char* string,ID us);
-void displayData(char* total,int ligne,INFO* user,char* string);
-void displayNav(ID us);
-int max(int ligne);
 VOLANA* moisS2M();
 ANDRO* jourS2M();
 
-///Formulaire d'authentification
+///HTML d'affichage de donnee
+void displayResult(char* total,int ligne,INFO* user,char* string,ID us);
+void displayData(char* total,int ligne,INFO* user,char* string);
+void displayNav(ID us);
+
+///Formulaire de login et signin
 void formLogin(int i);
 void formSignIn();
 
-///Traitement d'authentification
+///Protopype traitement des donnees hors de login et signin
 void registerID();
 int verifyID();
+int dejaPris(char* file,char* nom);
 
-///MOt de passe oubliE
+///Prototypes des fonctions sur changement de mot de passe
 void entrerNom();
 void changerMdp();
 
-///Autre
-char* supprPlus(char* data);
-int dejaPris(char* file,char* nom);
+///Test s'il est deja onnecte ou non
 int authentification(ID* contain);
-char* reglage(char* data);
 
 #endif

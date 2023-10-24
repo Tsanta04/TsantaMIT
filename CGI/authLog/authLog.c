@@ -6,6 +6,7 @@
 
 int main(){
 	printf("content-type: text/html\n");
+///Ne pas le mettre en cache
 	printf("Cache-Control: no-cache, no-store, must-revalidate\n");
 	printf("Pragma: no-cache\n");
 	printf("Expires: 0\n");
@@ -20,17 +21,18 @@ int main(){
 ///Test d'authentification
 	isValide=authentification(&utilisateur);
 
-
+	///Si non connectE
 	if(isValide==-1){
 		printf("Status: 302 Found\n");
 		printf("Location:http://www.tsa.com/cgi-bin/authLogC/login.cgi\n\n");				
 	}
 	
+	///Sinon
 	else if(isValide==1){
-///Recuperation des donnees
+///Recuperation des donnees (sur l'URL)
 		strcpy(string,geturl());	//ce qui est sur URL
 		separerDonnee(string,line);	//string:user , line:pagination
-///PLay
+///Recuperation des donnees dans auth.log
 		user=getData(&ligne,string);
 ///HTML
 		displayResult(line,ligne,user,string,utilisateur);
