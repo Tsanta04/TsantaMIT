@@ -50,6 +50,7 @@ typedef struct{
 ///Outils pour avoir les donnees
 char* geturl();
 char* reglage(char* data);
+void reglage1(char* a);
 int max(int ligne);
 void chiffrePagination(char* total,int* rand,int* debut,int* voalohany,int* farany,int mx);
 void separerDonnee(char* string, char* line);

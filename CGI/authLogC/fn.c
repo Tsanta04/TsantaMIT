@@ -368,7 +368,7 @@ void formLogin(int i){
 						printf("<p class='input' align='center'><LABEL for='PWD'>Password: <INPUT style='width:25vw' name='PWD' type='password' required/></p>");
 						printf("<p class='input' align='center'><INPUT type='submit' value='LogIn'/></p>");
 					printf("</FORM>");
-					printf("<p class='input' align='center'><a style='text-decoration-color:grey;font-size:small;' href='http://www.tsa.com/cgi-bin/authLog2/signIn.cgi'><button style='width:5vw;'>SignIn</button></a></p>");
+					printf("<p class='input' align='center'><a style='text-decoration-color:grey;font-size:small;' href='http://www.tsa.com/cgi-bin/authLogC/signIn.cgi'><button style='width:5vw;'>SignIn</button></a></p>");
 					printf("<p><a style='text-decoration-color:grey;font-size:small;' href='http://www.tsa.com/cgi-bin/authLogC/mdpOublier.cgi'><font color='grey'>Oublier le mot de passe?</font></a></p>");
 				printf("</div>");
 				if(i==-1){
@@ -559,7 +559,7 @@ void entrerNom(){
 					printf("<p class='input' align='center'><INPUT style='width:25vw' name='name' type='input' required/></p>");
 					printf("<p class='input' align='center'><INPUT type='submit' value='E n t r e r'/></p>");
 				printf("</FORM>");
-				printf("<p class='input' align='center'><a style='text-decoration-color:grey;font-size:small;' href='http://www.tsa.com/cgi-bin/authLog/signIn.cgi'><button style='width:5vw;'>SignIn</button></a></p>");
+				printf("<p class='input' align='center'><a style='text-decoration-color:grey;font-size:small;' href='http://www.tsa.com/cgi-bin/authLogC/signIn.cgi'><button style='width:5vw;'>SignIn</button></a></p>");
 			printf("</div>");
 
 	if(strcmp(val,"-1")==0){
@@ -592,6 +592,8 @@ void changerMdp(){
 	iden=(ID*)malloc(sizeof(ID)*len);
 	//data
 	char* data = getenv("QUERY_STRING");
+	reglage1(data);
+	
 	sscanf(data,"name=%[^&]&PWD=%[^&]&Vpwd=%[^\n]",name,mdp,vmdp);
 	
 ///open the file
@@ -637,7 +639,7 @@ void changerMdp(){
 		printf("<body>");
             printf("<div class='container rounded' style='margin:5vh;padding:1vw;box-sizing:border-box;background:linear-gradient(to right,hsla(157, 72%, 59%, 0.549),#53b68096);'><h1 align='center'>/var/log/auth.log</h1></div>"); 
 			printf("<div align:'center' style='width:50vw;box-shadow:2px 2px 5px #daa8d8; box-sizing:border-box;padding:10vh;margin:auto;margin-top:8vw;background:linear-gradient(to right,pink,#afffff);display:flex;flex-direction:column;justify-content:space-evenly;'>");
-			printf("<FORM ACTION='changerMdp.cgi#ambany' METHOD='GET'>");
+			printf("<FORM ACTION='changerMdp.cgi#ambany' METHOD='GET'>",iden[indice].nom);
 					//strcpy(inutile,supprPlus(iden[indice].nom));
 					printf("<p class='text-primary' align='center'>Bienvenue %s, entrer votre nouveau mot de passe:</p>",reglage(iden[indice].nom));
 					printf("<p class='input' align='center'><LABEL for='name=%s&PWD'>Password: <INPUT style='width:25vw' name='name=%s&PWD' type='password' required/></p>",name,name);
@@ -695,3 +697,36 @@ char* reglage(char* a){
 	char* result = &donne[0];
 	return result;
 }
+
+void reglage1(char* a){
+        char* resultat=(char*)malloc(100);
+        //char resultat[200];
+        strcpy(resultat,"");
+        int i=0;
+        for(i=0;i<strlen(a);i++){
+                if(a[i]=='%'){
+                        char tmp[3];
+                        tmp[0]=a[i+1];
+                        tmp[1]=a[i+2];
+                        int num=0;
+                        int k=16;
+                        for(int j=0;j<2;j++){
+                                if((tmp[j]<='9')&&(tmp[j]>='0')){
+                                        num+=(k*(tmp[j]-48));
+                                }
+                                else if((tmp[j]<='F')&&(tmp[j]>='A')){
+                                        num+=(k*(tmp[j]-'A'+10));
+                                }
+                                k-=15;
+                        }
+                        resultat[strlen(resultat)]=num;
+                        i+=2;
+                }
+                else{resultat[strlen(resultat)]=a[i];}
+				if((i+1)==strlen(a)){
+					resultat[i+1]='\0';					
+				}
+        }
+		strcpy(a,resultat);
+}
+
