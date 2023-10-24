@@ -205,6 +205,7 @@ void chiffrePagination(char* total,int* rand,int* debut,int* voalohany,int* fara
 }
 
 void displayResult(char* total,int ligne,INFO* user,char* string,ID us){
+	
 ///Affichage
 	printf("\n");
 	printf("<!DOCTYPE html>\n");
@@ -250,7 +251,7 @@ void displayNav(ID us){
 			printf("<INPUT type='submit' value='Search'/></p>");
 		printf("</FORM>");
 
-		printf("<p><a href='http://www.tsa.com/cgi-bin/authLog2/logout.cgi?id=%s&ip=%s'><button style='width:10vw;height:6vh;font-size:1vw;background-color:white;'>Log Out</button></a></p>",us.ip,us.id);
+		printf("<p><a href='http://www.tsa.com/cgi-bin/authLogC/logout.cgi?id=%s&ip=%s'><button style='width:10vw;height:6vh;font-size:1vw;background-color:white;'>Log Out</button></a></p>",us.ip,us.id);
 	printf("</div>");
 }
 
@@ -283,7 +284,7 @@ void displayData(char* total,int ligne,INFO* user,char* string){
 					}
 					printf("<TD>%s</TD>\n",user[i].time);
 					printf("<TD>%s</TD>\n",user[i].session);
-					printf("<TD><a href='http://www.tsa.com/cgi-bin/authLog/authLog.cgi?user=%s' style='text-decoration:none;'>%s</a></TD>\n",us,user[i].nameFor);
+					printf("<TD><a href='http://www.tsa.com/cgi-bin/authLogC/authLog.cgi?user=%s' style='text-decoration:none;'>%s</a></TD>\n",us,user[i].nameFor);
 					printf("<TD>%s</TD></TR>\n",user[i].nameBy);
 				}
 		
@@ -291,12 +292,12 @@ void displayData(char* total,int ligne,INFO* user,char* string){
 		printf("</TABLE>\n");
 		printf("<div class='container rounded' style='height:12vh;margin:5vh;padding:1vw;background:linear-gradient(to right,pink,#afffff);display:flex;flex-wrap:wrap;overflow:scroll;justify-content:space-around;align-items:center;'>");
 				
-			for(int i=voalohany;i<=farany;i++){printf("<div style='padding:1%;box-sizing:border-box;'><a href='http://www.tsa.com/cgi-bin/authLog2/authLog.cgi?user=%s&line=%d'>%d</a><br></div>",us,i,i);}
-				printf("<div><a href='http://www.tsa.com/cgi-bin/authLog2/authLog.cgi?user=%s&line=%d'>All</a><br></div>",us,(mx+1));
+			for(int i=voalohany;i<=farany;i++){printf("<div style='padding:1%;box-sizing:border-box;'><a href='http://www.tsa.com/cgi-bin/authLogC/authLog.cgi?user=%s&line=%d'>%d</a><br></div>",us,i,i);}
+				printf("<div><a href='http://www.tsa.com/cgi-bin/authLogC/authLog.cgi?user=%s&line=%d'>All</a><br></div>",us,(mx+1));
 				if(atoi(total)==mx){suiv=(atoi(total)-1);}
 				if(atoi(total)==1){prev=(atoi(total)+1);}
-				printf("<div><a href='http://www.tsa.com/cgi-bin/authLog2/authLog.cgi?user=%s&line=%d'><<< </a><br></div>",us,prev-1);				
-				printf("<div><a href='http://www.tsa.com/cgi-bin/authLog2/authLog.cgi?user=%s&line=%d'> >>></a><br></div>",us,suiv+1);
+				printf("<div><a href='http://www.tsa.com/cgi-bin/authLogC/authLog.cgi?user=%s&line=%d'><<< </a><br></div>",us,prev-1);				
+				printf("<div><a href='http://www.tsa.com/cgi-bin/authLogC/authLog.cgi?user=%s&line=%d'> >>></a><br></div>",us,suiv+1);
 		printf("</div>");
 		}
 		else if(ligne==0){
@@ -345,7 +346,7 @@ ANDRO* jourS2M(){
 void formLogin(int i){
 	if(i==1){
 		printf("Status: 302 Found\n");
-		printf("Location:http://www.tsa.com/cgi-bin/authLog2/authLog.cgi\n\n");		
+		printf("Location:http://www.tsa.com/cgi-bin/authLogC/authLog.cgi\n\n");		
 		//printf("content-type: text/html\n");
 	}
 	else{
@@ -368,7 +369,7 @@ void formLogin(int i){
 						printf("<p class='input' align='center'><INPUT type='submit' value='LogIn'/></p>");
 					printf("</FORM>");
 					printf("<p class='input' align='center'><a style='text-decoration-color:grey;font-size:small;' href='http://www.tsa.com/cgi-bin/authLog2/signIn.cgi'><button style='width:5vw;'>SignIn</button></a></p>");
-					printf("<p><a style='text-decoration-color:grey;font-size:small;' href='http://www.tsa.com/cgi-bin/authLog2/mdpOublier.cgi'><font color='grey'>Oublier le mot de passe?</font></a></p>");
+					printf("<p><a style='text-decoration-color:grey;font-size:small;' href='http://www.tsa.com/cgi-bin/authLogC/mdpOublier.cgi'><font color='grey'>Oublier le mot de passe?</font></a></p>");
 				printf("</div>");
 				if(i==-1){
 					printf("<a name='ambany'><h1 class='container' style='margin:8vh;padding:2vw;background:linear-gradient(to right,hsla(157, 72%, 59%, 0.549),#53b68096);'>Erreur d'authentification. Veuillez reessayer...</h1></a>");
@@ -399,7 +400,7 @@ void formSignIn(){
 					printf("<p class='input' align='center'><LABEL for='Vpwd'>Confirm your password: <INPUT style='width:25vw' name='Vpwd' type='password' required/></p>");
 					printf("<p class='input' align='center'><INPUT type='submit' value='SignIn'/></p>");
 				printf("</FORM>");
-				printf("<p class='input' align='center'><a style='text-decoration-color:grey;font-size:small;' href='http://www.tsa.com/cgi-bin/authLog2/login.cgi'><button style='width:5vw;'>Login</button></a></p>");
+				printf("<p class='input' align='center'><a style='text-decoration-color:grey;font-size:small;' href='http://www.tsa.com/cgi-bin/authLogC/login.cgi'><button style='width:5vw;'>Login</button></a></p>");
 			printf("</div>");	
 }
 
@@ -458,15 +459,23 @@ int dejaPris(char* file,char* nom){
 
 int verifyID(){
 	char* data=getenv("QUERY_STRING");
-	char* ip=getenv("REMOTE_ADDR");
 ///Les variables
 	LOG user;
 	ID contain;
-	char file[256];
+	char file[256];//char date[100]="";
 	char tmp[256]="";char inutile[256]="";
 	int test=-1;
+	//ANDROANY today;
 	FILE* f;
 	sscanf(data,"%[^=]=%[^\n]",tmp,inutile);
+
+/*
+///Preparation de la date d'expliration
+	f=popen("date","r");
+	fgets(date,100,f);
+	pclose(f);
+	sscanf(date,"%[^ ] %[^ ] %[^ ] %[^ ] %[^ ] %[^\n]\n",today.andro,today.volana,today.j,tmp,tmp,today.taona);
+*/
 
 ///Si non connectE
 	if(strcmp(data,"")==0){
@@ -484,17 +493,13 @@ int verifyID(){
 				fgets(tmp,256,f);
 				sscanf(tmp,"%[^:]:%[^:]:%[^:]:%[^\n]",contain.nom,contain.id,contain.mail,contain.psswd);
 				if((strcmp(contain.id,user.id)==0)&&(strcmp(contain.psswd,user.psswd)==0)){
-					fclose(f);
-					sprintf(file,"login.csv");
-					f=fopen(file,"w");
-					fprintf(f,"%s:%s\n",user.id,ip);
+					printf("Set-Cookie:session=%s; expires=Wed, 25 Oct 2023 00:00:00 GMT; HttpOnly\n",user.id);
 					test=0;break;
 				}
 			}
 			fclose(f);
 	
 			if(test==0){
-				printf("Set-Cookie:nom_cookie=123; expires=Sat, 21 Oct 2023 00:00:00 GMT; path=/; HttpOnly\n");
 				return 1;
 			}
 			else if(test==-1){
@@ -507,38 +512,27 @@ int verifyID(){
 int authentification(ID* contain){
 ///Les variables
 	FILE* f; char file[100];
-	char* ip=getenv("REMOTE_ADDR");//ip[strlen(ip)-1]='\0';
+	char* user=getenv("HTTP_COOKIE");
 	char tmp[100]="";
 	char inutile[200]="";
-	char ipLog[100];
-	char idLog[100];
-	
-///Contenu de File
-	sprintf(file,"login.csv");
-	f=fopen(file,"r");
-	if(f==NULL){return -1;}
 
-	for(int i=0;feof(f)!=1;i++){
-		fgets(tmp,100,f);
-		sscanf(tmp,"%[^:]:%[^\n]\n",idLog,ipLog);
-		//printf("\n%s:%s: avec:%s: et %c",ipLog,idLog,ip,strcmp(ipLog,ip));
-		if(strcmp(ipLog,ip)==0){
-			fclose(f);
-			sprintf(file,"identifiants.csv");
-			f=fopen(file,"r");
-			if(f==NULL){printf("\nErreur d'ouverture");exit(1);}
-			for(int i=0;feof(f)!=1;i++){
-				fgets(inutile,200,f);
-				sscanf(inutile,"%[^:]:%[^:]:%[^:]:%[^:]:%[^\n]",contain->nom,contain->id,contain->mail,contain->psswd,contain->ip);
-				if(strcmp(contain->id,idLog)==0){
-					fclose(f);
-					return 1;
-				}
+///Contenu de File
+	if((user==NULL)||strcmp(user,"session=")==0){return -1;}
+	else{
+		sscanf(user,"session=%[^\n]\n",user);
+		sprintf(file,"identifiants.csv");
+		f=fopen(file,"r");
+		if(f==NULL){printf("\nErreur d'ouverture");exit(1);}
+		for(int i=0;feof(f)!=1;i++){
+			fgets(inutile,200,f);
+			sscanf(inutile,"%[^:]:%[^:]:%[^:]:%[^:]:%[^\n]",contain->nom,contain->id,contain->mail,contain->psswd,contain->ip);
+			if(strcmp(contain->id,user)==0){
+				fclose(f);
+				return 1;
 			}
 		}
+		return -1;
 	}
-	fclose(f);
-	return -1;
 }
 
 ///MOt de passe oubliE
@@ -617,7 +611,7 @@ void changerMdp(){
 
 	if(test==-1){
 		printf("Status: 302 Found\n");
-		printf("Location: http://www.tsa.com/cgi-bin/authLog/mdpOublier.cgi?val=-1#ambany\n");	
+		printf("Location: http://www.tsa.com/cgi-bin/authLogC/mdpOublier.cgi?val=-1#ambany\n");	
 	}
 	
 	if((strcmp(mdp,"")!=0)&&(strcmp(mdp,vmdp)==0)&&(strlen(mdp)>=8)){
@@ -629,7 +623,7 @@ void changerMdp(){
 		}
 		fclose(f);
 		printf("Status: 302 Found\n");
-		printf("Location:http://www.tsa.com/cgi-bin/authLog/mdpOublier.cgi?val=OK#ambany\n");	
+		printf("Location:http://www.tsa.com/cgi-bin/authLogC/mdpOublier.cgi?val=OK#ambany\n");	
 	}
 
 	printf("\n<!DOCTYPE html>\n");

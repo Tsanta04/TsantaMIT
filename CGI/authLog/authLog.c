@@ -6,6 +6,10 @@
 
 int main(){
 	printf("content-type: text/html\n");
+	printf("Cache-Control: no-cache, no-store, must-revalidate\n");
+	printf("Pragma: no-cache\n");
+	printf("Expires: 0\n");
+
 
 ///Les variables
 	int ligne=100;int isValide=0;
@@ -19,8 +23,7 @@ int main(){
 
 	if(isValide==-1){
 		printf("Status: 302 Found\n");
-		printf("Location:http://www.tsa.com/cgi-bin/authLog2/login.cgi\n\n");		
-		
+		printf("Location:http://www.tsa.com/cgi-bin/authLogC/login.cgi\n\n");				
 	}
 	
 	else if(isValide==1){
