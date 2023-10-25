@@ -244,9 +244,9 @@ void displayNav(ID us){
 			printf("<option disabled>Email: %s </option>",reglage(us.mail));
 		printf("</select>");
 
-		printf("<div class='text-info initialiser' style='box-sizing:border-box;width:18vw;padding-top:1vh;height:6vh;border-style:dotted;font-size:1vw;' align='center'><a href='http://www.tsa.com/cgi-bin/authLog2/authLog.cgi' style='text-decoration:none;color:black;'>Revenir a la liste par defaut</a></div>");
+		printf("<div class='text-info initialiser' style='box-sizing:border-box;width:18vw;padding-top:1vh;height:6vh;border-style:dotted;font-size:1vw;' align='center'><a href='http://www.tsa.com/cgi-bin/authLogC/authLog.cgi' style='text-decoration:none;color:black;'>Revenir a la liste par defaut</a></div>");
 
-		printf("<FORM style='padding:1%;' ACTION='authLog.cgi' METHOD='GET'>");
+		printf("<FORM style='padding:1%%;' ACTION='authLog.cgi' METHOD='GET'>");
 			printf("<p><INPUT style='width:14vw;' name='user' type='input' required/>");
 			printf("<INPUT type='submit' value='Search'/></p>");
 		printf("</FORM>");
@@ -264,7 +264,7 @@ void displayData(char* total,int ligne,INFO* user,char* string){
 		char us[100];
 		sscanf(user[0].nameFor,"%[^(]",us);
 		chiffrePagination(total,&rand,&debut,&voalohany,&farany,mx);
-		printf("<div class='container rounded' style='margin:8vh;margin-top:11vw;padding:1vw;background:linear-gradient(to right,hsla(157, 72%, 59%, 0.549),#53b68096);'><h1 align='center'>/var/log/auth.log</h1></div>");
+		printf("<div class='container rounded' style='margin:8vh;margin-top:11vw;padding:1vw;background:linear-gradient(to right,hsla(157, 72%%, 59%%, 0.549),#53b68096);'><h1 align='center'>/var/log/auth.log</h1></div>");
 		if(ligne!=0){
 		printf("<TABLE class='table table-borderless rounded' style='margin-bottom:8vh;'>\n");
 			printf("<THEAD class='table-warning'>\n");
@@ -292,7 +292,7 @@ void displayData(char* total,int ligne,INFO* user,char* string){
 		printf("</TABLE>\n");
 		printf("<div class='container rounded' style='height:12vh;margin:5vh;padding:1vw;background:linear-gradient(to right,pink,#afffff);display:flex;flex-wrap:wrap;overflow:scroll;justify-content:space-around;align-items:center;'>");
 				
-			for(int i=voalohany;i<=farany;i++){printf("<div style='padding:1%;box-sizing:border-box;'><a href='http://www.tsa.com/cgi-bin/authLogC/authLog.cgi?user=%s&line=%d'>%d</a><br></div>",us,i,i);}
+			for(int i=voalohany;i<=farany;i++){printf("<div style='padding:1%%;box-sizing:border-box;'><a href='http://www.tsa.com/cgi-bin/authLogC/authLog.cgi?user=%s&line=%d'>%d</a><br></div>",us,i,i);}
 				printf("<div><a href='http://www.tsa.com/cgi-bin/authLogC/authLog.cgi?user=%s&line=%d'>All</a><br></div>",us,(mx+1));
 				if(atoi(total)==mx){suiv=(atoi(total)-1);}
 				if(atoi(total)==1){prev=(atoi(total)+1);}
@@ -360,7 +360,7 @@ void formLogin(int i){
         	    printf("<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN' crossorigin='anonymous'>");
     		printf("</head>\n");
 			printf("<body>");
-				printf("<div class='container rounded' style='margin:5vh;padding:1vw;box-sizing:border-box;background:linear-gradient(to right,hsla(157, 72%, 59%, 0.549),#53b68096);'><h1 align='center'>/var/log/auth.log</h1></div>"); 
+				printf("<div class='container rounded' style='margin:5vh;padding:1vw;box-sizing:border-box;background:linear-gradient(to right,hsla(157, 72%%, 59%%, 0.549),#53b68096);'><h1 align='center'>/var/log/auth.log</h1></div>"); 
 				printf("<div align:'center' style='width:50vw;box-shadow:2px 2px 5px #daa8d8; box-sizing:border-box;padding:10vh;margin:auto;margin-top:8vw;background:linear-gradient(to right,pink,#afffff);display:flex;flex-direction:column;justify-content:space-evenly;'>");
 					printf("<FORM ACTION='login.cgi#ambany' METHOD='GET'>");
 						printf("<p style='padding-bottom:1vw' class='text-primary' align='center'>Veuillez s'authentifier d'abord:</p>");
@@ -372,7 +372,7 @@ void formLogin(int i){
 					printf("<p><a style='text-decoration-color:grey;font-size:small;' href='http://www.tsa.com/cgi-bin/authLogC/mdpOublier.cgi'><font color='grey'>Oublier le mot de passe?</font></a></p>");
 				printf("</div>");
 				if(i==-1){
-					printf("<a name='ambany'><h1 class='container' style='margin:8vh;padding:2vw;background:linear-gradient(to right,hsla(157, 72%, 59%, 0.549),#53b68096);'>Erreur d'authentification. Veuillez reessayer...</h1></a>");
+					printf("<a name='ambany'><h1 class='container' style='margin:8vh;padding:2vw;background:linear-gradient(to right,hsla(157, 72%%, 59%%, 0.549),#53b68096);'>Erreur d'authentification. Veuillez reessayer...</h1></a>");
 				}
 			printf("</body>\n");
 		printf("</html>\n");
@@ -389,7 +389,7 @@ void formSignIn(){
         	    printf("<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN' crossorigin='anonymous'>");
     		printf("</head>\n");
 		printf("<body>");
-            printf("<div class='container rounded' style='margin:5vh;padding:1vw;box-sizing:border-box;background:linear-gradient(to right,hsla(157, 72%, 59%, 0.549),#53b68096);'><h1 align='center'>/var/log/auth.log</h1></div>"); 
+            printf("<div class='container rounded' style='margin:5vh;padding:1vw;box-sizing:border-box;background:linear-gradient(to right,hsla(157, 72%%, 59%%, 0.549),#53b68096);'><h1 align='center'>/var/log/auth.log</h1></div>"); 
 			printf("<div align:'center' style='width:50vw;box-shadow:2px 2px 5px #daa8d8; box-sizing:border-box;padding:10vh;margin:auto;margin-top:8vw;background:linear-gradient(to right,pink,#afffff);display:flex;flex-direction:column;justify-content:space-evenly;'>");
 				printf("<FORM ACTION='signIn.cgi#ambany' METHOD='GET'>");
 					printf("<p style='padding-bottom:1vw' class='text-primary' align='center'>Veuillez s'authentifier d'abord:</p>");
@@ -421,21 +421,21 @@ void registerID(){
 	sscanf(data,"Nom=%[^&]&ID=%[^&]&mail=%[^&]&PWD=%[^&]&Vpwd=%[^\n]",identite.nom,identite.id,identite.mail,identite.psswd,tmp);
 	int bool=dejaPris(file,identite.id);
 	if(bool==-1){
-		printf("<a name='ambany'><h1 class='container' style='margin:8vh;padding:2vw;background:linear-gradient(to right,hsla(157, 72%, 59%, 0.549),#53b68096);'>Cet identifiant est deja pris. Veuillez choisir un autre...</h1></a>");		
+		printf("<a name='ambany'><h1 class='container' style='margin:8vh;padding:2vw;background:linear-gradient(to right,hsla(157, 72%%, 59%%, 0.549),#53b68096);'>Cet identifiant est deja pris. Veuillez choisir un autre...</h1></a>");		
 	}
 	if(strcmp(identite.psswd,tmp)!=0){
-		printf("<a name='ambany'><h1 class='container' style='margin:8vh;padding:2vw;background:linear-gradient(to right,hsla(157, 72%, 59%, 0.549),#53b68096);'>Les mots de passe entrEs ne sont pas les meme.</h1></a>");
+		printf("<a name='ambany'><h1 class='container' style='margin:8vh;padding:2vw;background:linear-gradient(to right,hsla(157, 72%%, 59%%, 0.549),#53b68096);'>Les mots de passe entrEs ne sont pas les meme.</h1></a>");
 	}
 	else if((bool==0)&&(strcmp(identite.psswd,tmp)==0)&&(strcmp(identite.psswd,"")!=0)){
 		if(strlen(identite.psswd)<8){
-			printf("<a name='ambany'><h1 class='container' style='margin:8vh;padding:2vw;background:linear-gradient(to right,hsla(157, 72%, 59%, 0.549),#53b68096);'>Le mot de passe doit composer au moins 8 caracteres. Reessayez...</h1></a>");		
+			printf("<a name='ambany'><h1 class='container' style='margin:8vh;padding:2vw;background:linear-gradient(to right,hsla(157, 72%%, 59%%, 0.549),#53b68096);'>Le mot de passe doit composer au moins 8 caracteres. Reessayez...</h1></a>");		
 			exit(1);
 		}
 		f=fopen(file,"a");
 		if(f==NULL){printf("Erreur d'ouverture");exit(1);}
 		fprintf(f,"%s:%s:%s:%s\n",identite.nom,identite.id,identite.mail,identite.psswd);
 		fclose(f);
-		printf("<a name='ambany'><h1 class='container' style='margin:8vh;padding:2vw;background:linear-gradient(to right,hsla(157, 72%, 59%, 0.549),#53b68096);'>Enregistrement reussit.</h1></a>");
+		printf("<a name='ambany'><h1 class='container' style='margin:8vh;padding:2vw;background:linear-gradient(to right,hsla(157, 72%%, 59%%, 0.549),#53b68096);'>Enregistrement reussit.</h1></a>");
 	}
 	printf("</body>\n");
 	printf("</html>\n");	
@@ -521,6 +521,7 @@ int authentification(ID* contain){
 	else{
 		sscanf(user,"session=%[^\n]\n",user);
 		sprintf(file,"identifiants.csv");
+		if(strcmp(user,"")==0){return -1;}
 		f=fopen(file,"r");
 		if(f==NULL){printf("\nErreur d'ouverture");exit(1);}
 		for(int i=0;feof(f)!=1;i++){
@@ -552,7 +553,7 @@ void entrerNom(){
         	    printf("<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN' crossorigin='anonymous'>");
     		printf("</head>\n");
 		printf("<body>");
-            printf("<div class='container rounded' style='margin:5vh;padding:1vw;box-sizing:border-box;background:linear-gradient(to right,hsla(157, 72%, 59%, 0.549),#53b68096);'><h1 align='center'>/var/log/auth.log</h1></div>"); 
+            printf("<div class='container rounded' style='margin:5vh;padding:1vw;box-sizing:border-box;background:linear-gradient(to right,hsla(157, 72%%, 59%%, 0.549),#53b68096);'><h1 align='center'>/var/log/auth.log</h1></div>"); 
 			printf("<div align:'center' style='width:50vw;box-shadow:2px 2px 5px #daa8d8; box-sizing:border-box;padding:10vh;margin:auto;margin-top:8vw;background:linear-gradient(to right,pink,#afffff);display:flex;flex-direction:column;justify-content:space-evenly;'>");
 			printf("<FORM ACTION='changerMdp.cgi' METHOD='GET'>");
 					printf("<p class='text-primary' align='center'>Entrer ici votre Nom Identifiant:</p>");
@@ -563,10 +564,10 @@ void entrerNom(){
 			printf("</div>");
 
 	if(strcmp(val,"-1")==0){
-		printf("<a name='ambany'><h1 class='container' style='margin:8vh;padding:2vw;background:linear-gradient(to right,hsla(157, 72%, 59%, 0.549),#53b68096);'>You haven't register yet. Press on 'signIn' to register.</h1></a>");	
+		printf("<a name='ambany'><h1 class='container' style='margin:8vh;padding:2vw;background:linear-gradient(to right,hsla(157, 72%%, 59%%, 0.549),#53b68096);'>You haven't register yet. Press on 'signIn' to register.</h1></a>");	
 	}
 	if(strcmp(val,"OK")==0){	
-		printf("<a name='ambany'><h1 class='container' style='margin:8vh;padding:2vw;background:linear-gradient(to right,hsla(157, 72%, 59%, 0.549),#53b68096);'>Mot de passe bien modifiE.</h1></a>");
+		printf("<a name='ambany'><h1 class='container' style='margin:8vh;padding:2vw;background:linear-gradient(to right,hsla(157, 72%%, 59%%, 0.549),#53b68096);'>Mot de passe bien modifiE.</h1></a>");
 	}
 		printf("</body>\n");
 	printf("</html>\n");
@@ -637,9 +638,9 @@ void changerMdp(){
         	    printf("<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN' crossorigin='anonymous'>");
     		printf("</head>\n");
 		printf("<body>");
-            printf("<div class='container rounded' style='margin:5vh;padding:1vw;box-sizing:border-box;background:linear-gradient(to right,hsla(157, 72%, 59%, 0.549),#53b68096);'><h1 align='center'>/var/log/auth.log</h1></div>"); 
+            printf("<div class='container rounded' style='margin:5vh;padding:1vw;box-sizing:border-box;background:linear-gradient(to right,hsla(157, 72%%, 59%%, 0.549),#53b68096);'><h1 align='center'>/var/log/auth.log</h1></div>"); 
 			printf("<div align:'center' style='width:50vw;box-shadow:2px 2px 5px #daa8d8; box-sizing:border-box;padding:10vh;margin:auto;margin-top:8vw;background:linear-gradient(to right,pink,#afffff);display:flex;flex-direction:column;justify-content:space-evenly;'>");
-			printf("<FORM ACTION='changerMdp.cgi#ambany' METHOD='GET'>",iden[indice].nom);
+			printf("<FORM ACTION='changerMdp.cgi#ambany' METHOD='GET'>");
 					//strcpy(inutile,supprPlus(iden[indice].nom));
 					printf("<p class='text-primary' align='center'>Bienvenue %s, entrer votre nouveau mot de passe:</p>",reglage(iden[indice].nom));
 					printf("<p class='input' align='center'><LABEL for='name=%s&PWD'>Password: <INPUT style='width:25vw' name='name=%s&PWD' type='password' required/></p>",name,name);
@@ -652,12 +653,12 @@ void changerMdp(){
 	if((strcmp(mdp,"")!=0)||(strcmp(vmdp,"")!=0)){
 		if(strcmp(mdp,vmdp)==0){
 			if(strlen(mdp)<8){
-				printf("<a name='ambany'><h1 class='container' style='margin:8vh;padding:2vw;background:linear-gradient(to right,hsla(157, 72%, 59%, 0.549),#53b68096);'>Le mot de passe doit composer au moins 8 caracteres. Reessayez...</h1></a>");		
+				printf("<a name='ambany'><h1 class='container' style='margin:8vh;padding:2vw;background:linear-gradient(to right,hsla(157, 72%%, 59%%, 0.549),#53b68096);'>Le mot de passe doit composer au moins 8 caracteres. Reessayez...</h1></a>");		
 				exit(1);
 			}
 		}
 		else if(strcmp(mdp,vmdp)!=0){
-			printf("<a name='ambany'><h1 class='container' style='margin:8vh;padding:2vw;background:linear-gradient(to right,hsla(157, 72%, 59%, 0.549),#53b68096);'>Les mots de passe entrEs ne sont pas les meme.</h1></a>");
+			printf("<a name='ambany'><h1 class='container' style='margin:8vh;padding:2vw;background:linear-gradient(to right,hsla(157, 72%%, 59%%, 0.549),#53b68096);'>Les mots de passe entrEs ne sont pas les meme.</h1></a>");
 		}
 	}
 		printf("</body>\n");
