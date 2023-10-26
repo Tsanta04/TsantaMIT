@@ -47,8 +47,8 @@ int main(){
 			//printf("<div style='box-sizing:border-box;position:fixed;top:0;width:100vw;height:13vh;background:linear-gradient(to right,pink,#afffff);display:flex;flex-direction:row;justify-content:space-between;align-items:center;box-shadow:2px 5px 3px;'>"); 
 				printf("<FORM ACTION='solution.cgi' METHOD='GET' style='box-sizing:border-box;position:fixed;top:0;width:100vw;height:13vh;background:linear-gradient(to right,pink,#afffff);display:flex;flex-direction:row;justify-content:space-around;align-items:center;box-shadow:2px 5px 3px;'>");
 					printf("<p>A noter: eps=10^-5</p>");
-					printf("<p class='input' align='center'><LABEL for='a'>Borne a gauche: </LABEL><INPUT style='width:25vw' name='a' type='text' required/></p>");	//pattern='[0-9]+'
-					printf("<p class='input' align='center'><LABEL for='b'>Borne a droite: </LABEL><INPUT style='width:25vw' name='b' type='text' required/></p>");
+					printf("<p class='input' align='center'><LABEL for='a'>Borne a gauche: </LABEL><INPUT style='width:25vw' name='a' type='number' step='0.0001' required/></p>");	//pattern='[0-9]+'
+					printf("<p class='input' align='center'><LABEL for='b'>Borne a droite: </LABEL><INPUT style='width:25vw' name='b' type='number' step='0.0001' required/></p>");
 					printf("<p class='input' align='center'><INPUT type='submit' value='Enter'/></p>");
 				printf("</FORM>");
 			//printf("</div>");
