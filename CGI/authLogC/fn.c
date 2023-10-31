@@ -493,7 +493,7 @@ int verifyID(){
 				fgets(tmp,256,f);
 				sscanf(tmp,"%[^:]:%[^:]:%[^:]:%[^\n]",contain.nom,contain.id,contain.mail,contain.psswd);
 				if((strcmp(contain.id,user.id)==0)&&(strcmp(contain.psswd,user.psswd)==0)){
-					printf("Set-Cookie:session=%s; expires=Wed, 25 Oct 2023 00:00:00 GMT; HttpOnly\n",user.id);
+					printf("Set-Cookie:session=%s; expires=Wed, 25 Oct 2028 00:00:00 GMT; HttpOnly\n",user.id);
 					test=0;break;
 				}
 			}
