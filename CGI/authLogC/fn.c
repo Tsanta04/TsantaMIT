@@ -257,6 +257,7 @@ void displayNav(ID us){
 
 void displayData(char* total,int ligne,INFO* user,char* string){
 ///Les variables
+		sscanf(total,"line=%[^\n]",total);
 		int rand=10;int voalohany=1;int farany=10;int mx=max(ligne);int debut=0;
 		int prev=atoi(total);
 		int suiv=atoi(total);
