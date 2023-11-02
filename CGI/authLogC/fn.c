@@ -31,9 +31,9 @@ INFO* getData(int* ligne,char* string){
 	char commande[256];INFO* user;FILE* f;
 	char mois[10];char jour[10];char heure[50];
 	char us[100]="";
-	strcpy(us,string);
+	//strcpy(us,string);
 	//printf("us=%s,string=%s",us,string);
-	sscanf(us,"%[^=]=%[^\n]",inutile,us);
+	sscanf(string,"%[^=]=%[^\n]",inutile,us);
 
 //Recuperer le ligne max
 	strcpy(commande,"wc -l /var/log/auth.log");
@@ -258,10 +258,12 @@ void displayNav(ID us){
 void displayData(char* total,int ligne,INFO* user,char* string){
 ///Les variables
 		int rand=10;int voalohany=1;int farany=10;int mx=max(ligne);int debut=0;
+		sscanf(total,"line=%[^\n]",total);
 		int prev=atoi(total);
 		int suiv=atoi(total);
 ///gestion user=nomUser
-		char us[100];
+		char us[100]="";char str[100]="";
+		sscanf(string,"user=%[^\n]",str);
 		sscanf(user[0].nameFor,"%[^(]",us);
 		chiffrePagination(total,&rand,&debut,&voalohany,&farany,mx);
 		printf("<div class='container rounded' style='margin:8vh;margin-top:11vw;padding:1vw;background:linear-gradient(to right,hsla(157, 72%%, 59%%, 0.549),#53b68096);'><h1 align='center'>/var/log/auth.log</h1></div>");
@@ -292,12 +294,12 @@ void displayData(char* total,int ligne,INFO* user,char* string){
 		printf("</TABLE>\n");
 		printf("<div class='container rounded' style='height:12vh;margin:5vh;padding:1vw;background:linear-gradient(to right,pink,#afffff);display:flex;flex-wrap:wrap;overflow:scroll;justify-content:space-around;align-items:center;'>");
 				
-			for(int i=voalohany;i<=farany;i++){printf("<div style='padding:1%%;box-sizing:border-box;'><a href='http://www.tsa.com/cgi-bin/authLogC/authLog.cgi?user=%s&line=%d'>%d</a><br></div>",us,i,i);}
-				printf("<div><a href='http://www.tsa.com/cgi-bin/authLogC/authLog.cgi?user=%s&line=%d'>All</a><br></div>",us,(mx+1));
+			for(int i=voalohany;i<=farany;i++){printf("<div style='padding:1%%;box-sizing:border-box;'><a href='http://www.tsa.com/cgi-bin/authLogC/authLog.cgi?user=%s&line=%d'>%d</a><br></div>",str,i,i);}
+				printf("<div><a href='http://www.tsa.com/cgi-bin/authLogC/authLog.cgi?user=%s&line=%d'>All</a><br></div>",str,(mx+1));
 				if(atoi(total)==mx){suiv=(atoi(total)-1);}
 				if(atoi(total)==1){prev=(atoi(total)+1);}
-				printf("<div><a href='http://www.tsa.com/cgi-bin/authLogC/authLog.cgi?user=%s&line=%d'><<< </a><br></div>",us,prev-1);				
-				printf("<div><a href='http://www.tsa.com/cgi-bin/authLogC/authLog.cgi?user=%s&line=%d'> >>></a><br></div>",us,suiv+1);
+				printf("<div><a href='http://www.tsa.com/cgi-bin/authLogC/authLog.cgi?user=%s&line=%d'><<< </a><br></div>",str,prev-1);				
+				printf("<div><a href='http://www.tsa.com/cgi-bin/authLogC/authLog.cgi?user=%s&line=%d'> >>></a><br></div>",str,suiv+1);
 		printf("</div>");
 		}
 		else if(ligne==0){
@@ -493,7 +495,7 @@ int verifyID(){
 				fgets(tmp,256,f);
 				sscanf(tmp,"%[^:]:%[^:]:%[^:]:%[^\n]",contain.nom,contain.id,contain.mail,contain.psswd);
 				if((strcmp(contain.id,user.id)==0)&&(strcmp(contain.psswd,user.psswd)==0)){
-					printf("Set-Cookie:session=%s; expires=Wed, 25 Oct 2023 00:00:00 GMT; HttpOnly\n",user.id);
+					printf("Set-Cookie:session=%s; expires=Wed, 25 Oct 2028 00:00:00 GMT; HttpOnly\n",user.id);
 					test=0;break;
 				}
 			}
