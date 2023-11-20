@@ -1,0 +1,3 @@
+--Ce repertoire contient le devoir "authentification + configuration serveur + affichage lu fichier auth.log" en utilisant "AdminLte"
+--Les codes sources et les fichiers executables se trouvent "./AdminLte/pages/examples/"
+--Les bibliotheques utilisEs sont dans les repertoires "./serveur" et "./authLog"
