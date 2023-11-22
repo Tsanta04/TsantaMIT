@@ -1,0 +1,68 @@
+order-color: #afb5ba;
+}
+
+.custom-control-input-gray:not(:disabled):active ~ .custom-control-label::before {
+  background-color: #caced1;
+  border-color: #caced1;
+}
+
+.custom-control-input-gray-dark:checked ~ .custom-control-label::before {
+  border-color: #343a40;
+  background-color: #343a40;
+}
+
+.custom-control-input-gray-dark.custom-control-input-outline:checked[type="checkbox"] ~ .custom-control-label::after {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23343a40' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E") !important;
+}
+
+.custom-control-input-gray-dark.custom-control-input-outline:checked[type="radio"] ~ .custom-control-label::after {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23343a40'/%3E%3C/svg%3E") !important;
+}
+
+.custom-control-input-gray-dark:focus ~ .custom-control-label::before {
+  box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0.2rem rgba(52, 58, 64, 0.25);
+}
+
+.custom-control-input-gray-dark:focus:not(:checked) ~ .custom-control-label::before {
+  border-color: #6d7a86;
+}
+
+.custom-control-input-gray-dark:not(:disabled):active ~ .custom-control-label::before {
+  background-color: #88939e;
+  border-color: #88939e;
+}
+
+.custom-control-input-outline ~ .custom-control-label::before {
+  background-color: transparent !important;
+  box-shadow: none;
+}
+
+.custom-control-input-outline:checked ~ .custom-control-label::before {
+  background-color: transparent;
+}
+
+.navbar-dark .btn-navbar,
+.navbar-dark .form-control-navbar {
+  background-color: #3f474e;
+  border: 1px solid #56606a;
+  color: white;
+}
+
+.navbar-dark .btn-navbar:hover {
+  background-color: #454d55;
+}
+
+.navbar-dark .btn-navbar:focus {
+  background-color: #4b545c;
+}
+
+.navbar-dark .form-control-navbar + .input-group-prepend > .btn-navbar,
+.navbar-dark .form-control-navbar + .input-group-append > .btn-navbar {
+  background-color: #3f474e;
+  color: #fff;
+  border: 1px solid #56606a;
+  border-left: none;
+}
+
+.dark-mode .form-control:not(.form-control-navbar):not(.form-control-sidebar),
+.dark-m

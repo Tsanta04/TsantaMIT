@@ -1,0 +1,25 @@
+
+  color: #fff;
+}
+.swal2-radio label input:checked ~ .swal2-label::after {
+  background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="-4 -4 8 8"%3e%3ccircle r="3" fill="%23fff"/%3e%3c/svg%3e');
+}
+.swal2-radio label input:disabled:checked ~ .swal2-label::before {
+  background-color: rgba(0, 123, 255, 0.5);
+}
+.swal2-radio .swal2-label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0.0833333333rem;
+  /* stylelint-disable-line */
+  left: -1.5rem;
+  width: 1rem;
+  height: 1rem;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border: #adb5bd solid 1px;
+  border-radius: 50%;
+  background-color: #fff;
+  pointer-events: none;
+}
+.swal2-radio .swal
