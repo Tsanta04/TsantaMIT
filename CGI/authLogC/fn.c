@@ -56,7 +56,6 @@ INFO* getData(int* ligne,char* string){
 		if(f==NULL){printf("Erreur\n");exit(1);}
 		fgets(inutile,256,f);
 		pclose(f);
-
         if(k==len){
             if(i==0){*ligne=0;}
             else if(test==1){
