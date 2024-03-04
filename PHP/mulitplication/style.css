@@ -1,0 +1,56 @@
+.formulaire{
+    box-sizing:border-box;
+    position:fixed;
+    top:0;
+    width:100vw;
+    height:13vh;
+    display:flex;
+    align-items:center;
+    background-color: aquamarine;
+    justify-content:space-around;
+    box-shadow:2px 5px 3px;
+}
+
+.text{
+    /*width:15vw;*/
+    padding-top:1vh;
+    height:6vh;
+    font-size:3vh;
+}
+
+.flex{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.link{
+    color:brown;
+    text-decoration: none;
+}
+
+.container{
+    padding-top:15%;
+}
+
+h1.text{
+    margin: auto;
+    text-align: center;
+    font-size: 6vh;
+}
+
+.modify{
+    width: 50%;
+    height: 50%;
+    position:fixed;
+    margin: 25%;
+    margin-top: 15%;
+    padding: 5%;
+    border: 1px solid black;
+    border-radius: 2%;
+    box-shadow: 1px 1px 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
