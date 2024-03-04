@@ -34,6 +34,8 @@
 
 //Get datas to be treated
     if(isset($_POST['a'])){
+        $_SESSION['datas']=array();
+        $_SESSION['indice']=array();
         for($i=1;$i<=$_POST['b'];$i++){
             $_SESSION['datas'][$i -1]=array($i,$_POST['a'],($i * $_POST['a']));
             $_SESSION['indice'][$i -1]=$i-1;
