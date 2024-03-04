@@ -24,8 +24,8 @@
     <body>
 		<FORM class='formulaire bg-warning' ACTION='main.php' METHOD='POST'>
             <p class='text'>Table de multiplication<p/>
-            <p><label for='a'>A = </label><INPUT style='width:14vw;' name='a' type='input' required/></p>
-            <p><label for='b'>B = </label><INPUT style='width:14vw;' name='b' type='input' required/></p>
+            <p><label for='a'>A = </label><INPUT style='width:14vw;' name='a' type='number' required/></p>
+            <p><label for='b'>B = </label><INPUT style='width:14vw;' name='b' type='number' required/></p>
 		    <p><INPUT type='submit' value='Envoyer'/></p>
 	    </FORM>
     </body>

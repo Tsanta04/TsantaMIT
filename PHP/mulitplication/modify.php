@@ -34,8 +34,8 @@ if(isset($_POST['aM'])){
 
         <FORM class='container bg-warning modify' ACTION='modify.php' METHOD='POST'>
             <h1>Modify this value</h1>
-            <p><label for='aM'>a  :</label><input type='text' name='aM' value='{$_SESSION['datas'][$_SESSION['indice'][$_SESSION['lineModif']]][1]}' required/></p>
-            <p><label for='bM'>b  :</label><input type='text' name='bM' value='{$_SESSION['datas'][$_SESSION['indice'][$_SESSION['lineModif']]][0]}' required/></p>
+            <p><label for='aM'>a  :</label><input type='number' name='aM' value='{$_SESSION['datas'][$_SESSION['indice'][$_SESSION['lineModif']]][1]}' required/></p>
+            <p><label for='bM'>b  :</label><input type='number' name='bM' value='{$_SESSION['datas'][$_SESSION['indice'][$_SESSION['lineModif']]][0]}' required/></p>
             <input type=\"submit\" value=\"Modify it\">
         </FORM>
     </body>
