@@ -53,7 +53,7 @@ public class Simpson implements Traitement{
         out.println("set xrange ["+(this.pointA-4)+":"+(this.pointB+4)+"]\n");
         out.println("set output '" + path + "'\n");
         out.write("f(x)=" + f.f + "\n");
-        out.write("plot '" + this.pathDatas + "' using 2:1 w linespoints pt 28 lw 1 lc 'black' , f(x) w l pt 28 lw 1 lc 'red'\n");  // Use 'replot' for clarity
+        out.write("plot '" + this.pathDatas + "' using 2:1 w linespoints pt 28 lw 1 lc 'black' , f(x) w l lw 1 lc 'red'\n");  // Use 'replot' for clarity
         out.close();
         this.pathImg=path;
         // Exécution de Gnuplot
@@ -69,7 +69,7 @@ public class Simpson implements Traitement{
 		for(int i=2;i<this.pas;i+=2){
 			r+=2*f.f(a);
 			a+=2*h;
-			fd.println(a+" "+f.f(a)+"\n");
+			fd.println(a+" "+f.f(a));
 		}
 		for(int i=1;i<this.pas;i+=2){
 			r+=4*f.f(a);

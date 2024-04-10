@@ -48,7 +48,7 @@ public class Dichotomie implements Traitement{
         out.println(String.format("set xrange [%f:%f]\n", (this.pointA-4), (this.pointB+4)));
         out.println("set output '" + path + "'\n");
         out.write("f(x)=" + f.f + "\n");
-        out.write("replot '" + this.pathDatas + "' w linespoints pt 28 lw 1 lc 'red' , f(x) w linespoints pt 28 lw 1 lc 'red'\n");  // Use 'replot' for clarity
+        out.write("plot '" + this.pathDatas + "' w linespoints pt 28 lw 1 lc 'black' , f(x) w l lw 1 lc 'red'\n");  // Use 'replot' for clarity
         out.close();
         this.pathImg=path;
         // Exécution de Gnuplot
@@ -63,7 +63,7 @@ public class Dichotomie implements Traitement{
 		
 		while(Math.abs(f.f(r))>tol && this.iteration<10000){
 			r=(a+b)/2;
-			fd.println(r+" "+f.f(r)+"\n");
+			fd.println(r+" "+f.f(r));
 			if((f.f(a)*f.f(r)*f.f(b))==0){
 				if(f.f(this.pointA)==0)r=a;
 				else if(f.f(b)==0)r=b;

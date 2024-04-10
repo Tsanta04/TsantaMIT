@@ -40,6 +40,7 @@
       >
         <div
           class="md:flex-col md:items-stretch md:min-h-full md:flex-nowrap px-0 flex flex-wrap items-center justify-between w-full mx-auto"
+          style="background-color:grey;"
         >
           <button
             class="cursor-pointer text-black opacity-50 md:hidden px-3 py-1 text-xl leading-none bg-transparent rounded border border-solid border-transparent"
@@ -60,21 +61,12 @@
                 class="text-blueGray-500 block"
                 href="#pablo"
                 onclick="openDropdown(event,'user-responsive-dropdown')"
-                ><div class="items-center flex">
-                  <span
-                    class="w-12 h-12 text-sm text-white bg-blueGray-200 inline-flex items-center justify-center rounded-full"
-                    ><img
-                      alt="..."
-                      class="w-full rounded-full align-middle border-none shadow-lg"
-                      src="../head/assets/img/inconnu.jpg"
-                  /></span></div
               ></a>
             </li>
           </ul>
           <div
             class="md:flex md:flex-col md:items-stretch md:opacity-100 md:relative md:mt-4 md:shadow-none shadow absolute top-0 left-0 right-0 z-40 overflow-y-auto overflow-x-hidden h-auto items-center flex-1 rounded hidden"
-            id="example-collapse-sidebar"
-            style="background-color:white;"                                              
+            id="example-collapse-sidebar"                                              
           >
             <div
               class="md:min-w-full md:hidden block pb-4 mb-4 border-b border-solid border-blueGray-200"
@@ -102,15 +94,6 @@
                 </div>
               </div>
             </div>
-            <form class="mt-6 mb-4 md:hidden">
-              <div class="mb-3 pt-0">
-                <input
-                  type="text"
-                  placeholder="Search"
-                  class="border-0 px-3 py-2 h-12 border border-solid  border-blueGray-500 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-base leading-snug shadow-none outline-none focus:outline-none w-full font-normal"
-                />
-              </div>
-            </form>
             <ul class="text-blueGray-700 md:flex-col md:min-w-full flex flex-col list-none"
             >
             <li class="items-center">
@@ -152,8 +135,8 @@
       </nav>
 <!--Content -->
     <main class="profile-page" style='background-color:'grey;''>
-    	<h1>Entrer la fonction</h1>
 		<form id='formulaire' class='w-1/2 absolute border border-1 right-0' style='margin-right:16vw;' action='Developpement' method='POST'>
+			<h1  class='container bg-secondary'>Entrer la fonction</h1>
 			Dimension: <input type='number' class='container' id='dim' name='dim'/><div class='container' id='coef'></div>
 			<%
 				if("A".equals(request.getParameter("mode"))){
@@ -179,18 +162,20 @@
 		</form>
 		<!--info method-->
 
-		<div id='ici' class='container absolute right-0 d-flex' style="width:80vw;margin-top:60vh;margin-bottom:5vw;;">
+		<div id='ici' class='container absolute right-0 d-flex' style="width:80vw;margin-top:90vh;margin-bottom:10vw;">
 		    		<hr>
 		    <div class='w-50' style='font-size:2vw;'>
 			   <H1 class='container bg-secondary' style='font-size:3vw';> Le resultat </H1>		
 				<p class='container'>Fonction: ${fonction}</p>
 		        <p class='container'>Method: ${methode}</p>
-		        <p class='container'>f(2): ${aa}</p>
+		        <p class='container'>pointA: ${pointA}</p>
+		        <p class='container'>pointB: ${pointB}</p>		        
 		        <p class='container'>Nombre iteration: ${iteration}</p>
 		        <p class='container'>Resultat final: ${resultat}</p>
 		    </div>
-		    <div class='w-50' style='background-image:url("${path}");'>
-					Veuillez installer Gnuplot pour afficher la courbe.
+		    <!-- <div class='w-50' style='background-image:url("${path}");'>-->
+			<div class='w-50'>
+				<img src="<%=request.getContextPath()%>/function.png" alt="<%=request.getContextPath()%>" width="100%" height="100%">
 		    </div>
 		</div>			
     </main>

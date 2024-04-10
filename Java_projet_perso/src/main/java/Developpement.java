@@ -51,6 +51,11 @@ public class Developpement extends HttpServlet {
 			request.setAttribute("iteration", f.iteration);
 			request.setAttribute("path", f.pathImg);
 			request.setAttribute("resultat", f.resultat);
+			request.setAttribute("coef", f.f.coefficient);
+			request.setAttribute("pointA", f.pointA);
+			request.setAttribute("pointB", f.pointB);
+//			request.setAttribute("f2", f.f.f(2));
+//			request.setAttribute("fp2", f.f.fp(2));
 			this.url="Dashboard.jsp?mode=A";
 			
 //			PrintWriter p = response.getWriter();
@@ -66,8 +71,14 @@ public class Developpement extends HttpServlet {
 			request.setAttribute("methode", f.methode);
 			request.setAttribute("fonction", f.f.f);
 			request.setAttribute("iteration", f.iteration);
-			request.setAttribute("path", f.pathImg);			
+			request.setAttribute("path", f.pathImg);
 			request.setAttribute("resultat", f.resultat);
+			request.setAttribute("coef", f.f.coefficient);
+			request.setAttribute("pointA", f.pointI);
+			request.setAttribute("pointB", "--");
+//			request.setAttribute("f2", f.f.f(2));
+//			request.setAttribute("fp2", f.f.fp(2));
+			this.url="Dashboard.jsp?mode=A";
 			this.url="Dashboard.jsp?mode=A";
 		}		
 		else if(Integer.parseInt(request.getParameter("methode"))==3) {
@@ -80,8 +91,14 @@ public class Developpement extends HttpServlet {
 			request.setAttribute("methode", f.methode);
 			request.setAttribute("fonction", f.f.f);
 			request.setAttribute("iteration", f.iteration);
+			request.setAttribute("path", f.pathImg);
 			request.setAttribute("resultat", f.resultat);
-			request.setAttribute("path", f.pathImg);			
+			request.setAttribute("coef", f.f.coefficient);
+			request.setAttribute("pointA", f.pointA);
+			request.setAttribute("pointB", f.pointB);
+//			request.setAttribute("f2", f.f.f(2));
+//			request.setAttribute("fp2", f.f.fp(2));
+			this.url="Dashboard.jsp?mode=A";
 			this.url="Dashboard.jsp?mode=A";
 		}
 		else if(Integer.parseInt(request.getParameter("methode"))==4) {
@@ -94,8 +111,14 @@ public class Developpement extends HttpServlet {
 			request.setAttribute("methode", f.methode);
 			request.setAttribute("fonction", f.f.f);
 			request.setAttribute("iteration", f.iteration);
+			request.setAttribute("path", f.pathImg);
 			request.setAttribute("resultat", f.resultat);
-			request.setAttribute("path", f.pathImg);			
+			request.setAttribute("coef", f.f.coefficient);
+			request.setAttribute("pointA", f.pointI);
+			request.setAttribute("pointB", "--");
+//			request.setAttribute("f2", f.f.f(2));
+//			request.setAttribute("fp2", f.f.fp(2));
+			this.url="Dashboard.jsp?mode=A";
 			this.url="Dashboard.jsp?mode=B";
 			request.setAttribute("aa",f.f.fp(2));
 		}
@@ -109,8 +132,14 @@ public class Developpement extends HttpServlet {
 			request.setAttribute("methode", f.methode);
 			request.setAttribute("fonction", f.f.f);
 			request.setAttribute("iteration", f.iteration);
+			request.setAttribute("path", f.pathImg);
 			request.setAttribute("resultat", f.resultat);
-			request.setAttribute("path", f.pathImg);			
+			request.setAttribute("coef", f.f.coefficient);
+			request.setAttribute("pointA", f.pointI);
+			request.setAttribute("pointB", "--");
+			//			request.setAttribute("f2", f.f.f(2));
+//			request.setAttribute("fp2", f.f.fp(2));
+			this.url="Dashboard.jsp?mode=A";
 			this.url="Dashboard.jsp?mode=B#ici";
 		}
 		else if(Integer.parseInt(request.getParameter("methode"))==6) {
@@ -123,9 +152,15 @@ public class Developpement extends HttpServlet {
 			f.gnuplot("function.png");
 			request.setAttribute("methode", f.methode);
 			request.setAttribute("fonction", f.f.f);
-			request.setAttribute("iteration", "non_interessant");
+			request.setAttribute("path", f.pathImg);
 			request.setAttribute("resultat", f.resultat);
-			request.setAttribute("path", f.pathImg);			
+			request.setAttribute("coef", f.f.coefficient);
+			request.setAttribute("pointA", f.pointA);
+			request.setAttribute("pointB", f.pointB);
+			request.setAttribute("iteration", f.pas);			
+//			request.setAttribute("f2", f.f.f(2));
+//			request.setAttribute("fp2", f.f.fp(2));
+			this.url="Dashboard.jsp?mode=A";
 			this.url="Dashboard.jsp?mode=C";
 		}
 		else if(Integer.parseInt(request.getParameter("methode"))==7) {
@@ -138,9 +173,12 @@ public class Developpement extends HttpServlet {
 			f.gnuplot("function.png");
 			request.setAttribute("methode", f.methode);
 			request.setAttribute("fonction", f.f.f);
-			request.setAttribute("iteration", "non_interessant");
+			request.setAttribute("path", f.pathImg);
 			request.setAttribute("resultat", f.resultat);
-			request.setAttribute("path", f.pathImg);			
+			request.setAttribute("coef", f.f.coefficient);
+			request.setAttribute("pointA", f.pointA);
+			request.setAttribute("pointB", f.pointB);
+			request.setAttribute("iteration", f.pas);			
 			this.url="Dashboard.jsp?mode=C";
 		}
 		else if(Integer.parseInt(request.getParameter("methode"))==8) {
@@ -153,9 +191,12 @@ public class Developpement extends HttpServlet {
 			f.gnuplot("function.png");
 			request.setAttribute("methode", f.methode);
 			request.setAttribute("fonction", f.f.f);
-			request.setAttribute("iteration", "non_interessant");
-			request.setAttribute("resultat", f.resultat);
 			request.setAttribute("path", f.pathImg);
+			request.setAttribute("resultat", f.resultat);
+			request.setAttribute("coef", f.f.coefficient);
+			request.setAttribute("pointA", f.pointA);
+			request.setAttribute("pointB", f.pointB);
+			request.setAttribute("iteration", f.pas);			
 			this.url="Dashboard.jsp?mode=C";
 		}
     }

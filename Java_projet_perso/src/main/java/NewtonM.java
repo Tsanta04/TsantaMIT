@@ -49,7 +49,7 @@ public class NewtonM implements Traitement{
         out.println(String.format("set xrange [%f:%f]\n", (this.pointI-8), (this.pointI+8)));
         out.println("set output '" + path + "'\n");
         out.write("f(x)=" + f.f + "\n");
-        out.write("replot '" + this.pathDatas + "' w linespoints pt 28 lw 1 lc 'red' , f(x) w linespoints pt 28 lw 1 lc 'red'\n");  // Use 'replot' for clarity
+        out.write("plot '" + this.pathDatas + "' w linespoints pt 28 lw 1 lc 'black' , f(x) w l lw 1 lc 'red'\n");  // Use 'replot' for clarity
         out.close();
         this.pathImg=path;
 
@@ -67,7 +67,7 @@ public class NewtonM implements Traitement{
 		do{
 			r=x;
 			x=r-(f.fp(r)/f.fpp(r));
-			fd.println(r+" "+f.f(r)+"\n");
+			fd.println(r+" "+f.f(r));
 			this.iteration++;
 		}while(Math.abs(f.fp(r))>tol);
 		fd.close();

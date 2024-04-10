@@ -30,7 +30,7 @@ public class Fonction {
 
 	public float f(float x) {
 		float result=this.coefficient[0];
-		for(int i=1;i<this.dim;i++){
+		for(int i=1;i<=this.dim;i++){
 			result=(result*x)+this.coefficient[i];
 		}		
 		return result;		
@@ -43,7 +43,7 @@ public class Fonction {
 			this.coeffD[i]=((this.dim-i) * this.coefficient[i]);
 		}
 		result=coeffD[0];
-		for(int i=1;i<this.dim-1;i++){
+		for(int i=1;i<=this.dim-1;i++){
 			result=(result*x)+this.coeffD[i];
 		}				
 		return result;		
@@ -52,10 +52,12 @@ public class Fonction {
 	public float fpp(float x) {
 		float result=0;
 		this.coeffDD=new float[this.dim-1];
+
 		for(int i=0;i<=this.dim-2;i++) {
 			this.coeffDD[i]=((this.dim-i) * this.coeffD[i]);
 		}
-		for(int i=1;i<this.dim-2;i++){
+		result=coeffDD[0];		
+		for(int i=1;i<=this.dim-2;i++){
 			result=(result*x)+this.coeffDD[i];
 		}				
 		return result;

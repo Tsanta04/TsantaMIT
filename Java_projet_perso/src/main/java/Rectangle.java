@@ -53,7 +53,7 @@ public class Rectangle implements Traitement{
         out.println(String.format("set xrange [%f:%f]\n", (this.pointA-4), (this.pointB+4)));
         out.println("set output '" + path + "'\n");
         out.write("f(x)=" + f.f + "\n");
-        out.write("replot '" + this.pathDatas + "' w linespoints pt 28 lw 1 lc 'red' , f(x) w linespoints pt 28 lw 1 lc 'red'\n");  // Use 'replot' for clarity
+        out.write("plot '" + this.pathDatas + "' w linespoints pt 28 lw 1 lc 'black' , f(x) w l lw 1 lc 'red'\n");  // Use 'replot' for clarity
         out.close();
         this.pathImg=path;
 
@@ -68,7 +68,7 @@ public class Rectangle implements Traitement{
 		float h=(Math.abs(b)-Math.abs(a))/this.pas;
 		
 		for(int i=0;i<this.pas;i++){
-			fd.println(a+" "+f.f(a)+"\n");
+			fd.println(a+" "+f.f(a));
 			r+=(f.f(a)*h);
 			a+=h;
 		}
