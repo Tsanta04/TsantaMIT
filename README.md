@@ -9,8 +9,9 @@ On a utilisE quelques differentes methodes pour chaque section:
 Avec les resultats de l'etude de fonction, cela affiche aussi la courbe qui montre la partie de la fonction et le chemin que les methodes font pour trouver le resultat attendu.
 Il faut faire attention à la permission puisque ce programme utilise gnuplot, et génère une image. Alors s'il n'a pas de permission, il 'arrivera pas à creer l'image.
 
-Le php_projet_perso: La version ancienne (l'examen)
-Le php_projet_perso_codeigniter: La version implantée dans le codeigniter.
+-Le php_projet_perso: L'ancienne version (l'examen)
+
+-Le php_projet_perso_codeigniter: La version implantée dans le codeigniter.
 
 Comment s'organiser la version codeigniter?
 - Le nom de mon domaine : www.code.com
