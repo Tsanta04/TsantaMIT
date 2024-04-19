@@ -13,7 +13,7 @@ Il faut faire attention à la permission puisque ce programme utilise gnuplot, e
 
 -Le php_projet_perso_codeigniter: La version implantée dans le codeigniter.
 
-Comment s'organiser la version codeigniter?
+Comment s'organise-t-elle la version codeigniter?
 - Le nom de mon domaine : www.code.com
 - Les Controlleurs que j'ai utilisé: Home.php et Dashboard.php
 - Les objets que j'ai créés sont dans app/Librairies
