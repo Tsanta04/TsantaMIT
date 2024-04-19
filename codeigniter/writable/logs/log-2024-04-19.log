@@ -1,0 +1,874 @@
+CRITICAL - 2024-04-19 05:15:34 --> ErrorException: Undefined property: App\Controllers\Dashboard::$load
+[Method: POST, Route: Dashboard/development/A]
+in APPPATH/Controllers/Dashboard.php on line 20.
+ 1 APPPATH/Controllers/Dashboard.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(210): App\Controllers\Dashboard->getFonction()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 05:16:15 --> Error: Class "App\Controllers\Fonction" not found
+[Method: POST, Route: Dashboard/development/A]
+in APPPATH/Controllers/Dashboard.php on line 22.
+ 1 APPPATH/Controllers/Dashboard.php(210): App\Controllers\Dashboard->getFonction()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 05:19:08 --> Error: Class "App\Libraries\Fonction" not found
+[Method: POST, Route: Dashboard/development/A]
+in APPPATH/Controllers/Dashboard.php on line 24.
+ 1 APPPATH/Controllers/Dashboard.php(212): App\Controllers\Dashboard->getFonction()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 05:36:34 --> ErrorException: Undefined array key "dim"
+[Method: GET, Route: Dashboard/development/assets/img/favicon.ico]
+in APPPATH/Controllers/Dashboard.php on line 23.
+ 1 APPPATH/Controllers/Dashboard.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(210): App\Controllers\Dashboard->getFonction()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 05:37:06 --> ParseError: syntax error, unexpected token "*", expecting "{"
+[Method: POST, Route: Dashboard/development/A]
+in APPPATH/Controllers/Dashboard.php on line 4.
+ 1 SYSTEMPATH/Router/Router.php(562): CodeIgniter\Router\AutoRouter->getRoute()
+ 2 SYSTEMPATH/Router/Router.php(227): CodeIgniter\Router\Router->autoRoute()
+ 3 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 05:39:26 --> ErrorException: Undefined property: App\Controllers\Dashboard::$load
+[Method: POST, Route: Dashboard/development/A]
+in APPPATH/Controllers/Dashboard.php on line 50.
+ 1 APPPATH/Controllers/Dashboard.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(221): App\Controllers\Dashboard->traitement()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 05:39:56 --> ErrorException: Undefined array key "dim"
+[Method: GET, Route: Dashboard/development/assets/img/favicon.ico]
+in APPPATH/Controllers/Dashboard.php on line 33.
+ 1 APPPATH/Controllers/Dashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(220): App\Controllers\Dashboard->getFonction()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 05:41:13 --> ErrorException: Undefined array key "dim"
+[Method: GET, Route: Dashboard/development/assets/img/favicon.ico]
+in APPPATH/Controllers/Dashboard.php on line 33.
+ 1 APPPATH/Controllers/Dashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(46): App\Controllers\Dashboard->getFonction()
+ 3 APPPATH/Controllers/Dashboard.php(219): App\Controllers\Dashboard->traitement()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 05:46:45 --> ErrorException: Undefined property: App\Controllers\Dashboard::$load
+[Method: POST, Route: Dashboard/development/A]
+in APPPATH/Controllers/Dashboard.php on line 50.
+ 1 APPPATH/Controllers/Dashboard.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(219): App\Controllers\Dashboard->traitement()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 05:46:58 --> ErrorException: Undefined property: App\Controllers\Dashboard::$load
+[Method: POST, Route: Dashboard/development/A]
+in APPPATH/Controllers/Dashboard.php on line 50.
+ 1 APPPATH/Controllers/Dashboard.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(219): App\Controllers\Dashboard->traitement()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 05:47:01 --> ErrorException: Undefined property: App\Controllers\Dashboard::$load
+[Method: POST, Route: Dashboard/development/A]
+in APPPATH/Controllers/Dashboard.php on line 50.
+ 1 APPPATH/Controllers/Dashboard.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(219): App\Controllers\Dashboard->traitement()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 05:49:55 --> ErrorException: Undefined array key "dim"
+[Method: GET, Route: Dashboard/development/function.png]
+in APPPATH/Controllers/Dashboard.php on line 33.
+ 1 APPPATH/Controllers/Dashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(46): App\Controllers\Dashboard->getFonction()
+ 3 APPPATH/Controllers/Dashboard.php(211): App\Controllers\Dashboard->traitement()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 05:49:55 --> ErrorException: Undefined array key "dim"
+[Method: GET, Route: Dashboard/development/assets/img/favicon.ico]
+in APPPATH/Controllers/Dashboard.php on line 33.
+ 1 APPPATH/Controllers/Dashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(46): App\Controllers\Dashboard->getFonction()
+ 3 APPPATH/Controllers/Dashboard.php(211): App\Controllers\Dashboard->traitement()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 05:52:44 --> ErrorException: Undefined array key "dim"
+[Method: GET, Route: Dashboard/development/function.png]
+in APPPATH/Controllers/Dashboard.php on line 33.
+ 1 APPPATH/Controllers/Dashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(46): App\Controllers\Dashboard->getFonction()
+ 3 APPPATH/Controllers/Dashboard.php(211): App\Controllers\Dashboard->traitement()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 05:52:44 --> ErrorException: Undefined array key "dim"
+[Method: GET, Route: Dashboard/development/assets/img/favicon.ico]
+in APPPATH/Controllers/Dashboard.php on line 33.
+ 1 APPPATH/Controllers/Dashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(46): App\Controllers\Dashboard->getFonction()
+ 3 APPPATH/Controllers/Dashboard.php(211): App\Controllers\Dashboard->traitement()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 05:58:08 --> ErrorException: Undefined array key "dim"
+[Method: GET, Route: Dashboard/development/assets/img/favicon.ico]
+in APPPATH/Controllers/Dashboard.php on line 33.
+ 1 APPPATH/Controllers/Dashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(46): App\Controllers\Dashboard->getFonction()
+ 3 APPPATH/Controllers/Dashboard.php(211): App\Controllers\Dashboard->traitement()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 05:58:15 --> ErrorException: Undefined array key "dim"
+[Method: GET, Route: Dashboard/development/assets/img/favicon.ico]
+in APPPATH/Controllers/Dashboard.php on line 33.
+ 1 APPPATH/Controllers/Dashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(46): App\Controllers\Dashboard->getFonction()
+ 3 APPPATH/Controllers/Dashboard.php(211): App\Controllers\Dashboard->traitement()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 05:59:06 --> ErrorException: Undefined array key "dim"
+[Method: GET, Route: Dashboard/development/assets/img/favicon.ico]
+in APPPATH/Controllers/Dashboard.php on line 33.
+ 1 APPPATH/Controllers/Dashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(46): App\Controllers\Dashboard->getFonction()
+ 3 APPPATH/Controllers/Dashboard.php(211): App\Controllers\Dashboard->traitement()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:00:08 --> ErrorException: Undefined array key "dim"
+[Method: GET, Route: Dashboard/development/assets/img/favicon.ico]
+in APPPATH/Controllers/Dashboard.php on line 33.
+ 1 APPPATH/Controllers/Dashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(46): App\Controllers\Dashboard->getFonction()
+ 3 APPPATH/Controllers/Dashboard.php(211): App\Controllers\Dashboard->traitement()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:00:34 --> ErrorException: Undefined array key "dim"
+[Method: GET, Route: Dashboard/development/assets/img/favicon.ico]
+in APPPATH/Controllers/Dashboard.php on line 33.
+ 1 APPPATH/Controllers/Dashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(46): App\Controllers\Dashboard->getFonction()
+ 3 APPPATH/Controllers/Dashboard.php(211): App\Controllers\Dashboard->traitement()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:01:02 --> ErrorException: Undefined array key "dim"
+[Method: GET, Route: Dashboard/development/assets/img/favicon.ico]
+in APPPATH/Controllers/Dashboard.php on line 33.
+ 1 APPPATH/Controllers/Dashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(46): App\Controllers\Dashboard->getFonction()
+ 3 APPPATH/Controllers/Dashboard.php(211): App\Controllers\Dashboard->traitement()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:01:36 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: Dashboard/development/B]
+in APPPATH/Libraries/Fonction.php on line 64.
+ 1 APPPATH/Libraries/Fonction.php(64): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Libraries/NewtonM.php(33): App\Libraries\Fonction->fpp()
+ 3 APPPATH/Controllers/Dashboard.php(106): App\Libraries\NewtonM->resolution()
+ 4 APPPATH/Controllers/Dashboard.php(211): App\Controllers\Dashboard->traitement()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:02:39 --> ArgumentCountError: Too few arguments to function App\Libraries\NewtonR::__construct(), 0 passed in /var/www/codeigniter/app/Controllers/Dashboard.php on line 67 and exactly 2 expected
+[Method: POST, Route: Dashboard/development/A]
+in APPPATH/Libraries/NewtonR.php on line 9.
+ 1 APPPATH/Controllers/Dashboard.php(67): App\Libraries\NewtonR->__construct()
+ 2 APPPATH/Controllers/Dashboard.php(211): App\Controllers\Dashboard->traitement()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:06:06 --> ArgumentCountError: Too few arguments to function App\Libraries\NewtonR::__construct(), 0 passed in /var/www/codeigniter/app/Controllers/Dashboard.php on line 67 and exactly 2 expected
+[Method: POST, Route: Dashboard/development/A]
+in APPPATH/Libraries/NewtonR.php on line 9.
+ 1 APPPATH/Controllers/Dashboard.php(67): App\Libraries\NewtonR->__construct()
+ 2 APPPATH/Controllers/Dashboard.php(211): App\Controllers\Dashboard->traitement()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:06:51 --> ArgumentCountError: Too few arguments to function App\Libraries\NewtonR::__construct(), 0 passed in /var/www/codeigniter/app/Controllers/Dashboard.php on line 67 and exactly 2 expected
+[Method: POST, Route: Dashboard/development/A]
+in APPPATH/Libraries/NewtonR.php on line 9.
+ 1 APPPATH/Controllers/Dashboard.php(67): App\Libraries\NewtonR->__construct()
+ 2 APPPATH/Controllers/Dashboard.php(211): App\Controllers\Dashboard->traitement()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:08:37 --> ArgumentCountError: Too few arguments to function App\Libraries\NewtonR::__construct(), 0 passed in /var/www/codeigniter/app/Controllers/Dashboard.php on line 67 and exactly 2 expected
+[Method: POST, Route: Dashboard/development/A]
+in APPPATH/Libraries/NewtonR.php on line 9.
+ 1 APPPATH/Controllers/Dashboard.php(67): App\Libraries\NewtonR->__construct()
+ 2 APPPATH/Controllers/Dashboard.php(210): App\Controllers\Dashboard->traitement()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:17:16 --> ArgumentCountError: Too few arguments to function App\Libraries\NewtonR::__construct(), 0 passed in /var/www/codeigniter/app/Controllers/Dashboard.php on line 67 and exactly 2 expected
+[Method: POST, Route: Dashboard/development/A]
+in APPPATH/Libraries/NewtonR.php on line 9.
+ 1 APPPATH/Controllers/Dashboard.php(67): App\Libraries\NewtonR->__construct()
+ 2 APPPATH/Controllers/Dashboard.php(210): App\Controllers\Dashboard->traitement()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:18:22 --> ArgumentCountError: Too few arguments to function App\Libraries\NewtonR::__construct(), 0 passed in /var/www/codeigniter/app/Controllers/Dashboard.php on line 67 and exactly 2 expected
+[Method: POST, Route: Dashboard/development/A]
+in APPPATH/Libraries/NewtonR.php on line 9.
+ 1 APPPATH/Controllers/Dashboard.php(67): App\Libraries\NewtonR->__construct()
+ 2 APPPATH/Controllers/Dashboard.php(210): App\Controllers\Dashboard->traitement()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:18:59 --> ArgumentCountError: Too few arguments to function App\Libraries\NewtonR::__construct(), 0 passed in /var/www/codeigniter/app/Controllers/Dashboard.php on line 67 and exactly 2 expected
+[Method: POST, Route: Dashboard/development/A]
+in APPPATH/Libraries/NewtonR.php on line 9.
+ 1 APPPATH/Controllers/Dashboard.php(67): App\Libraries\NewtonR->__construct()
+ 2 APPPATH/Controllers/Dashboard.php(210): App\Controllers\Dashboard->traitement()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:19:13 --> ArgumentCountError: Too few arguments to function App\Libraries\NewtonR::__construct(), 0 passed in /var/www/codeigniter/app/Controllers/Dashboard.php on line 67 and exactly 2 expected
+[Method: POST, Route: Dashboard/development/A]
+in APPPATH/Libraries/NewtonR.php on line 9.
+ 1 APPPATH/Controllers/Dashboard.php(67): App\Libraries\NewtonR->__construct()
+ 2 APPPATH/Controllers/Dashboard.php(210): App\Controllers\Dashboard->traitement()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:19:50 --> ErrorException: Undefined array key "dim"
+[Method: GET, Route: Dashboard/development/assets/img/favicon.ico]
+in APPPATH/Controllers/Dashboard.php on line 33.
+ 1 APPPATH/Controllers/Dashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(46): App\Controllers\Dashboard->getFonction()
+ 3 APPPATH/Controllers/Dashboard.php(210): App\Controllers\Dashboard->traitement()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:21:28 --> ErrorException: Undefined array key "dim"
+[Method: GET, Route: Dashboard/development/assets/img/favicon.ico]
+in APPPATH/Controllers/Dashboard.php on line 33.
+ 1 APPPATH/Controllers/Dashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(46): App\Controllers\Dashboard->getFonction()
+ 3 APPPATH/Controllers/Dashboard.php(210): App\Controllers\Dashboard->traitement()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:21:49 --> ArgumentCountError: Too few arguments to function App\Libraries\NewtonR::__construct(), 0 passed in /var/www/codeigniter/app/Controllers/Dashboard.php on line 67 and exactly 2 expected
+[Method: POST, Route: Dashboard/development/A]
+in APPPATH/Libraries/NewtonR.php on line 9.
+ 1 APPPATH/Controllers/Dashboard.php(67): App\Libraries\NewtonR->__construct()
+ 2 APPPATH/Controllers/Dashboard.php(210): App\Controllers\Dashboard->traitement()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:22:26 --> ArgumentCountError: Too few arguments to function App\Libraries\NewtonR::__construct(), 0 passed in /var/www/codeigniter/app/Controllers/Dashboard.php on line 67 and exactly 2 expected
+[Method: POST, Route: Dashboard/development/A]
+in APPPATH/Libraries/NewtonR.php on line 9.
+ 1 APPPATH/Controllers/Dashboard.php(67): App\Libraries\NewtonR->__construct()
+ 2 APPPATH/Controllers/Dashboard.php(211): App\Controllers\Dashboard->traitement()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:22:33 --> ArgumentCountError: Too few arguments to function App\Libraries\NewtonR::__construct(), 0 passed in /var/www/codeigniter/app/Controllers/Dashboard.php on line 67 and exactly 2 expected
+[Method: POST, Route: Dashboard/development/A]
+in APPPATH/Libraries/NewtonR.php on line 9.
+ 1 APPPATH/Controllers/Dashboard.php(67): App\Libraries\NewtonR->__construct()
+ 2 APPPATH/Controllers/Dashboard.php(211): App\Controllers\Dashboard->traitement()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:23:10 --> ErrorException: Undefined array key "iteration"
+[Method: POST, Route: Dashboard/development/A]
+in APPPATH/Controllers/Dashboard.php on line 194.
+ 1 APPPATH/Controllers/Dashboard.php(194): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(211): App\Controllers\Dashboard->traitement()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:24:15 --> ArgumentCountError: Too few arguments to function App\Libraries\NewtonR::__construct(), 0 passed in /var/www/codeigniter/app/Controllers/Dashboard.php on line 67 and exactly 2 expected
+[Method: POST, Route: Dashboard/development/A]
+in APPPATH/Libraries/NewtonR.php on line 9.
+ 1 APPPATH/Controllers/Dashboard.php(67): App\Libraries\NewtonR->__construct()
+ 2 APPPATH/Controllers/Dashboard.php(211): App\Controllers\Dashboard->traitement()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:25:04 --> ErrorException: Undefined array key "dim"
+[Method: GET, Route: Dashboard/development/assets/img/favicon.ico]
+in APPPATH/Controllers/Dashboard.php on line 33.
+ 1 APPPATH/Controllers/Dashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(46): App\Controllers\Dashboard->getFonction()
+ 3 APPPATH/Controllers/Dashboard.php(211): App\Controllers\Dashboard->traitement()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:25:15 --> ArgumentCountError: Too few arguments to function App\Libraries\NewtonR::__construct(), 0 passed in /var/www/codeigniter/app/Controllers/Dashboard.php on line 67 and exactly 2 expected
+[Method: POST, Route: Dashboard/development/A]
+in APPPATH/Libraries/NewtonR.php on line 9.
+ 1 APPPATH/Controllers/Dashboard.php(67): App\Libraries\NewtonR->__construct()
+ 2 APPPATH/Controllers/Dashboard.php(211): App\Controllers\Dashboard->traitement()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:25:37 --> ArgumentCountError: Too few arguments to function App\Libraries\NewtonR::__construct(), 0 passed in /var/www/codeigniter/app/Controllers/Dashboard.php on line 67 and exactly 2 expected
+[Method: POST, Route: Dashboard/development/A]
+in APPPATH/Libraries/NewtonR.php on line 9.
+ 1 APPPATH/Controllers/Dashboard.php(67): App\Libraries\NewtonR->__construct()
+ 2 APPPATH/Controllers/Dashboard.php(211): App\Controllers\Dashboard->traitement()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:26:03 --> ArgumentCountError: Too few arguments to function App\Libraries\NewtonR::__construct(), 0 passed in /var/www/codeigniter/app/Controllers/Dashboard.php on line 67 and exactly 2 expected
+[Method: POST, Route: Dashboard/development/A]
+in APPPATH/Libraries/NewtonR.php on line 9.
+ 1 APPPATH/Controllers/Dashboard.php(67): App\Libraries\NewtonR->__construct()
+ 2 APPPATH/Controllers/Dashboard.php(211): App\Controllers\Dashboard->traitement()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:27:25 --> ArgumentCountError: Too few arguments to function App\Libraries\NewtonR::__construct(), 0 passed in /var/www/codeigniter/app/Controllers/Dashboard.php on line 211 and exactly 2 expected
+[Method: POST, Route: Dashboard/development/A]
+in APPPATH/Libraries/NewtonR.php on line 9.
+ 1 APPPATH/Controllers/Dashboard.php(211): App\Libraries\NewtonR->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:27:30 --> ArgumentCountError: Too few arguments to function App\Libraries\NewtonR::__construct(), 0 passed in /var/www/codeigniter/app/Controllers/Dashboard.php on line 211 and exactly 2 expected
+[Method: POST, Route: Dashboard/development/A]
+in APPPATH/Libraries/NewtonR.php on line 9.
+ 1 APPPATH/Controllers/Dashboard.php(211): App\Libraries\NewtonR->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:28:05 --> ArgumentCountError: Too few arguments to function App\Libraries\NewtonR::__construct(), 0 passed in /var/www/codeigniter/app/Controllers/Dashboard.php on line 211 and exactly 2 expected
+[Method: POST, Route: Dashboard/development/A]
+in APPPATH/Libraries/NewtonR.php on line 9.
+ 1 APPPATH/Controllers/Dashboard.php(211): App\Libraries\NewtonR->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:28:41 --> ErrorException: Undefined variable $fx
+[Method: POST, Route: Dashboard/development/A]
+in APPPATH/Controllers/Dashboard.php on line 212.
+ 1 APPPATH/Controllers/Dashboard.php(212): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:30:19 --> ErrorException: Undefined array key "pointI"
+[Method: POST, Route: Dashboard/development/A]
+in APPPATH/Controllers/Dashboard.php on line 213.
+ 1 APPPATH/Controllers/Dashboard.php(213): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:30:45 --> ErrorException: Undefined array key "dim"
+[Method: GET, Route: Dashboard/development/assets/img/favicon.ico]
+in APPPATH/Controllers/Dashboard.php on line 33.
+ 1 APPPATH/Controllers/Dashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(212): App\Controllers\Dashboard->getFonction()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:35:23 --> ErrorException: Undefined array key "dim"
+[Method: GET, Route: Dashboard/development/assets/img/favicon.ico]
+in APPPATH/Controllers/Dashboard.php on line 33.
+ 1 APPPATH/Controllers/Dashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(46): App\Controllers\Dashboard->getFonction()
+ 3 APPPATH/Controllers/Dashboard.php(208): App\Controllers\Dashboard->traitement()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:35:45 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: Dashboard/development/B]
+in APPPATH/Libraries/Fonction.php on line 64.
+ 1 APPPATH/Libraries/Fonction.php(64): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Libraries/NewtonM.php(33): App\Libraries\Fonction->fpp()
+ 3 APPPATH/Controllers/Dashboard.php(103): App\Libraries\NewtonM->resolution()
+ 4 APPPATH/Controllers/Dashboard.php(208): App\Controllers\Dashboard->traitement()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:41:02 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: Dashboard/development/B]
+in APPPATH/Libraries/Fonction.php on line 64.
+ 1 APPPATH/Libraries/Fonction.php(64): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Libraries/NewtonM.php(32): App\Libraries\Fonction->fpp()
+ 3 APPPATH/Controllers/Dashboard.php(103): App\Libraries\NewtonM->resolution()
+ 4 APPPATH/Controllers/Dashboard.php(208): App\Controllers\Dashboard->traitement()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:41:15 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: Dashboard/development/B]
+in APPPATH/Libraries/Fonction.php on line 64.
+ 1 APPPATH/Libraries/Fonction.php(64): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Libraries/NewtonM.php(32): App\Libraries\Fonction->fpp()
+ 3 APPPATH/Controllers/Dashboard.php(103): App\Libraries\NewtonM->resolution()
+ 4 APPPATH/Controllers/Dashboard.php(208): App\Controllers\Dashboard->traitement()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:41:40 --> ErrorException: Undefined array key "dim"
+[Method: GET, Route: Dashboard/development/assets/img/favicon.ico]
+in APPPATH/Controllers/Dashboard.php on line 33.
+ 1 APPPATH/Controllers/Dashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(46): App\Controllers\Dashboard->getFonction()
+ 3 APPPATH/Controllers/Dashboard.php(208): App\Controllers\Dashboard->traitement()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:47:20 --> ErrorException: Undefined array key "dim"
+[Method: GET, Route: Dashboard/development/assets/img/favicon.ico]
+in APPPATH/Controllers/Dashboard.php on line 33.
+ 1 APPPATH/Controllers/Dashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(46): App\Controllers\Dashboard->getFonction()
+ 3 APPPATH/Controllers/Dashboard.php(208): App\Controllers\Dashboard->traitement()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:48:44 --> ErrorException: Undefined array key "dim"
+[Method: GET, Route: Dashboard/development/assets/img/favicon.ico]
+in APPPATH/Controllers/Dashboard.php on line 33.
+ 1 APPPATH/Controllers/Dashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(46): App\Controllers\Dashboard->getFonction()
+ 3 APPPATH/Controllers/Dashboard.php(208): App\Controllers\Dashboard->traitement()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:54:23 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: Dashboard/development/B]
+in APPPATH/Libraries/Fonction.php on line 65.
+ 1 APPPATH/Libraries/Fonction.php(65): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Libraries/NewtonM.php(32): App\Libraries\Fonction->fpp()
+ 3 APPPATH/Controllers/Dashboard.php(103): App\Libraries\NewtonM->resolution()
+ 4 APPPATH/Controllers/Dashboard.php(208): App\Controllers\Dashboard->traitement()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:55:41 --> ErrorException: Undefined array key "dim"
+[Method: GET, Route: Dashboard/development/assets/img/favicon.ico]
+in APPPATH/Controllers/Dashboard.php on line 33.
+ 1 APPPATH/Controllers/Dashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(46): App\Controllers\Dashboard->getFonction()
+ 3 APPPATH/Controllers/Dashboard.php(208): App\Controllers\Dashboard->traitement()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:56:11 --> ErrorException: Undefined array key 0
+[Method: POST, Route: Dashboard/development/B]
+in APPPATH/Libraries/Fonction.php on line 67.
+ 1 APPPATH/Libraries/Fonction.php(67): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Libraries/NewtonM.php(32): App\Libraries\Fonction->fpp()
+ 3 APPPATH/Controllers/Dashboard.php(103): App\Libraries\NewtonM->resolution()
+ 4 APPPATH/Controllers/Dashboard.php(208): App\Controllers\Dashboard->traitement()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:56:30 --> ErrorException: Undefined array key "dim"
+[Method: GET, Route: Dashboard/development/assets/img/favicon.ico]
+in APPPATH/Controllers/Dashboard.php on line 33.
+ 1 APPPATH/Controllers/Dashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(46): App\Controllers\Dashboard->getFonction()
+ 3 APPPATH/Controllers/Dashboard.php(208): App\Controllers\Dashboard->traitement()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:57:07 --> ErrorException: Undefined array key "dim"
+[Method: GET, Route: Dashboard/development/assets/img/favicon.ico]
+in APPPATH/Controllers/Dashboard.php on line 33.
+ 1 APPPATH/Controllers/Dashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(46): App\Controllers\Dashboard->getFonction()
+ 3 APPPATH/Controllers/Dashboard.php(208): App\Controllers\Dashboard->traitement()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:57:25 --> ErrorException: Undefined array key 0
+[Method: POST, Route: Dashboard/development/B]
+in APPPATH/Libraries/Fonction.php on line 67.
+ 1 APPPATH/Libraries/Fonction.php(67): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Libraries/NewtonM.php(32): App\Libraries\Fonction->fpp()
+ 3 APPPATH/Controllers/Dashboard.php(103): App\Libraries\NewtonM->resolution()
+ 4 APPPATH/Controllers/Dashboard.php(208): App\Controllers\Dashboard->traitement()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:57:31 --> ErrorException: Undefined array key "dim"
+[Method: GET, Route: Dashboard/development/assets/img/favicon.ico]
+in APPPATH/Controllers/Dashboard.php on line 33.
+ 1 APPPATH/Controllers/Dashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(46): App\Controllers\Dashboard->getFonction()
+ 3 APPPATH/Controllers/Dashboard.php(208): App\Controllers\Dashboard->traitement()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:57:46 --> ErrorException: Undefined array key "dim"
+[Method: GET, Route: Dashboard/development/assets/img/favicon.ico]
+in APPPATH/Controllers/Dashboard.php on line 33.
+ 1 APPPATH/Controllers/Dashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(46): App\Controllers\Dashboard->getFonction()
+ 3 APPPATH/Controllers/Dashboard.php(208): App\Controllers\Dashboard->traitement()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:58:43 --> ErrorException: Undefined array key "dim"
+[Method: GET, Route: Dashboard/development/assets/img/favicon.ico]
+in APPPATH/Controllers/Dashboard.php on line 33.
+ 1 APPPATH/Controllers/Dashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(46): App\Controllers\Dashboard->getFonction()
+ 3 APPPATH/Controllers/Dashboard.php(208): App\Controllers\Dashboard->traitement()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:59:50 --> ErrorException: Undefined array key "dim"
+[Method: GET, Route: Dashboard/development/assets/img/favicon.ico]
+in APPPATH/Controllers/Dashboard.php on line 33.
+ 1 APPPATH/Controllers/Dashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(46): App\Controllers\Dashboard->getFonction()
+ 3 APPPATH/Controllers/Dashboard.php(208): App\Controllers\Dashboard->traitement()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 07:00:05 --> ErrorException: Undefined array key "dim"
+[Method: GET, Route: Dashboard/development/assets/img/favicon.ico]
+in APPPATH/Controllers/Dashboard.php on line 33.
+ 1 APPPATH/Controllers/Dashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(46): App\Controllers\Dashboard->getFonction()
+ 3 APPPATH/Controllers/Dashboard.php(208): App\Controllers\Dashboard->traitement()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 07:01:11 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: Dashboard/index/B]
+in APPPATH/Controllers/Dashboard.php on line 200.
+ 1 SYSTEMPATH/Router/Router.php(562): CodeIgniter\Router\AutoRouter->getRoute()
+ 2 SYSTEMPATH/Router/Router.php(227): CodeIgniter\Router\Router->autoRoute()
+ 3 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 07:01:17 --> ParseError: syntax error, unexpected token "public"
+[Method: POST, Route: Dashboard/development/B]
+in APPPATH/Controllers/Dashboard.php on line 200.
+ 1 SYSTEMPATH/Router/Router.php(562): CodeIgniter\Router\AutoRouter->getRoute()
+ 2 SYSTEMPATH/Router/Router.php(227): CodeIgniter\Router\Router->autoRoute()
+ 3 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 07:01:20 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: Dashboard/index/A]
+in APPPATH/Controllers/Dashboard.php on line 200.
+ 1 SYSTEMPATH/Router/Router.php(562): CodeIgniter\Router\AutoRouter->getRoute()
+ 2 SYSTEMPATH/Router/Router.php(227): CodeIgniter\Router\Router->autoRoute()
+ 3 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 07:01:34 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: Dashboard/index]
+in APPPATH/Controllers/Dashboard.php on line 200.
+ 1 SYSTEMPATH/Router/Router.php(562): CodeIgniter\Router\AutoRouter->getRoute()
+ 2 SYSTEMPATH/Router/Router.php(227): CodeIgniter\Router\Router->autoRoute()
+ 3 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 07:01:43 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: Dashboard/development/A]
+in APPPATH/Controllers/Dashboard.php on line 200.
+ 1 SYSTEMPATH/Router/Router.php(562): CodeIgniter\Router\AutoRouter->getRoute()
+ 2 SYSTEMPATH/Router/Router.php(227): CodeIgniter\Router\Router->autoRoute()
+ 3 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 07:01:50 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: Dashboard/index/A]
+in APPPATH/Controllers/Dashboard.php on line 200.
+ 1 SYSTEMPATH/Router/Router.php(562): CodeIgniter\Router\AutoRouter->getRoute()
+ 2 SYSTEMPATH/Router/Router.php(227): CodeIgniter\Router\Router->autoRoute()
+ 3 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 07:03:39 --> ErrorException: Undefined array key "dim"
+[Method: GET, Route: Dashboard/development/assets/img/favicon.ico]
+in APPPATH/Controllers/Dashboard.php on line 33.
+ 1 APPPATH/Controllers/Dashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(46): App\Controllers\Dashboard->getFonction()
+ 3 APPPATH/Controllers/Dashboard.php(203): App\Controllers\Dashboard->traitement()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 07:03:56 --> ErrorException: Undefined array key "dim"
+[Method: GET, Route: Dashboard/development/assets/img/favicon.ico]
+in APPPATH/Controllers/Dashboard.php on line 33.
+ 1 APPPATH/Controllers/Dashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(46): App\Controllers\Dashboard->getFonction()
+ 3 APPPATH/Controllers/Dashboard.php(203): App\Controllers\Dashboard->traitement()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 07:04:10 --> ErrorException: Undefined array key "dim"
+[Method: GET, Route: Dashboard/development/assets/img/favicon.ico]
+in APPPATH/Controllers/Dashboard.php on line 33.
+ 1 APPPATH/Controllers/Dashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(46): App\Controllers\Dashboard->getFonction()
+ 3 APPPATH/Controllers/Dashboard.php(203): App\Controllers\Dashboard->traitement()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 07:07:42 --> ErrorException: Undefined array key "dim"
+[Method: GET, Route: Dashboard/development/assets/img/favicon.ico]
+in APPPATH/Controllers/Dashboard.php on line 33.
+ 1 APPPATH/Controllers/Dashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(46): App\Controllers\Dashboard->getFonction()
+ 3 APPPATH/Controllers/Dashboard.php(203): App\Controllers\Dashboard->traitement()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 07:08:00 --> ErrorException: Undefined array key "dim"
+[Method: GET, Route: Dashboard/development/assets/img/favicon.ico]
+in APPPATH/Controllers/Dashboard.php on line 33.
+ 1 APPPATH/Controllers/Dashboard.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Dashboard.php(46): App\Controllers\Dashboard->getFonction()
+ 3 APPPATH/Controllers/Dashboard.php(203): App\Controllers\Dashboard->traitement()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->development()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
