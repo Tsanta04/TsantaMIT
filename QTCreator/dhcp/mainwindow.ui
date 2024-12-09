@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="pages">
+    <property name="geometry">
+     <rect>
+      <x>-20</x>
+      <y>20</y>
+      <width>820</width>
+      <height>661</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="to_list">
+     <widget class="QComboBox" name="mode">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>10</y>
+        <width>69</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Num</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Nom</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>MAC ether</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>MAC wlp0s25</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Serial</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PAN</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Etat</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>IP</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Tout</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QTableWidget" name="liste">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>50</y>
+        <width>820</width>
+        <height>480</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="mouseTracking">
+       <bool>false</bool>
+      </property>
+      <property name="tabletTracking">
+       <bool>false</bool>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>true</bool>
+      </property>
+      <property name="sortingEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="rowCount">
+       <number>73</number>
+      </property>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <column>
+       <property name="text">
+        <string>Num</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Nom</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>MAC ether</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>MAC wlp0s25</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Serial</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>PAN</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Etat</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>IP</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QLineEdit" name="input">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>10</y>
+        <width>391</width>
+        <height>25</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>10</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Trier par</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="rechercher">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>10</y>
+        <width>89</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Recherche</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page"/>
+    <widget class="QWidget" name="to_add">
+     <widget class="QTextBrowser" name="textBrowser">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>20</y>
+        <width>441</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI'; font-size:14pt; font-weight:704;&quot;&gt;Formulaire d'ajout&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>80</y>
+        <width>441</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Noms:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="nom"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>150</y>
+        <width>441</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>MAC ether: </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="mac_ether"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>220</y>
+        <width>441</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>MAC wlp0s25: </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="mac_wlp"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>290</y>
+        <width>441</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>Serial:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="serial"/>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <item>
+          <widget class="QLabel" name="label_7">
+           <property name="text">
+            <string>PAN:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="pan"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_6">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>360</y>
+        <width>441</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_8">
+       <item>
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>Etat: </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="etat"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="add">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>440</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <widget class="QMenu" name="lister">
+     <property name="title">
+      <string>Info des etudiants</string>
+     </property>
+     <addaction name="listeL1"/>
+     <addaction name="listeL2"/>
+     <addaction name="listeL3"/>
+     <addaction name="listeM1"/>
+     <addaction name="listeM2"/>
+    </widget>
+    <widget class="QMenu" name="ajouter">
+     <property name="title">
+      <string>Ajouter au liste</string>
+     </property>
+     <addaction name="ajouterL1"/>
+     <addaction name="ajouterL2"/>
+     <addaction name="ajouterL3"/>
+     <addaction name="ajouterM1"/>
+     <addaction name="ajouterM2"/>
+    </widget>
+    <addaction name="lister"/>
+    <addaction name="ajouter"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionIP">
+   <property name="text">
+    <string>IP</string>
+   </property>
+  </action>
+  <action name="actionNum">
+   <property name="text">
+    <string>Num</string>
+   </property>
+  </action>
+  <action name="actionNiveau">
+   <property name="text">
+    <string>Niveau</string>
+   </property>
+  </action>
+  <action name="actionMAC_ether">
+   <property name="text">
+    <string>MAC ether</string>
+   </property>
+  </action>
+  <action name="actionMAC_wlp0s25">
+   <property name="text">
+    <string>MAC wlp0s25</string>
+   </property>
+  </action>
+  <action name="actionSerial">
+   <property name="text">
+    <string>Serial</string>
+   </property>
+  </action>
+  <action name="listeL1">
+   <property name="text">
+    <string>L1</string>
+   </property>
+  </action>
+  <action name="listeL2">
+   <property name="text">
+    <string>L2</string>
+   </property>
+  </action>
+  <action name="listeL3">
+   <property name="text">
+    <string>L3</string>
+   </property>
+  </action>
+  <action name="listeM1">
+   <property name="text">
+    <string>M1</string>
+   </property>
+  </action>
+  <action name="listeM2">
+   <property name="text">
+    <string>M2</string>
+   </property>
+  </action>
+  <action name="ajouterL1">
+   <property name="text">
+    <string>L1</string>
+   </property>
+  </action>
+  <action name="ajouterL2">
+   <property name="text">
+    <string>L2</string>
+   </property>
+  </action>
+  <action name="ajouterL3">
+   <property name="text">
+    <string>L3</string>
+   </property>
+  </action>
+  <action name="ajouterM1">
+   <property name="text">
+    <string>M1</string>
+   </property>
+  </action>
+  <action name="ajouterM2">
+   <property name="text">
+    <string>M2</string>
+   </property>
+  </action>
+  <action name="modifierL1">
+   <property name="text">
+    <string>L1</string>
+   </property>
+  </action>
+  <action name="modifierL2">
+   <property name="text">
+    <string>L2</string>
+   </property>
+  </action>
+  <action name="modifierL3">
+   <property name="text">
+    <string>L3</string>
+   </property>
+  </action>
+  <action name="modifierM1">
+   <property name="text">
+    <string>M1</string>
+   </property>
+  </action>
+  <action name="modifierM2">
+   <property name="text">
+    <string>M2</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

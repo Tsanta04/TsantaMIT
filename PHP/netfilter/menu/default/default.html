@@ -1,0 +1,86 @@
+  <body class="text-gray-800 antialiased">
+    <main class="profile-page">
+      <section class="relative block" style="height: 500px;">
+        <div
+          class="absolute top-0 w-full h-full bg-center bg-cover"
+          style='background-image: url("./assets/img/bg.webp");'
+        >
+          <span
+            id="blackOverlay"
+            class="w-full h-full absolute opacity-50 bg-black"
+          ></span>
+        </div>
+        <div
+          class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+          style="height: 70px;"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon
+              class="text-gray-300 fill-current"
+              points="2560 0 2560 100 0 100"
+            ></polygon>
+          </svg>
+        </div>
+      </section>
+      <section class="relative py-16 bg-gray-300">
+        <div class="container mx-auto px-4">
+          <div
+            class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64"
+          >
+            <div class="px-6">
+              <div class="flex flex-wrap justify-center">
+                <div
+                  class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center"
+                >
+                <div class="relative">
+                  <img
+                    alt="..."
+                    src="./assets/img/firewall.png"
+                    class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16"
+                    style="max-width: 150px;"
+                  />
+                </div>
+              </div>
+            </div>
+              <form class="w-full" action="default.php" method="POST">
+                <div class="flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded">
+                  <div class="rounded-t mb-0 px-4 py-3 border-0">
+                    <div class="flex flex-wrap items-center py-10">
+                      <div class="relative w-full px-4 max-w-full flex-grow flex-1">
+                        <h3 class="font-semibold text-base text-blueGray-700">
+                          Add new rules
+                        </h3>
+                      </div>
+                      <button
+                        class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1"
+                        type="button"
+                        style="transition:all .15s ease"
+                      >
+                        New chain
+                      </button>
+                      <button
+                        class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1"
+                        type="button"
+                        style="transition:all .15s ease"
+                      >
+                        Save modification
+                      </button>                      
+                      <button
+                        class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1"
+                        type="button"
+                        style="transition:all .15s ease"
+                      >
+                        Delete chain
+                      </button>
+                    </div>
+                  </div>
+                  <div class="block w-full">
+                    <hr>

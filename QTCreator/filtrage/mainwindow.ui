@@ -1,0 +1,1572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(230, 230, 230);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="Main">
+    <property name="geometry">
+     <rect>
+      <x>249</x>
+      <y>-13</y>
+      <width>1251</width>
+      <height>701</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(230, 230, 230);
+border-radius:10px;
+border:1px;</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="New">
+     <widget class="QWidget" name="Container" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>330</y>
+        <width>911</width>
+        <height>351</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:white;</string>
+      </property>
+      <widget class="QWidget" name="horizontalLayoutWidget_12">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>30</y>
+         <width>391</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_14">
+        <item>
+         <widget class="QLabel" name="label_16">
+          <property name="styleSheet">
+           <string notr="true">font: 500 12pt &quot;Segoe UI&quot;;
+color: rgb(57, 57, 57);
+background:transparent;</string>
+          </property>
+          <property name="text">
+           <string>DEST. IP/NETWORK (S) : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="dInp">
+          <property name="styleSheet">
+           <string notr="true">font: 500 12pt &quot;Segoe UI&quot;;
+color: rgb(57, 57, 57);
+background:transparent;
+border:1px solid black;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="dB">
+          <property name="styleSheet">
+           <string notr="true">border-radius:15px;
+border:0px;
+background-color: rgb(71, 105, 255);</string>
+          </property>
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget_13">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>150</y>
+         <width>411</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_15">
+        <item>
+         <widget class="QLabel" name="label_22">
+          <property name="styleSheet">
+           <string notr="true">font: 500 12pt &quot;Segoe UI&quot;;
+color: rgb(57, 57, 57);
+background:transparent;</string>
+          </property>
+          <property name="text">
+           <string>SOURCE PORT(S) :</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="sportInp">
+          <property name="styleSheet">
+           <string notr="true">font: 500 12pt &quot;Segoe UI&quot;;
+color: rgb(57, 57, 57);
+background:transparent;
+border:1px solid black;</string>
+          </property>
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+          <property name="duplicatesEnabled">
+           <bool>true</bool>
+          </property>
+          <item>
+           <property name="text">
+            <string>none</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="sportB">
+          <property name="styleSheet">
+           <string notr="true">border-radius:15px;
+border:0px;
+background-color: rgb(71, 105, 255);</string>
+          </property>
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget_14">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>30</y>
+         <width>411</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_16">
+        <item>
+         <widget class="QLabel" name="label_20">
+          <property name="styleSheet">
+           <string notr="true">font: 500 12pt &quot;Segoe UI&quot;;
+color: rgb(57, 57, 57);
+background:transparent;</string>
+          </property>
+          <property name="text">
+           <string>FLUX :</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="addFlux">
+          <property name="styleSheet">
+           <string notr="true">font: 500 12pt &quot;Segoe UI&quot;;
+color: rgb(57, 57, 57);
+background:transparent;
+border:1px solid black;</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>INPUT</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>FORWARD</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>OUTPUT</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget_15">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>90</y>
+         <width>391</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_17">
+        <item>
+         <widget class="QLabel" name="label_19">
+          <property name="styleSheet">
+           <string notr="true">font: 500 12pt &quot;Segoe UI&quot;;
+color: rgb(57, 57, 57);
+background:transparent;</string>
+          </property>
+          <property name="text">
+           <string>MAC SOURCE (S) : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="macInp">
+          <property name="styleSheet">
+           <string notr="true">font: 500 12pt &quot;Segoe UI&quot;;
+color: rgb(57, 57, 57);
+background:transparent;
+border:1px solid black;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="macB">
+          <property name="styleSheet">
+           <string notr="true">border-radius:15px;
+border:0px;
+background-color: rgb(71, 105, 255);</string>
+          </property>
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget_16">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>280</y>
+         <width>391</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_18">
+        <item>
+         <widget class="QLabel" name="label_17">
+          <property name="styleSheet">
+           <string notr="true">font: 500 12pt &quot;Segoe UI&quot;;
+color: rgb(57, 57, 57);
+background:transparent;</string>
+          </property>
+          <property name="text">
+           <string>ACCESS : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="policyInput">
+          <property name="styleSheet">
+           <string notr="true">font: 500 12pt &quot;Segoe UI&quot;;
+color: rgb(57, 57, 57);
+background:transparent;
+border:1px solid black;</string>
+          </property>
+          <property name="editable">
+           <bool>false</bool>
+          </property>
+          <item>
+           <property name="text">
+            <string>ACCEPT</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>DROP</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>REJECT</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget_17">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>280</y>
+         <width>411</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_19">
+        <item>
+         <widget class="QLabel" name="label_13">
+          <property name="styleSheet">
+           <string notr="true">font: 500 12pt &quot;Segoe UI&quot;;
+color: rgb(57, 57, 57);
+background:transparent;</string>
+          </property>
+          <property name="text">
+           <string>SOURCE IP/NETWORK (S) : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="sInp">
+          <property name="styleSheet">
+           <string notr="true">font: 500 12pt &quot;Segoe UI&quot;;
+color: rgb(57, 57, 57);
+background:transparent;
+border:1px solid black;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="sB">
+          <property name="styleSheet">
+           <string notr="true">border-radius:15px;
+border:0px;
+background-color: rgb(71, 105, 255);</string>
+          </property>
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget_18">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>150</y>
+         <width>391</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_20">
+        <item>
+         <widget class="QLabel" name="label_28">
+          <property name="styleSheet">
+           <string notr="true">font: 500 12pt &quot;Segoe UI&quot;;
+color: rgb(57, 57, 57);
+background:transparent;</string>
+          </property>
+          <property name="text">
+           <string>INPUT INTERFACE : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="iInp">
+          <property name="styleSheet">
+           <string notr="true">font: 500 12pt &quot;Segoe UI&quot;;
+color: rgb(57, 57, 57);
+background:transparent;
+border:1px solid black;</string>
+          </property>
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+          <property name="duplicatesEnabled">
+           <bool>true</bool>
+          </property>
+          <item>
+           <property name="text">
+            <string>none</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget_19">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>90</y>
+         <width>411</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_21">
+        <item>
+         <widget class="QLabel" name="label_14">
+          <property name="styleSheet">
+           <string notr="true">font: 500 12pt &quot;Segoe UI&quot;;
+color: rgb(57, 57, 57);
+background:transparent;</string>
+          </property>
+          <property name="text">
+           <string>PROTOCOL :</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="addProtocol">
+          <property name="styleSheet">
+           <string notr="true">font: 500 12pt &quot;Segoe UI&quot;;
+color: rgb(57, 57, 57);
+background:transparent;
+border:1px solid black;</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>none</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>TCP</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>UDP</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ICMP</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget_20">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>210</y>
+         <width>391</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_22">
+        <item>
+         <widget class="QLabel" name="label_21">
+          <property name="styleSheet">
+           <string notr="true">font: 500 12pt &quot;Segoe UI&quot;;
+color: rgb(57, 57, 57);
+background:transparent;</string>
+          </property>
+          <property name="text">
+           <string>OUTPUT INTERFACE : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="oInp">
+          <property name="styleSheet">
+           <string notr="true">font: 500 12pt &quot;Segoe UI&quot;;
+color: rgb(57, 57, 57);
+background:transparent;
+border:1px solid black;</string>
+          </property>
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+          <property name="duplicatesEnabled">
+           <bool>true</bool>
+          </property>
+          <item>
+           <property name="text">
+            <string>none</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget_21">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>210</y>
+         <width>411</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_23">
+        <item>
+         <widget class="QLabel" name="label_18">
+          <property name="styleSheet">
+           <string notr="true">font: 500 12pt &quot;Segoe UI&quot;;
+color: rgb(57, 57, 57);
+background:transparent;</string>
+          </property>
+          <property name="text">
+           <string>DEST. PORT(S) :</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="dportInp">
+          <property name="styleSheet">
+           <string notr="true">font: 500 12pt &quot;Segoe UI&quot;;
+color: rgb(57, 57, 57);
+background:transparent;
+border:1px solid black;</string>
+          </property>
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+          <property name="duplicatesEnabled">
+           <bool>true</bool>
+          </property>
+          <item>
+           <property name="text">
+            <string>none</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="dportB">
+          <property name="styleSheet">
+           <string notr="true">border-radius:15px;
+border:0px;
+background-color: rgb(71, 105, 255);</string>
+          </property>
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_9" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>209</y>
+        <width>911</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:white;</string>
+      </property>
+      <widget class="QPushButton" name="ajoutRegle">
+       <property name="geometry">
+        <rect>
+         <x>720</x>
+         <y>20</y>
+         <width>151</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:15px;
+border:0px;
+background-color: rgb(71, 105, 255);</string>
+       </property>
+       <property name="text">
+        <string>Add</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="titre">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>301</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 700 10pt &quot;Segoe UI&quot;;
+font: 12pt &quot;Segoe UI&quot;;
+color: rgb(67, 81, 127);
+</string>
+       </property>
+       <property name="text">
+        <string>Add rules</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_10" native="true">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>110</y>
+        <width>171</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-size: cover;
+background-image:url(firewall.png);
+border-radius:45px;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Default_2">
+     <widget class="QWidget" name="widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>290</y>
+        <width>871</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: white;</string>
+      </property>
+      <widget class="QWidget" name="horizontalLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>70</y>
+         <width>751</width>
+         <height>42</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="styleSheet">
+           <string notr="true">font: 500 14pt &quot;Segoe UI&quot;;
+color: rgb(57, 57, 57);
+</string>
+          </property>
+          <property name="text">
+           <string>INPUT :</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="dInputPolicy">
+          <property name="styleSheet">
+           <string notr="true">font: 500 14pt &quot;Segoe UI&quot;;
+color: rgb(57, 57, 57);
+border:1px solid black;</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>ACCEPT</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>DROP</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>REJECT</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget_22">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>160</y>
+         <width>751</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_24">
+        <item>
+         <widget class="QLabel" name="label_23">
+          <property name="styleSheet">
+           <string notr="true">font: 500 14pt &quot;Segoe UI&quot;;
+color: rgb(57, 57, 57);
+</string>
+          </property>
+          <property name="text">
+           <string>OUTPUT :</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="dOutputPolicy">
+          <property name="styleSheet">
+           <string notr="true">border:1px solid black;
+font: 500 14pt &quot;Segoe UI&quot;;
+color: rgb(57, 57, 57);
+
+</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>ACCEPT</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>DROP</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>REJECT</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget_23">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>270</y>
+         <width>751</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_25">
+        <item>
+         <widget class="QLabel" name="label_24">
+          <property name="styleSheet">
+           <string notr="true">font: 500 14pt &quot;Segoe UI&quot;;
+color: rgb(57, 57, 57);
+</string>
+          </property>
+          <property name="text">
+           <string>FORWARD :</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="dForPolicy">
+          <property name="styleSheet">
+           <string notr="true">border:1px solid black;
+font: 500 14pt &quot;Segoe UI&quot;;
+color: rgb(57, 57, 57);
+
+</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>ACCEPT</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>DROP</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>REJECT</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_8" native="true">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>180</y>
+        <width>861</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: white;
+</string>
+      </property>
+      <widget class="QPushButton" name="defModify">
+       <property name="geometry">
+        <rect>
+         <x>670</x>
+         <y>10</y>
+         <width>181</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:15px;
+border:0px;
+background-color: rgb(71, 105, 255);</string>
+       </property>
+       <property name="text">
+        <string>MODIFY</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_30">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>20</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 700 10pt &quot;Segoe UI&quot;;
+font: 12pt &quot;Segoe UI&quot;;
+color: rgb(67, 81, 127);
+</string>
+       </property>
+       <property name="text">
+        <string>Default rules</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_7" native="true">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>110</y>
+        <width>171</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-size: cover;
+background-image:url(firewall.png);
+border-radius:45px;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Menu">
+     <widget class="QWidget" name="head" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>931</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(1.png);
+background-color: rgb(26, 95, 180);</string>
+      </property>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>140</y>
+         <width>331</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>N E T F I L  T E R</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_3" native="true">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>390</y>
+        <width>281</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:white;
+border-radius:20px;
+border:1px solid grey;</string>
+      </property>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>10</y>
+         <width>51</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">qproperty-alignment: 'AlignCenter';
+border-radius:23px;
+font: 20pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 85, 255);</string>
+       </property>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_25">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>70</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">qproperty-alignment: 'AlignCenter';
+border-radius:23px;
+font: 20pt &quot;Segoe UI&quot;;
+color:rgb(88, 88, 88)</string>
+       </property>
+       <property name="text">
+        <string>New rules</string>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="plainTextEdit">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>150</y>
+         <width>261</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">qproperty-alignment: 'AlignCenter';
+word-wrap: break-word;
+color: rgb(34, 34, 34);
+font: 11pt &quot;Segoe UI&quot;;
+border:none;</string>
+       </property>
+       <property name="plainText">
+        <string>Allow specific incoming, outgoing, forwarding connections, drop or reject unwanted traffic, and limit the number of connections. </string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_4" native="true">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>370</y>
+        <width>281</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:white;
+border-radius:20px;
+border:1px solid grey;</string>
+      </property>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>10</y>
+         <width>51</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">qproperty-alignment: 'AlignCenter';
+border-radius:23px;
+font: 20pt &quot;Segoe UI&quot;;
+background-color: rgb(35, 185, 255);</string>
+       </property>
+       <property name="text">
+        <string>2</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_26">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>70</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">qproperty-alignment: 'AlignCenter';
+border-radius:23px;
+font: 20pt &quot;Segoe UI&quot;;
+color:rgb(88, 88, 88)</string>
+       </property>
+       <property name="text">
+        <string>Default rules</string>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="plainTextEdit_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>160</y>
+         <width>261</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">qproperty-alignment: 'AlignCenter';
+word-wrap: break-word;
+color: rgb(34, 34, 34);
+font: 11pt &quot;Segoe UI&quot;;
+border:none;</string>
+       </property>
+       <property name="plainText">
+        <string>Determine the policy for packets that do not match any of the explicitly defined rules. </string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_5" native="true">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>390</y>
+        <width>271</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:white;
+border-radius:20px;
+border:1px solid grey;</string>
+      </property>
+      <widget class="QLabel" name="label_15">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>10</y>
+         <width>51</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">qproperty-alignment: 'AlignCenter';
+border-radius:23px;
+font: 20pt &quot;Segoe UI&quot;;
+background-color: rgb(7, 135, 255);</string>
+       </property>
+       <property name="text">
+        <string>3</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_27">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>70</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">qproperty-alignment: 'AlignCenter';
+border-radius:23px;
+font: 20pt &quot;Segoe UI&quot;;
+color:rgb(88, 88, 88)</string>
+       </property>
+       <property name="text">
+        <string>Current rules</string>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="plainTextEdit_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>160</y>
+         <width>251</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">qproperty-alignment: 'AlignCenter';
+word-wrap: break-word;
+color: rgb(34, 34, 34);
+font: 11pt &quot;Segoe UI&quot;;
+border:none;</string>
+       </property>
+       <property name="plainText">
+        <string>List the currently configured firewall rules, displays the rules for each of the built-in chains in the filter table.</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Current">
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>320</y>
+        <width>861</width>
+        <height>350</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:white;</string>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="widOutput">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>861</width>
+         <height>350</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_6" native="true">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>170</y>
+        <width>861</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>141</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 700 10pt &quot;Segoe UI&quot;;
+font: 12pt &quot;Segoe UI&quot;;
+color: rgb(67, 81, 127);
+</string>
+       </property>
+       <property name="text">
+        <string>Current rules</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton">
+       <property name="geometry">
+        <rect>
+         <x>720</x>
+         <y>30</y>
+         <width>89</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:0px;
+background-color: rgb(71, 105, 255);</string>
+       </property>
+       <property name="text">
+        <string>INPUT</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>30</y>
+         <width>89</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:0px;
+background-color: rgb(71, 105, 255);</string>
+       </property>
+       <property name="text">
+        <string>OUTPUT</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="geometry">
+        <rect>
+         <x>590</x>
+         <y>30</y>
+         <width>89</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:0px;
+background-color: rgb(71, 105, 255);</string>
+       </property>
+       <property name="text">
+        <string>FORWARD</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>80</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:none;
+border:1px solid white;font: 13pt \&amp;quot;Lucida Calligraphy\&amp;quot;;
+border-radius: 10px;
+</string>
+       </property>
+       <property name="text">
+        <string>Target</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>80</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:none;
+border:1px solid white;font: 13pt \&amp;quot;Lucida Calligraphy\&amp;quot;;
+border-radius: 10px;
+</string>
+       </property>
+       <property name="text">
+        <string>Protocol</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>80</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:none;
+border:1px solid white;font: 13pt \&amp;quot;Lucida Calligraphy\&amp;quot;;
+border-radius: 10px;
+</string>
+       </property>
+       <property name="text">
+        <string>Option</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>80</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:none;
+border:1px solid white;font: 13pt \&amp;quot;Lucida Calligraphy\&amp;quot;;
+border-radius: 10px;
+</string>
+       </property>
+       <property name="text">
+        <string>Source</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>80</y>
+         <width>111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:none;
+border:1px solid white;font: 13pt \&amp;quot;Lucida Calligraphy\&amp;quot;;
+border-radius: 10px;
+</string>
+       </property>
+       <property name="text">
+        <string>Destination</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>550</x>
+         <y>80</y>
+         <width>121</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:none;
+border:1px solid white;font: 13pt \&amp;quot;Lucida Calligraphy\&amp;quot;;
+border-radius: 10px;
+</string>
+       </property>
+       <property name="text">
+        <string>Other</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_29">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>80</y>
+        <width>161</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-size: cover;
+background-image:url(firewall.png);
+border-radius:45px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="boxMessage" native="true">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>230</y>
+      <width>500</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 10px;
+background-color: rgb(91, 91, 91);
+</string>
+    </property>
+    <widget class="QLabel" name="message_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>471</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:none;
+qproperty-alignment: 'AlignCenter';
+border:0px;
+font: 16pt &quot;Ubuntu Condensed&quot;;</string>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="addValid_3">
+     <property name="geometry">
+      <rect>
+       <x>185</x>
+       <y>240</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:1px solid black;</string>
+     </property>
+     <property name="text">
+      <string>Valider</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_4">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>15</y>
+       <width>23</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:1px solid black;</string>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="errorMessage" native="true">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>230</y>
+      <width>500</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 10px;
+background-color: rgb(91, 91, 91);
+</string>
+    </property>
+    <widget class="QLabel" name="message_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>471</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:none;
+qproperty-alignment: 'AlignCenter';
+border:0px;
+font: 16pt &quot;Ubuntu Condensed&quot;;</string>
+     </property>
+     <property name="text">
+      <string>There is an error in your rule. Please reverify it.</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="okError">
+     <property name="geometry">
+      <rect>
+       <x>185</x>
+       <y>240</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:1px solid black;</string>
+     </property>
+     <property name="text">
+      <string>Ok</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_5">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>15</y>
+       <width>23</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:1px solid black;</string>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-10</y>
+      <width>231</width>
+      <height>681</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 75, 225);
+font: 700 12pt &quot;Segoe UI&quot;;</string>
+    </property>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>131</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>NETFILTER</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="newRule">
+     <property name="geometry">
+      <rect>
+       <x>-10</x>
+       <y>160</y>
+       <width>251</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border:1px;
+color: rgb(71, 105, 255);</string>
+     </property>
+     <property name="text">
+      <string>Add new rules</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="listRules">
+     <property name="geometry">
+      <rect>
+       <x>-10</x>
+       <y>280</y>
+       <width>251</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border:1px;
+color: rgb(71, 105, 255);</string>
+     </property>
+     <property name="text">
+      <string>Current rules</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="defaultRules">
+     <property name="geometry">
+      <rect>
+       <x>-10</x>
+       <y>220</y>
+       <width>251</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border:1px;
+color: rgb(71, 105, 255);</string>
+     </property>
+     <property name="text">
+      <string>Default rules</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="home">
+     <property name="geometry">
+      <rect>
+       <x>-10</x>
+       <y>100</y>
+       <width>251</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border:1px;
+color: rgb(71, 105, 255);</string>
+     </property>
+     <property name="text">
+      <string>Home</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

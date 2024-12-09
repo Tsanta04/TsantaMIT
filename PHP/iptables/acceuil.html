@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN' crossorigin='anonymous'>
+    <title>Accueil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+                <h1>Welcome Tsanta !</h1>
+        </nav>
+    </header>
+
+    <main id="contenu-accueil">
+        <h1>Bienvenue sur notre site</h1>
+        <p>Découvrez nos services exceptionnels.</p>
+        <main id="contenu-accueil">
+            <div class="table tableau-responsive">
+                <table>
+                    <thead>
+                        <th>Chain</th>
+                        <th>Protocol</th>
+                        <th>Option</th>
+                        <th>Sources</th>
+                        <th>Destinations</th>
+                        <th>Others</th>
+                        <th>Modify</th>
+                        <th>Delete</th>
+                    </thead>
+                    <?php
+                        session.start();
+                        $_SESSION["datas"]=shell_exec('sudo iptables -L');
+                        for($i=0;$i<count($_SESSION["datas"]);$i++){
+                            if (strpos($_SESSION["datas"], "Chain")) {
+                                
+                            }
+                        }
+
+                    ?>
+                </table>
+            </div>
+        </main>
+
+    </main>
+
+    <main id="contenu-services" style="display:none;">
+        <h1>Nos Services</h1>
+        <p>Nous offrons une gamme complète de services pour répondre à vos besoins.</p>
+    </main>
+
+    <main id="contenu-contact" style="display:none;">
+        <h1>Contactez-nous</h1>
+        <p>N'hésitez pas à nous contacter pour toute question ou demande de renseignements.</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

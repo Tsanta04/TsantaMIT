@@ -1,0 +1,3 @@
+Password root: TestAcc@12#$
+All repository:/etc/yum.repos.d
+gsql -d postgres -p 15400 -r
